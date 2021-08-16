@@ -12,7 +12,7 @@ Provide an interface for creating families of related or dependent objects witho
 - Kits
 - Multiplatform Toolkits
 
-**Examples:**
+**Example:**
 
     abstract class Animal {}
 
@@ -428,5 +428,5 @@ Defines a new operation to a class without change.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NzMwMjk4ODUsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbMTE0NDM1OTkwMCw0NjA1NTc1ODBdfQ==
 -->
