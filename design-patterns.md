@@ -159,11 +159,92 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 ### Adapter
 
-Match interfaces of different classes.
+Match interfaces of different classes. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
+
+**Uses:**
+- **Refactoring**
+- Frameworks
+- External Libraries
+- Legacy Codes
+
+**Example:**
+
+> main.ts
+
+    import {
+      EmailValidatorProtocol,
+      EmailValidatorFnProtocol,
+    } from './validation/email-validator-protocol'
+    import { EmailValidatorClassAdapter } from './validation/email-validator-class-adapter'
+    import { emailValidatorFnAdapter } from './validation/email-validator-fn-adapter'
+    
+    function validaEmailClass(
+      emailValidator: EmailValidatorProtocol,
+      email: string,
+    ): void {
+      if (emailValidator.isEmail(email)) {
+        console.log('Email é válido (CLASS)')
+      } else {
+        console.log('Email é inválido (CLASS)')
+      }
+    }
+    
+    function validaEmailFn(
+      emailValidator: EmailValidatorFnProtocol,
+      email: string,
+    ): void {
+      if (emailValidator(email)) {
+        console.log('Email é válido (FN)')
+      } else {
+        console.log('Email é inválido (FN)')
+      }
+    }
+    
+    const email = 'luizomf@gmail.com'
+    validaEmailClass(new EmailValidatorClassAdapter(), email)
+    validaEmailFn(emailValidatorFnAdapter, email)
+
+> email-validator-protocol.ts
+
+    export interface EmailValidatorProtocol {
+      isEmail: EmailValidatorFnProtocol
+    }
+    
+    export interface EmailValidatorFnProtocol {
+      (value: string): boolean
+    }
+
+> email-validator-class-adapter.ts
+
+    import isEmail from 'validator/lib/isEmail'
+    import { EmailValidatorProtocol } from './email-validator-protocol'
+    
+    export class EmailValidatorClassAdapter implements EmailValidatorProtocol {
+      isEmail(value: string): boolean {
+        return isEmail(value)
+      }
+    }
+
+> email-validator-fn-adapter.ts
+
+    import isEmail from 'validator/lib/isEmail'
+    import { EmailValidatorFnProtocol } from './email-validator-protocol'
+    
+    export const emailValidatorFnAdapter: EmailValidatorFnProtocol = (
+      value: string,
+    ): boolean => {
+      return isEmail(value)
+    }
 
 ### Bridge
 
-Separates an object’s interface from its implementation.
+Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
+
+**Uses:**
+- **Planning**
+- Frameworks
+- External Libraries
+- Legacy Codes
 
 ### Composite
 
@@ -263,5 +344,5 @@ Defines a new operation to a class without change.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzMjMzNzc1Niw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbMTQ2ODM1NDgzMSw0NjA1NTc1ODBdfQ==
 -->
