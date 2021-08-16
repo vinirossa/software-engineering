@@ -121,6 +121,8 @@ Defines a new operation to a class without change
 -   Method chaining
 -   Inversion of control
 -   Unit of Work
+
+## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbLTEwMzgyMzQ1MjYsNDYwNTU3NTgwXX0=
 -->
