@@ -2,18 +2,6 @@
 
 ## Creational Design Patterns
 
-###  Abstract Factory
-
-Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
-
-**Examples:**
-- Kits
-- Multiplatform Toolkits
-
-###  Builder
-
-Separates object construction from its representation
-
 ###  Factory Method
 
 Creates an instance of several derived classes
@@ -38,9 +26,33 @@ Creates an instance of several derived classes
         return person
     }
 
-###  Object Pool 
+###  Abstract Factory
 
-Avoid expensive acquisition and release of resources by recycling objects that are no longer in use
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
+
+**Uses:**
+- Kits
+- Multiplatform Toolkits
+
+**Examples:**
+
+    class Animal {}
+
+	class Bird extends Animal {}
+
+	class Reptile extends Animal {}
+	
+	class Hawk extends Bird {}
+
+	class Alligator extends Reptile {}
+
+###  Builder
+
+Separates object construction from its representation. An `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
+
+**Uses:**
+- Text Editors
+- Templates
 
 ###  Prototype
 
@@ -49,6 +61,27 @@ A fully initialized instance to be copied or cloned
 ###  Singleton
 
 A class of which only a single instance can exist
+
+**Uses:**
+- Database Configuration
+
+**Example:**
+
+    const Singleton = (() => {
+        var instance
+    
+        function createInstance() {
+            var object = new Object("I am the instance")
+            return object
+        }
+    
+        return {
+            getInstance: () => {
+                if (!instance) instance = createInstance()
+                return instance
+        	}
+        }
+    })()
 
 ## Structural Design Patterns
 
@@ -110,10 +143,6 @@ Defines simplified communication between classes
 
 Capture and restore an object's internal state
 
-### Null Object
-
-Designed to act as a default value of an object
-
 ### Observer
 
 A way of notifying change to a number of classes
@@ -137,16 +166,18 @@ Defines a new operation to a class without change
 
 ## Other Patterns
 
--   Rules Design Patterns
--   Dependency Injection
--   Intercepting filter
--   Lazy loading
--   Mock object
--   Method chaining
--   Inversion of control
--   Unit of Work
+-   **Rules Design Patterns**
+-   **Dependency Injection**
+-   **Intercepting filter**
+-   **Lazy loading**
+-   **Mock object**
+-   **Method chaining**
+-   **Inversion of control**
+-   **Unit of Work**
+-   **Object Pool:** avoid expensive acquisition and release of resources by recycling objects that are no longer in use
+- **Null Object:** designed to act as a default value of an object
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk4NTgzMzE0LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbMTU3NDA3MzU5NSw0NjA1NTc1ODBdfQ==
 -->
