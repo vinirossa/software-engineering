@@ -48,7 +48,9 @@ Provide an interface for creating families of related or dependent objects witho
 
 ###  Builder
 
-Separates object construction from its representation. An `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
+Separates object construction from its representation. 
+
+A `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
 
 **Uses:**
 - Text Editors
@@ -60,7 +62,9 @@ A fully initialized instance to be copied or cloned
 
 ###  Singleton
 
-A class of which only a single instance can exist
+A class of which only a single instance can exist. 
+
+All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
 **Uses:**
 - Database Configuration
@@ -179,5 +183,5 @@ Defines a new operation to a class without change
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3NDA3MzU5NSw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTE0NjMyODg2ODEsNDYwNTU3NTgwXX0=
 -->
