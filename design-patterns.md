@@ -32,6 +32,8 @@ Creates an instance of several derived classes
         function fullName() {
     	    return `${person.name} ${person.lastname}`
         }
+
+		person.fullName
         
         return person
     }
@@ -146,5 +148,5 @@ Defines a new operation to a class without change
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY2MzA2NzgwMSw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTk4NTgzMzE0LDQ2MDU1NzU4MF19
 -->
