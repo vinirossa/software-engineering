@@ -25,9 +25,9 @@ Creates an instance of several derived classes
 **Example:**
 
     function fabricatePerson(name, lastname) {
-        	let person = {}
-        	person.name = name
-        	person.lastname = lastname
+        let person = {}
+        person.name = name
+        person.lastname = lastname
             
         function fullName() {
     	    return `${person.name} ${person.lastname}`
@@ -146,5 +146,5 @@ Defines a new operation to a class without change
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTIyNzUyMSw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTY2MzA2NzgwMSw0NjA1NTc1ODBdfQ==
 -->
