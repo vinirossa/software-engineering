@@ -34,7 +34,7 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
 
 **Example:**
 
-    const Task = (name, description, finished, dueDate) => {
+    var Task = (name, description, finished, dueDate) => {
     
         this.name = name
         this.description = description
@@ -42,7 +42,7 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
         this.dueDate = dueDate
     }
     
-    const TaskBuilder = () => {
+    var TaskBuilder = () => {
     
         let name
         let description
@@ -101,7 +101,12 @@ Creates an instance of several derived classes.
     
 ###  Prototype
 
-A fully initialized instance to be copied or cloned.
+A fully initialized instance to be copied or cloned and then modified.
+
+**Uses:**
+
+- JavaScript and TypeScript
+- To avoid unnecessary subclasses
 
 **Example:**
 
@@ -168,6 +173,22 @@ A tree structure of simple and composite objects.
 
 Add responsibilities to objects dynamically.
 
+**Example:**
+
+    function log(constructor: any) {
+        console.log(`New ${constructor.name} created!`)
+    }
+    
+    @log
+    class Yogurt {
+        
+        public flavor: string;
+    
+        constructor(flavor: string) {
+            this.flavor = flavor
+        }
+    }
+
 ### Facade
 
 A single class that represents an entire subsystem.
@@ -175,10 +196,6 @@ A single class that represents an entire subsystem.
 ### Flyweight
 
 A fine-grained instance used for efficient sharing.
-
-### Private Class Data
-
-Restricts accessor/mutator access.
 
 ### Proxy
 
@@ -230,7 +247,6 @@ Defer the exact steps of an algorithm to a subclass.
 
 Defines a new operation to a class without change.
 
-
 ## Other Patterns
 
 -   **Rules Design Patterns**
@@ -243,8 +259,9 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 -   **Object Pool:** avoid expensive acquisition and release of resources by recycling objects that are no longer in use
 - **Null Object:** designed to act as a default value of an object
+- **Private Class Data:** restricts accessor/mutator access.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5ODQ2OTQyMSw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTYzMjMzNzc1Niw0NjA1NTc1ODBdfQ==
 -->
