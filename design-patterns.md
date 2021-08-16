@@ -18,20 +18,22 @@ Separates object construction from its representation
 
 Creates an instance of several derived classes
 
-**Examples:**
+**Uses:**
 - Frameworks
 - TDD
 
+**Example:**
+
     function fabricatePerson(name, lastname) {
-    	let person = {}
-    	person.name = name
-    	person.lastname = lastname
-        
+        	let person = {}
+        	person.name = name
+        	person.lastname = lastname
+            
         function fullName() {
-    		return `${person.name} ${person.lastname}`
-    	}
-    
-    	return person
+    	    return `${person.name} ${person.lastname}`
+        }
+        
+        return person
     }
 
 ###  Object Pool 
@@ -144,5 +146,5 @@ Defines a new operation to a class without change
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzE2OTAyNjg2LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbLTE3MTIyNzUyMSw0NjA1NTc1ODBdfQ==
 -->
