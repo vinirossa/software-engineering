@@ -2,9 +2,82 @@
 
 ## Creational Design Patterns
 
+###  Abstract Factory
+
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
+
+**Uses:**
+- Kits
+- Multiplatform Toolkits
+
+**Examples:**
+
+    abstract class Animal {}
+
+	abstract class Bird extends Animal {}
+
+	abstract class Reptile extends Animal {}
+	
+	class Hawk extends Bird {}
+
+	class Alligator extends Reptile {}
+
+###  Builder
+
+Separates object construction from its representation. 
+
+A `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
+
+**Uses:**
+- Text Editors
+- Templates
+
+**Example:**
+
+    const Task = (name, description, finished, dueDate) => {
+    
+        this.name = name
+        this.description = description
+        this.finished = finished
+        this.dueDate = dueDate
+    }
+    
+    const TaskBuilder = () => {
+    
+        let name
+        let description
+        let isFinished = false
+        let dueDate
+    
+        return {
+            setName: name => {
+                this.name = name
+                return this
+            },
+            setDescription: description => {
+                this.description = description
+                return this
+            },
+            setFinished: finished => {
+                this.finished = finished
+                return this
+            },
+            setDueDate: dueDate => {
+                this.dueDate = dueDate
+                return this
+            },
+            build: () => {
+                return new Task(name, description, isFinished, dueDate)
+            }
+        }
+    }
+    
+    let task = new TaskBuilder().setName('Task A').setDescription('finish book')
+        .setDueDate(new Date(2019, 5, 12))
+
 ###  Factory Method
 
-Creates an instance of several derived classes
+Creates an instance of several derived classes.
 
 **Uses:**
 - Frameworks
@@ -25,40 +98,28 @@ Creates an instance of several derived classes
         
         return person
     }
-
-###  Abstract Factory
-
-Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
-
-**Uses:**
-- Kits
-- Multiplatform Toolkits
-
-**Examples:**
-
-    class Animal {}
-
-	class Bird extends Animal {}
-
-	class Reptile extends Animal {}
-	
-	class Hawk extends Bird {}
-
-	class Alligator extends Reptile {}
-
-###  Builder
-
-Separates object construction from its representation. 
-
-A `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
-
-**Uses:**
-- Text Editors
-- Templates
-
+    
 ###  Prototype
 
-A fully initialized instance to be copied or cloned
+A fully initialized instance to be copied or cloned.
+
+**Example:**
+
+    interface Prototype {
+        clone(): Prototype
+    }
+    
+    class Person implements Prototype {
+        constructor(public name: string, public age: number) {}
+    	
+        clone(): this {
+            const newPerson = Object.create(this)
+            return newPerson
+        }
+    }
+    
+    const person1 = new Person('Luiz', 30)
+    const person2 = person1.clone()
 
 ###  Singleton
 
@@ -87,85 +148,87 @@ All singletons have a private constructor (`createInstance`), a public access me
         }
     })()
 
+#### Monostate
+
 ## Structural Design Patterns
 
 ### Adapter
 
-Match interfaces of different classes
+Match interfaces of different classes.
 
 ### Bridge
 
-Separates an object’s interface from its implementation
+Separates an object’s interface from its implementation.
 
 ### Composite
 
-A tree structure of simple and composite objects
+A tree structure of simple and composite objects.
 
 ### Decorator
 
-Add responsibilities to objects dynamically
+Add responsibilities to objects dynamically.
 
 ### Facade
 
-A single class that represents an entire subsystem
+A single class that represents an entire subsystem.
 
 ### Flyweight
 
-A fine-grained instance used for efficient sharing
+A fine-grained instance used for efficient sharing.
 
 ### Private Class Data
 
-Restricts accessor/mutator access
+Restricts accessor/mutator access.
 
 ### Proxy
 
-An object representing another object
+An object representing another object.
 
 ## Behavioral Patterns
 
 ### Chain of Responsibility
 
-A way of passing a request between a chain of objects
+A way of passing a request between a chain of objects.
 
 ### Command
 
-Encapsulate a command request as an object
+Encapsulate a command request as an object.
 
 ### Interpreter
 
-A way to include language elements in a program
+A way to include language elements in a program.
 
 ### Iterator
 
-Sequentially access the elements of a collection
+Sequentially access the elements of a collection.
 
 ### Mediator
 
-Defines simplified communication between classes
+Defines simplified communication between classes.
 
 ### Memento
 
-Capture and restore an object's internal state
+Capture and restore an object's internal state.
 
 ### Observer
 
-A way of notifying change to a number of classes
+A way of notifying change to a number of classes.
 
 ### State
 
-Alter an object's behavior when its state changes
+Alter an object's behavior when its state changes.
 
 ### Strategy
 
-Encapsulates an algorithm inside a class
+Encapsulates an algorithm inside a class.
 
 ### Template Method
 
-Defer the exact steps of an algorithm to a subclass
+Defer the exact steps of an algorithm to a subclass.
 
 ### Visitor
 
-Defines a new operation to a class without change
+Defines a new operation to a class without change.
 
 
 ## Other Patterns
@@ -183,5 +246,5 @@ Defines a new operation to a class without change
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjMyODg2ODEsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbMTYzMTc1NDEyNyw0NjA1NTc1ODBdfQ==
 -->
