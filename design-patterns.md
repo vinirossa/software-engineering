@@ -132,7 +132,7 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 **Example:**
 
-    const Singleton = (() => {
+    const database = (() => {
         var instance
     
         function createInstance() {
@@ -246,5 +246,5 @@ Defines a new operation to a class without change.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzMTc1NDEyNyw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTQ5ODQ2OTQyMSw0NjA1NTc1ODBdfQ==
 -->
