@@ -4,7 +4,11 @@
 
 ###  Abstract Factory
 
-Creates an instance of several families of classes
+Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
+
+**Examples:**
+- Kits
+- Multiplatform Toolkits
 
 ###  Builder
 
@@ -13,6 +17,22 @@ Separates object construction from its representation
 ###  Factory Method
 
 Creates an instance of several derived classes
+
+**Examples:**
+- Frameworks
+- TDD
+
+    function fabricatePerson(name, lastname) {
+    	let person = {}
+    	person.name = name
+    	person.lastname = lastname
+        
+        function fullName() {
+    		return `${person.name} ${person.lastname}`
+    	}
+    
+    	return person
+    }
 
 ###  Object Pool 
 
@@ -124,5 +144,5 @@ Defines a new operation to a class without change
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMzgyMzQ1MjYsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbMzE2OTAyNjg2LDQ2MDU1NzU4MF19
 -->
