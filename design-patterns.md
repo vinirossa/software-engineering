@@ -6,7 +6,9 @@
 
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
 
-**Uses:**
+**Applicability:**
+
+**Known Uses:**
 - Kits
 - Multiplatform Toolkits
 
@@ -28,9 +30,11 @@ Separates object construction from its representation.
 
 A `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
 
-**Uses:**
-- Text Editors
+**Applicability:**
 - Templates
+
+**Known Uses:**
+- Text Editors
 
 **Example:**
 
@@ -79,7 +83,9 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
 
 Creates an instance of several derived classes.
 
-**Uses:**
+**Applicability:**
+
+**Known Uses:**
 - Frameworks
 - TDD
 
@@ -103,10 +109,11 @@ Creates an instance of several derived classes.
 
 A fully initialized instance to be copied or cloned and then modified.
 
-**Uses:**
+**Applicability:**
+- Avoid unnecessary subclasses
 
+**Known Uses:**
 - JavaScript and TypeScript
-- To avoid unnecessary subclasses
 
 **Example:**
 
@@ -132,7 +139,9 @@ A class of which only a single instance can exist.
 
 All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
-**Uses:**
+**Applicability:**
+
+**Known Uses:**
 - Database Configuration
 
 **Example:**
@@ -163,8 +172,11 @@ Respects the S.O.L.I.D principles.
 
 Match interfaces of different classes. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
-**Uses:**
-- **On Refactoring**
+**Applicability:**
+- On Refactoring
+
+**Known Uses:**
+
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -242,8 +254,11 @@ Match interfaces of different classes. It's useful when you don't want your code
 
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
 
-**Uses:**
-- **On Planning**
+**Applicability:**
+- On Planning
+
+**Known Uses:**
+
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -255,6 +270,8 @@ A tree structure of simple (leaf) and composite objects.
 ### Decorator
 
 Add responsibilities to objects dynamically.
+
+**Applicability:**
 
 **Example:**
 
@@ -275,6 +292,12 @@ Add responsibilities to objects dynamically.
 ### Facade
 
 A single class that represents an entire subsystem.
+
+**Applicability:**
+- Simplify and Unify
+
+**Known Uses:**
+
 
 **Example:**
 
@@ -331,7 +354,17 @@ A fine-grained instance used for efficient sharing and memory saving. In this pa
 
 ### Proxy
 
-An object representing another object.
+Provide a surrogate or placeholder for another object to control access to it, working as a middleware.
+
+**Applicability:**
+- Access control
+- Logs
+- Cache
+- Lazy instanciation
+- Lazy evaluation
+
+**Known Uses:**
+
 
 ## Behavioral Patterns
 
@@ -395,5 +428,5 @@ Defines a new operation to a class without change.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE0NzY0NzAzLDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbLTE1NzMwMjk4ODUsNDYwNTU3NTgwXX0=
 -->
