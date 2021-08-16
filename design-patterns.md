@@ -153,7 +153,9 @@ All singletons have a private constructor (`createInstance`), a public access me
         }
     })()
 
-#### Monostate
+#### Monostate...
+
+Respects the S.O.L.I.D principles.
 
 ## Structural Design Patterns
 
@@ -162,7 +164,7 @@ All singletons have a private constructor (`createInstance`), a public access me
 Match interfaces of different classes. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
 **Uses:**
-- **Refactoring**
+- **On Refactoring**
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -241,14 +243,14 @@ Match interfaces of different classes. It's useful when you don't want your code
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
 
 **Uses:**
-- **Planning**
+- **On Planning**
 - Frameworks
 - External Libraries
 - Legacy Codes
 
 ### Composite
 
-A tree structure of simple and composite objects.
+A tree structure of simple (leaf) and composite objects.
 
 ### Decorator
 
@@ -274,9 +276,58 @@ Add responsibilities to objects dynamically.
 
 A single class that represents an entire subsystem.
 
+**Example:**
+
+> customer-facade.ts
+
+    import { CustomerClient } from '../models/customer-client.ts'
+    import { CustomerAvatar } from '../models/customer-avatar.ts'
+    import { CustomerDocuments } from '../models/customer-documents.ts'
+    import { CustomerAccessHistory } from '../models/customer-access-history.ts'
+    import { CustomerService } from '../models/customer-service.ts'
+    import { CustomerEmail } from '../models/customer-email.ts'
+     
+    export module Facade { 
+        export class CustomerFacade { 
+            static removeAccount(customer: Customer) {
+                const customerAvatar = new CustomerAvatar(customer)
+                const customerDocumentos = new CustomerDocuments(customer)
+                const customerHistoricoAcesso = new CustomerAccessHistory(customer)
+                const customerService = new CustomerService(customer)
+                const customerEmail = new CustomerEmail(customer)
+    
+                customerAvatar.remove()
+                customerDocumentos.delete()
+                customerHistoricoAcesso.remove()
+                customerService.delete()
+                customerEmail.sendRemoveAccount()
+            }
+        }
+    }
+
+> main.ts
+
+    import { CustomerClient } from '../models/customer-client.ts'
+    import { Facade } from './facade/customer-facade.ts'
+    
+    const John = new Customer(
+        "John Holts",
+        "johnholts",
+        "johnholts67@hotmail.com"
+    )
+    
+    const Alice = new Customer(
+        "Alice Cooper",
+        "alicecooper",
+        "alicecooperw@gmail.com"
+    )
+    
+    Facade.CustomerFacade.removeAccount(John)
+    Facade.CustomerFacade.removeAccount(Alice)
+
 ### Flyweight
 
-A fine-grained instance used for efficient sharing.
+A fine-grained instance used for efficient sharing and memory saving. In this pattern, if a flyweight object already exists, it will be returned and not created again.
 
 ### Proxy
 
@@ -344,5 +395,5 @@ Defines a new operation to a class without change.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ2ODM1NDgzMSw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbNDE0NzY0NzAzLDQ2MDU1NzU4MF19
 -->
