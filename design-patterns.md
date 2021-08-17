@@ -435,7 +435,13 @@ Provide a surrogate or placeholder for another object to control access to it, w
 
 ### Chain of Responsibility
 
-A way of passing a request between a chain of objects.
+A way of passing a request between a chain of objects, similar to middlewares.
+
+**Applicability:**
+- Task delegation
+
+**Known Uses:**
+- HTTP requisitions
 
 ### Command
 
@@ -467,7 +473,15 @@ Alter an object's behavior when its state changes.
 
 ### Strategy
 
-Encapsulates an algorithm inside a class.
+Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at run time.
+
+**Applicability:**
+- Many algorithms and need to change them at run time
+- Isolate business rules
+- Encapsulates a group of conditionals
+
+**Known Uses:**
+- Ecommerces
 
 ### Template Method
 
@@ -481,17 +495,17 @@ Defines a new operation to a class without change.
 
 -   **Rules Design Patterns**
 -   **Dependency Injection**
+-   **Inversion of control**
+-   **Inversion of dependency **
 -   **Intercepting filter**
 -   **Lazy loading**
 -   **Mock object**
 -   **Method chaining**
--   **Inversion of control**
 -   **Unit of Work**
 -   **Object Pool:** avoid expensive acquisition and release of resources by recycling objects that are no longer in use
 - **Null Object:** designed to act as a default value of an object
 - **Private Class Data:** restricts accessor/mutator access.
 
-## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTE3OTY5NTg3LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbMzE1MzkwNzE4LDQ2MDU1NzU4MF19
 -->
