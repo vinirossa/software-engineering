@@ -173,10 +173,10 @@ Respects the S.O.L.I.D principles.
 Match interfaces of different classes. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
 **Applicability:**
+- Uncouple code
 - On Refactoring
 
 **Known Uses:**
-
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -255,10 +255,10 @@ Match interfaces of different classes. It's useful when you don't want your code
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
 
 **Applicability:**
+- Uncouple code
 - On Planning
 
 **Known Uses:**
-
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -272,8 +272,12 @@ A tree structure of simple (leaf) and composite objects.
 Add responsibilities to objects dynamically.
 
 **Applicability:**
+- Add features to existent code
+- Logging
 
-**Example:**
+**Examples:**
+
+> Class decorators
 
     function log(constructor: any) {
         console.log(`New ${constructor.name} created!`)
@@ -289,15 +293,47 @@ Add responsibilities to objects dynamically.
         }
     }
 
+> Method decorators
+
+    import userModel from './user.model'
+    import UserNotFoundException from './UserNotFoundException'
+    
+    function excludeProperties(propertiesToExclude: string[]) {
+        return (target: any, propertyName: string, descriptor: PropertyDescriptor) =&gt {
+            const originalFunction = descriptor.value
+            
+            descriptor.value = async function(...args: any[]) {
+                const originalResult = await originalFunction.apply(this, args)
+                propertiesToExclude.forEach(propertyName =&gt {
+                delete originalResult[propertyName]
+                })
+                return originalResult
+            }
+        }
+    }
+        
+    class UserService {
+        private user = userModel
+        
+        @excludeProperties(['password'])
+        private getUser = async (userId: string) => {
+            const user = await this.user.findById(userId)
+            if (user) {
+                return user
+            }
+            throw new UserNotFoundException(userId)
+        }
+    }
+
 ### Facade
 
-A single class that represents an entire subsystem.
+A single class (`wrapper`) that represents an entire subsystem.
 
 **Applicability:**
 - Simplify and Unify
 
 **Known Uses:**
-
+- Operational Systems
 
 **Example:**
 
@@ -350,7 +386,12 @@ A single class that represents an entire subsystem.
 
 ### Flyweight
 
-A fine-grained instance used for efficient sharing and memory saving. In this pattern, if a flyweight object already exists, it will be returned and not created again.
+A fine-grained instance used for efficient sharing and memory saving, as if an flyweight object already exists, it will be returned and not created again.
+
+**Applicability:**
+- High memory cost softwares
+- Optimization
+- Memory saving
 
 ### Proxy
 
@@ -364,7 +405,31 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - Lazy evaluation
 
 **Known Uses:**
+- Networking
+- VPNs
+- Credit card validations
 
+**Example:**
+
+    export interface Subject { 
+        request(): void
+    } 
+    
+    export class RealSubject implements Subject { 
+        request(): void { 
+            console.log('Something that the object do.')
+        } 
+    } 
+    
+    export class Proxy implements Subject { 
+        constructor(private subject: Subject) {} 
+    
+        request(): void { 
+            console.log('The proxy do something')
+            this.subject.request()
+            console.log('The proxy can do other thing')
+        } 
+    }
 
 ## Behavioral Patterns
 
@@ -428,5 +493,5 @@ Defines a new operation to a class without change.
 
 ## S.O.L.I.D and Clean Code
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDM1OTkwMCw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbOTE3OTY5NTg3LDQ2MDU1NzU4MF19
 -->
