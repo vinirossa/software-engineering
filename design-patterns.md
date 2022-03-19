@@ -82,7 +82,7 @@ Create an object without exposing the creation logic to the client and refer to 
 > [Suggested video](https://www.youtube.com/watch?v=v-GiuMmsXj4&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=5&ab_channel=ChristopherOkhravi). 
 
 **Uses:**
-- Kits
+- UI Controls
 - Multiplatform Toolkits
 
 **In C#:**
@@ -599,11 +599,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ4NTEzMjA3LDEwNzY3MzYwNTksLTEwOT
-EzNjQ2OTQsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQy
-ODU5LC0xMDE1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OT
-UsLTg5MjcxOTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3
-OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OT
-M1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbMTUwMTU1OTMwNCwxMDc2NzM2MDU5LC0xMD
+kxMzY0Njk0LDEyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0
+Mjg1OSwtMTAxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Nj
+k1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5
+Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OT
+kzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
 
 -->
