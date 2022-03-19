@@ -4,6 +4,8 @@
 
 ### Factory
 
+Create an object without exposing the creation logic to the client and refer to newly created object using a common interface.
+
 **In C#:**
 ```ts
     void Main()
@@ -645,7 +647,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODkxMTA2OCwtMTkxMDQxODY5NSwtOD
+eyJoaXN0b3J5IjpbMTc5MzA1NTc4NywtMTkxMDQxODY5NSwtOD
 kyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUy
 MTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLT
 E4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
