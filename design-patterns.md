@@ -423,8 +423,9 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - VPNs
 - Credit card validations
 
-**Example:**
+**In TypeScript:**
 
+```ts
     export interface Subject { 
         request(): void
     } 
@@ -444,6 +445,7 @@ Provide a surrogate or placeholder for another object to control access to it, w
             console.log('The proxy can do other thing')
         } 
     }
+```
 
 ## Behavioral Patterns
 
@@ -521,6 +523,6 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NjA5MjQ0NywtMjk0ODY5OTM1LC0xOD
+eyJoaXN0b3J5IjpbMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0xOD
 Y0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
