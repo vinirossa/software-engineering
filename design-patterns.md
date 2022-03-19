@@ -76,6 +76,8 @@ public class RandomAnimalFactory : IAnimalFactory
 
 Create an object without exposing the creation logic to the client and refer to newly created object using a common interface.
 
+> [Suggested video](https://www.youtube.com/watch?v=v-GiuMmsXj4&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=5&ab_channel=ChristopherOkhravi). 
+
 **Uses:**
 - Kits
 - Multiplatform Toolkits
@@ -594,10 +596,10 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
-MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
-NTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OT
-IsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0
-MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0ODY3OTc4LDMxNTM5MD
-cxOCw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMj
+EzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0
+OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NT
+AyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYz
+MTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4Nj
+c5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
 -->
