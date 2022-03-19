@@ -2,6 +2,7 @@
 
 ## Creational Design Patterns
 
+#
 ###  Abstract Factory
 
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
@@ -512,8 +513,8 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5MjcxOTUwMiw1NDI5MTI1OTIsLTUwOT
-I5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0
-NCwtMjk0ODY5OTM1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0Nj
-A1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbMjAxNzc2ODk2NywtODkyNzE5NTAyLDU0Mj
+kxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAw
+MCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMz
+E1MzkwNzE4LDQ2MDU1NzU4MF19
 -->
