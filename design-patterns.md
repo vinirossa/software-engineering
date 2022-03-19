@@ -142,10 +142,8 @@ Separates object construction from its representation.
 
 A `Builder` abstract class or interface and one `ConcreteBuilder` for each variation of the product.
 
-**Applicability:**
-- Templates
-
 **Uses:**
+- Templates
 - Text Editors
 
 **In TypeScript:**
@@ -194,10 +192,8 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
 
 A fully initialized instance to be copied or cloned and then modified.
 
-**Applicability:**
-- Avoid unnecessary subclasses
-
 **Uses:**
+- Avoid unnecessary subclasses
 - JavaScript and TypeScript
 
 **In TypeScript:**
@@ -598,9 +594,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA3NTAwNzg0MCwyMDc0OTQyODU5LC0xMD
-E1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5Mjcx
-OTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Mi
-w2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0
-ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTIzNjA3NzAsMjA3NDk0Mjg1OSwtMTAxNT
+Q5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1
+MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNj
+MxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OTkzNSwtMTg2NDg2
+Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
 -->
