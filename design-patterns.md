@@ -8,7 +8,7 @@ Creates an instance of several derived classes.
 
 > Abstract the instantiation of objects by wrapping them in a Factory method.
 
-> [Suggested video](https://www.youtube.com/watch?v=EcFVTgRHJLM&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=4&ab_channel=ChristopherOkhravi). 
+> [Deep explanation](https://www.youtube.com/watch?v=EcFVTgRHJLM&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=4&ab_channel=ChristopherOkhravi). 
 
 **Uses:**
 - Frameworks
@@ -79,12 +79,12 @@ public class RandomAnimalFactory : IAnimalFactory
 
 Create an object without exposing the creation logic to the client and refer to newly created object using a common interface.
 
-> [Suggested video](https://www.youtube.com/watch?v=v-GiuMmsXj4&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=5&ab_channel=ChristopherOkhravi). 
+> [Deep explanation](https://www.youtube.com/watch?v=v-GiuMmsXj4&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=5&ab_channel=ChristopherOkhravi). 
 
 **Uses:**
 - UI Controls
 - Multiplatform Toolkits
-- Pro
+- Product Families
 
 **UML:** 
 
@@ -602,11 +602,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzIyMzAxMTc0LDE4MjY4ODQ2NTgsMTA3Nj
-czNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3
-MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4Ny
-wtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5
-Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3OD
-Q0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2
-MDU1NzU4MF19
+eyJoaXN0b3J5IjpbLTU0NzYzNDQzNCwxODI2ODg0NjU4LDEwNz
+Y3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMTMxMTg3
+NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMwNTU3OD
+csLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OTIsLTUw
+OTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nz
+g0NCwtMjk0ODY5OTM1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0
+NjA1NTc1ODBdfQ==
 -->
