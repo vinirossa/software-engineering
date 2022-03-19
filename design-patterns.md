@@ -15,6 +15,45 @@ Creates an instance of several derived classes.
 - TDD
 
 **In C#:**
+```ts
+public class Program
+{
+	public static void Main()
+	{
+		var animal1 = new BalancedAnimalFactory().createAnimal();
+		var animal2 = new RandomAnimalFactory().createAnimal();
+	}
+}
+	
+public abstract class Animal { }
+
+public class Dog : Animal { }
+public class Cat : Animal { }
+public class Duck : Animal { }
+
+public interface IAnimalFactory 
+{
+	public Animal createAnimal();
+}
+
+public class BalancedAnimalFactory : IAnimalFactory
+{
+	public Animal createAnimal()
+	{
+		// Logic
+		return new Dog();
+	}
+}
+
+public class RandomAnimalFactory : IAnimalFactory
+{
+	public Animal createAnimal()
+	{
+		// Logic
+		return new Cat();
+	}
+}
+```
 
 **In TypeScript:**
 ```ts
@@ -562,9 +601,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMT
-kxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2
-NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC
-0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1
-NzU4MF19
+eyJoaXN0b3J5IjpbLTM2Nzc3MTcsLTEwMTU0OTE5NTgsMTc5Mz
+A1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5
+MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxND
+QzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1Mzkw
+NzE4LDQ2MDU1NzU4MF19
 -->
