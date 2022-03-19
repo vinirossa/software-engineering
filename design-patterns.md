@@ -36,7 +36,6 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
 - Text Editors
 
 **In TypeScript:**
-
 ```ts
     var Task = (name, description, finished, dueDate) => {
         this.name = name
@@ -89,7 +88,6 @@ Creates an instance of several derived classes.
 - TDD
 
 **In TypeScript:**
-
 ```ts
     function fabricatePerson(name, lastname) {
         let person = {}
@@ -117,7 +115,6 @@ A fully initialized instance to be copied or cloned and then modified.
 - JavaScript and TypeScript
 
 **In TypeScript:**
-
 ```ts
     interface Prototype {
         clone(): Prototype
@@ -148,7 +145,6 @@ All singletons have a private constructor (`createInstance`), a public access me
 - Database Configuration
 
 **In TypeScript:**
-
 ```ts
     const database = (() => {
         var instance
@@ -187,7 +183,6 @@ Match interfaces of different classes. It's useful when you don't want your code
 - Legacy Codes
 
 **In TypeScript:**
-
 ```ts
 > main.ts
 
@@ -283,7 +278,6 @@ Add responsibilities to objects dynamically.
 - Logging
 
 **In TypeScript:**
-
 ```ts
 > Class decorators
 
@@ -345,7 +339,6 @@ A single class (`wrapper`) that represents an entire subsystem.
 - Operational Systems
 
 **In TypeScript:**
-
 ```ts
 > customer-facade.ts
 
@@ -421,7 +414,6 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - Credit card validations
 
 **In TypeScript:**
-
 ```ts
     export interface Subject { 
         request(): void
@@ -520,7 +512,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg3ODQyNzMyLC01MDkyOTY1NDgsLTE5Nz
+eyJoaXN0b3J5IjpbNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nz
 k2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OTkz
 NSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
 -->
