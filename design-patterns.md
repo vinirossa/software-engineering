@@ -2,6 +2,90 @@
 
 ## Creational Design Patterns
 
+###  Factory Method
+
+Creates an instance of several derived classes.
+
+> Abstract the instantiation of objects by wrapping them in a Factory method.
+
+**Applicability:**
+
+**Uses:**
+- Frameworks
+- TDD
+
+**In C#:**
+```ts
+void Main()
+{
+	new NavigationBar();
+	new DropdownMenu();
+	new AndroidNavigationBar();
+	new AndroidDropdownMenu();
+}
+
+public class Button
+{
+	public string Type { get; set; }
+}
+
+public abstract class Element
+{
+	protected abstract Button CreateButton();
+
+	public Element() => CreateButton();
+}
+
+public class NavigationBar : Element
+{
+	protected override Button CreateButton()
+	{
+		return new Button { Type = "Default Button".Dump() };
+	}
+}
+
+public class DropdownMenu : Element
+{
+	protected override Button CreateButton()
+	{
+		return new Button { Type = "Default Button".Dump() };
+	}
+}
+
+public class AndroidNavigationBar : Element
+{
+	protected override Button CreateButton()
+	{
+		return new Button { Type = "Android Button".Dump() };
+	}
+}
+
+public class AndroidDropdownMenu : Element
+{
+	protected override Button CreateButton()
+	{
+		return new Button { Type = "Android Button".Dump() };
+	}
+}
+```
+
+**In TypeScript:**
+```ts
+    function fabricatePerson(name, lastname) {
+        let person = {}
+        person.name = name
+        person.lastname = lastname
+            
+        function fullName() {
+    	    return `${person.name} ${person.lastname}`
+        }
+
+		person.fullName
+        
+        return person
+    }
+```
+
 
 ###  Abstract Factory
 
@@ -531,9 +615,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTk4ODQ3NDUsMTc5MzA1NTc4NywtMT
-kxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2
-NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC
-0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1
-NzU4MF19
+eyJoaXN0b3J5IjpbLTI1NDA5NTU5MiwxNzkzMDU1Nzg3LC0xOT
+EwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1
+NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLT
+I5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3
+NTgwXX0=
 -->
