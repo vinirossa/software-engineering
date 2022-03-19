@@ -84,6 +84,7 @@ Create an object without exposing the creation logic to the client and refer to 
 **Uses:**
 - UI Controls
 - Multiplatform Toolkits
+- Pro
 
 **UML:** 
 
@@ -601,11 +602,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMD
-kxMzY0Njk0LDEyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0
-Mjg1OSwtMTAxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Nj
-k1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5
-Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OT
-kzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
-
+eyJoaXN0b3J5IjpbMzIyMzAxMTc0LDE4MjY4ODQ2NTgsMTA3Nj
+czNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3
+MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4Ny
+wtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5
+Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3OD
+Q0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2
+MDU1NzU4MF19
 -->
