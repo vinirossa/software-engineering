@@ -1,5 +1,7 @@
 # Design Patterns
 
+
+
 ## Creational Design Patterns
 
 ###  Abstract Factory
@@ -510,7 +512,7 @@ Defines a new operation to a class without change.
 -   **Rules Design Patterns**
 -   **Dependency Injection**
 -   **Inversion of control**
--   **Inversion of dependency **
+-   **Inversion of dependency**
 -   **Intercepting filter**
 -   **Lazy loading**
 -   **Mock object**
@@ -521,7 +523,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5ND
-g2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgw
-XX0=
+eyJoaXN0b3J5IjpbLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0ND
+M2Njc4NDQsLTI5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3
+MTgsNDYwNTU3NTgwXX0=
 -->
