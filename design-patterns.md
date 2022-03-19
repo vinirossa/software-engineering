@@ -20,8 +20,8 @@ public class Program
 {
 	public static void Main()
 	{
-		var animal1 = new BalancedAnimalFactory().createAnimal();
-		var animal2 = new RandomAnimalFactory().createAnimal();
+		var animal1 = new BalancedAnimalFactory().CreateAnimal();
+		var animal2 = new RandomAnimalFactory().CreateAnimal();
 	}
 }
 	
@@ -33,12 +33,12 @@ public class Duck : Animal { }
 
 public interface IAnimalFactory 
 {
-	public Animal createAnimal();
+	public Animal CreateAnimal();
 }
 
 public class BalancedAnimalFactory : IAnimalFactory
 {
-	public Animal createAnimal()
+	public Animal CreateAnimal()
 	{
 		// Logic
 		return new Dog();
@@ -47,7 +47,7 @@ public class BalancedAnimalFactory : IAnimalFactory
 
 public class RandomAnimalFactory : IAnimalFactory
 {
-	public Animal createAnimal()
+	public Animal CreateAnimal()
 	{
 		// Logic
 		return new Cat();
@@ -601,9 +601,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2Nzc3MTcsLTEwMTU0OTE5NTgsMTc5Mz
-A1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5
-MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxND
-QzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1Mzkw
-NzE4LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNz
+kzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEy
+NTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLD
+E0NDM2Njc4NDQsLTI5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUz
+OTA3MTgsNDYwNTU3NTgwXX0=
 -->
