@@ -221,8 +221,6 @@ A class of which only a single instance can exist.
 
 All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
-**Applicability:**
-
 **Uses:**
 - Database Configuration
 
@@ -594,9 +592,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzNjA3NzAsMjA3NDk0Mjg1OSwtMTAxNT
-Q5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1
-MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNj
-MxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OTkzNSwtMTg2NDg2
-Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMT
+AxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3
+MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxND
+IsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OTkzNSwtMTg2
+NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
 -->
