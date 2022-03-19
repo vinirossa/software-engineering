@@ -589,7 +589,7 @@ Defines a new operation to a class without change.
 
 -   **Rules Design Patterns**
 -   **Dependency Injection**
--   **Inversion of control**
+-   **Inversion of Control**
 -   **Inversion of dependency**
 -   **Intercepting filter**
 -   **Lazy loading**
@@ -601,9 +601,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNz
-kzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEy
-NTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLD
-E0NDM2Njc4NDQsLTI5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUz
-OTA3MTgsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbMTc1MzYyNDc1LDIwNzQ5NDI4NTksLTEwMT
+U0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5
+NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLD
+YzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4
+Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
 -->
