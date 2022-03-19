@@ -16,6 +16,7 @@ Creates an instance of several derived classes.
 
 **UML:**
 
+![factory-method](https://user-images.githubusercontent.com/72560319/159106269-6a0b440f-ad84-4f1b-bc60-9252db988268.png)
 
 **In C#:**
 ```cs
@@ -87,6 +88,8 @@ Create an object without exposing the creation logic to the client and refer to 
 - Product Families
 
 **UML:** 
+
+![abstract-factory](https://user-images.githubusercontent.com/72560319/159106388-4cc123cf-d58e-4857-8d55-921cf0a3bd78.png)
 
 **In C#:**
 ```cs
