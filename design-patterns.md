@@ -2,44 +2,9 @@
 
 ## Creational Design Patterns
 
-### Factory
-
-Create an object without exposing the creation logic to the client and refer to newly created object using a common interface.
-
-**In C#:**
-```ts
-    void Main()
-    {
-    	new NavigationBar();
-    	new DropdownMenu();
-    }
-    
-    public class Button
-    {
-    	public string Type { get; set; }
-    }
-    
-    public class ButtonFactory
-    {
-    	public static Button CreateButton()
-    	{
-    		return new Button { Type = "Red Button".Dump() };
-    	}
-    }
-    
-    public class NavigationBar {
-    	public NavigationBar() => ButtonFactory.CreateButton();
-    }
-    
-    public class DropdownMenu
-    {
-    	public DropdownMenu() => ButtonFactory.CreateButton();
-    }
-```
-
 ###  Abstract Factory
 
-Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
+Create an object without exposing the creation logic to the client and refer to newly created object using a common interface.
 
 **Uses:**
 - Kits
@@ -647,8 +612,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5MzA1NTc4NywtMTkxMDQxODY5NSwtOD
-kyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUy
-MTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLT
-E4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbMTk2OTY5NTU1MywxNzkzMDU1Nzg3LC0xOT
+EwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1
+NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLT
+I5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3
+NTgwXX0=
 -->
