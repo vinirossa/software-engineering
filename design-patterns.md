@@ -43,6 +43,53 @@ Provide an interface for creating families of related or dependent objects witho
 - Kits
 - Multiplatform Toolkits
 
+**In C#:**
+```ts
+void Main()
+{
+	new NavigationBar(new Android());
+	new DropdownMenu(new Android());
+}
+
+public class Button
+{
+	public string Type { get; set; }
+}
+
+public interface IUIFactory
+{
+	public Button CreateButton();
+
+	public Button CreateButton();
+}
+
+public class Apple : IUIFactory
+{
+	public Button CreateButton()
+	{
+		return new Button { Type = "iOS Button".Dump() };
+	}
+}
+
+public class Android : IUIFactory
+{
+	public Button CreateButton()
+	{
+		return new Button { Type = "Android Button".Dump() };
+	}
+}
+
+public class NavigationBar
+{
+	public NavigationBar(IUIFactory factory) => factory.CreateButton();
+}
+
+public class DropdownMenu
+{
+	public DropdownMenu(IUIFactory factory) => factory.CreateButton();
+}
+```
+
 **In TypeScript:**
 ```ts
     abstract class Animal {}
@@ -545,7 +592,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMjgzNDYxMiwtMTkxMDQxODY5NSwtOD
+eyJoaXN0b3J5IjpbLTIxNzQ5ODYwNCwtMTkxMDQxODY5NSwtOD
 kyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUy
 MTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLT
 E4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
