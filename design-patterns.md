@@ -46,8 +46,7 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
         this.dueDate = dueDate
     }
     
-    var TaskBuilder = () => {
-    
+    var TaskBuilder = () => {    
         let name
         let description
         let isFinished = false
@@ -522,7 +521,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTY2NjAzNjcwLDE0NDM2Njc4NDQsLTI5ND
+eyJoaXN0b3J5IjpbNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5ND
 g2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgw
 XX0=
 -->
