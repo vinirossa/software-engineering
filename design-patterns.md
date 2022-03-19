@@ -8,6 +8,8 @@ Creates an instance of several derived classes.
 
 > Abstract the instantiation of objects by wrapping them in a Factory method.
 
+> [Suggested video](https://www.youtube.com/watch?v=EcFVTgRHJLM&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=4&ab_channel=ChristopherOkhravi). 
+
 **Uses:**
 - Frameworks
 - TDD
@@ -592,10 +594,10 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMD
-c0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0
-MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OC
-wtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0
-ODY5OTM1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1OD
-BdfQ==
+eyJoaXN0b3J5IjpbLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
+MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
+NTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OT
+IsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0
+MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0ODY3OTc4LDMxNTM5MD
+cxOCw0NjA1NTc1ODBdfQ==
 -->
