@@ -85,6 +85,9 @@ Create an object without exposing the creation logic to the client and refer to 
 - UI Controls
 - Multiplatform Toolkits
 
+**UML:** 
+![Hello World](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEYAAAAUCAAAAAAVAxSkAAABrUlEQVQ4y+3TPUvDQBgH8OdDOGa+oUMgk2MpdHIIgpSUiqC0OKirgxYX8QVFRQRpBRF8KShqLbgIYkUEteCgFVuqUEVxEIkvJFhae3m8S2KbSkcFBw9yHP88+eXucgH8kQZ/jSm4VDaIy9RKCpKac9NKgU4uEJNwhHhK3qvPBVO8rxRWmFXPF+NSM1KVMbwriAMwhDgVcrxeMZm85GR0PhvGJAAmyozJsbsxgNEir4iEjIK0SYqGd8sOR3rJAGN2BCEkOxhxMhpd8Mk0CXtZacxi1hr20mI/rzgnxayoidevcGuHXTC/q6QuYSMt1jC+gBIiMg12v2vb5NlklChiWnhmFZpwvxDGzuUzV8kOg+N8UUvNBp64vy9q3UN7gDXhwWLY2nMC3zRDibfsY7wjEkY79CdMZhrxSqqzxf4ZRPXwzWJirMicDa5KwiPeARygHXKNMQHEy3rMopDR20XNZGbJzUtrwDC/KshlLDWyqdmhxZzCsdYmf2fWZPoxCEDyfIvdtNQH0PRkH6Q51g8rFO3Qzxh2LbItcDCOpmuOsV7ntNaERe3v/lP/zO8yn4N+yNPrekmPAAAAAElFTkSuQmCC)
+
 **In C#:**
 ```cs
 void Main()
@@ -599,11 +602,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUwMTU1OTMwNCwxMDc2NzM2MDU5LC0xMD
-kxMzY0Njk0LDEyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0
-Mjg1OSwtMTAxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Nj
-k1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5
-Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OT
-kzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbLTE0MzkwMDgwMDQsMTA3NjczNjA1OSwtMT
+A5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5
+NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxOD
+Y5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0x
+OTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Nj
+k5MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
 
 -->
