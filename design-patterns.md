@@ -34,7 +34,7 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
 **Applicability:**
 - Templates
 
-**Known Uses:**
+**Uses:**
 - Text Editors
 
 **In TypeScript:**
@@ -522,7 +522,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2Mz
-EyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0ODY3
-OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
+eyJoaXN0b3J5IjpbLTEwOTU2MTUzNywtNTA5Mjk2NTQ4LC0xOT
+c5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5
+MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
 -->
