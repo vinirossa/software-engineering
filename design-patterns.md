@@ -11,7 +11,6 @@ Provide an interface for creating families of related or dependent objects witho
 - Multiplatform Toolkits
 
 **In TypeScript:**
-
 ```ts
     abstract class Animal {}
     
@@ -521,8 +520,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzU5Mzc4MzAsLTUwOTI5NjU0OCwtMT
-k3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5
-OTM1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ
-==
+eyJoaXN0b3J5IjpbNzg3ODQyNzMyLC01MDkyOTY1NDgsLTE5Nz
+k2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OTkz
+NSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
 -->
