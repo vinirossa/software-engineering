@@ -2,7 +2,40 @@
 
 ## Creational Design Patterns
 
-#
+### Factory
+
+**In C#:**
+```c#
+
+    void Main()
+    {
+    	new NavigationBar();
+    	new DropdownMenu();
+    }
+    
+    public class NavigationBar {
+    	public NavigationBar() => ButtonFactory.CreateButton();
+    }
+    
+    public class DropdownMenu
+    {
+    	public DropdownMenu() => ButtonFactory.CreateButton();
+    }
+    
+    public class ButtonFactory
+    {
+    	public static Button CreateButton()
+    	{
+    		return new Button { Type = "Red Button".Dump() };
+    	}
+    }
+    
+    public class Button
+    {
+    	public string Type { get; set; }
+    }
+```
+
 ###  Abstract Factory
 
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
@@ -513,8 +546,8 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxNzc2ODk2NywtODkyNzE5NTAyLDU0Mj
-kxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAw
-MCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMz
-E1MzkwNzE4LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1ND
+I5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEw
+MDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0ODY3OTc4LD
+MxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
