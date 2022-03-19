@@ -59,8 +59,6 @@ public class Button
 public interface IUIFactory
 {
 	public Button CreateButton();
-
-	public Button CreateButton();
 }
 
 public class Apple : IUIFactory
@@ -112,6 +110,11 @@ Creates an instance of several derived classes.
 **Uses:**
 - Frameworks
 - TDD
+
+**In C#:**
+```ts
+
+```
 
 **In TypeScript:**
 ```ts
@@ -592,8 +595,8 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxNzQ5ODYwNCwtMTkxMDQxODY5NSwtOD
-kyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUy
-MTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLT
-E4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbLTExMTQ1MTczODcsLTE5MTA0MTg2OTUsLT
+g5MjcxOTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1
+MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC
+0xODY0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
