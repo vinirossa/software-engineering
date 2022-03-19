@@ -13,7 +13,7 @@ Creates an instance of several derived classes.
 - TDD
 
 **In C#:**
-```ts
+```cs
 public class Program
 {
 	public static void Main()
@@ -79,7 +79,7 @@ Create an object without exposing the creation logic to the client and refer to 
 - Multiplatform Toolkits
 
 **In C#:**
-```ts
+```cs
 void Main()
 {
 	new NavigationBar(new Android());
@@ -592,9 +592,10 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMT
-AxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3
-MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxND
-IsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLTI5NDg2OTkzNSwtMTg2
-NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMD
+c0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0
+MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OC
+wtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0
+ODY5OTM1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1OD
+BdfQ==
 -->
