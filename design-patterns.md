@@ -7,7 +7,6 @@
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
 
 **Uses:**
-
 - Kits
 - Multiplatform Toolkits
 
@@ -86,7 +85,7 @@ Creates an instance of several derived classes.
 
 **Applicability:**
 
-**Known Uses:**
+**Uses:**
 - Frameworks
 - TDD
 
@@ -115,7 +114,7 @@ A fully initialized instance to be copied or cloned and then modified.
 **Applicability:**
 - Avoid unnecessary subclasses
 
-**Known Uses:**
+**Uses:**
 - JavaScript and TypeScript
 
 **In TypeScript:**
@@ -146,7 +145,7 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 **Applicability:**
 
-**Known Uses:**
+**Uses:**
 - Database Configuration
 
 **In TypeScript:**
@@ -183,7 +182,7 @@ Match interfaces of different classes. It's useful when you don't want your code
 - Uncouple code
 - On Refactoring
 
-**Known Uses:**
+**Uses:**
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -267,7 +266,7 @@ Separates an object’s interface / abstraction from its implementation, so that
 - Uncouple code
 - On Planning
 
-**Known Uses:**
+**Uses:**
 - Frameworks
 - External Libraries
 - Legacy Codes
@@ -343,7 +342,7 @@ A single class (`wrapper`) that represents an entire subsystem.
 **Applicability:**
 - Simplify and Unify
 
-**Known Uses:**
+**Uses:**
 - Operational Systems
 
 **In TypeScript:**
@@ -417,7 +416,7 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - Lazy instanciation
 - Lazy evaluation
 
-**Known Uses:**
+**Uses:**
 - Networking
 - VPNs
 - Credit card validations
@@ -455,7 +454,7 @@ A way of passing a request between a chain of objects, similar to middlewares.
 **Applicability:**
 - Task delegation
 
-**Known Uses:**
+**Uses:**
 - HTTP requisitions
 
 ### Command
@@ -495,7 +494,7 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 - Isolate business rules
 - Encapsulates a group of conditionals
 
-**Known Uses:**
+**Uses:**
 - Ecommerces
 
 ### Template Method
@@ -522,7 +521,8 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTU2MTUzNywtNTA5Mjk2NTQ4LC0xOT
-c5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5
-MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbLTEzMzU5Mzc4MzAsLTUwOTI5NjU0OCwtMT
+k3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5
+OTM1LC0xODY0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ
+==
 -->
