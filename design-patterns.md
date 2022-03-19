@@ -8,8 +8,6 @@ Creates an instance of several derived classes.
 
 > Abstract the instantiation of objects by wrapping them in a Factory method.
 
-**Applicability:**
-
 **Uses:**
 - Frameworks
 - TDD
@@ -71,7 +69,6 @@ public class RandomAnimalFactory : IAnimalFactory
         return person
     }
 ```
-
 
 ###  Abstract Factory
 
@@ -590,20 +587,20 @@ Defines a new operation to a class without change.
 -   **Rules Design Patterns**
 -   **Dependency Injection**
 -   **Inversion of Control**
--   **Inversion of dependency**
--   **Intercepting filter**
--   **Lazy loading**
--   **Mock object**
--   **Method chaining**
+-   **Inversion of Dependency**
+-   **Intercepting Filter**
+-   **Lazy Loading**
+-   **Mock Object**
+-   **Method Chaining**
 -   **Unit of Work**
 -   **Object Pool:** avoid expensive acquisition and release of resources by recycling objects that are no longer in use
 - **Null Object:** designed to act as a default value of an object
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1MzYyNDc1LDIwNzQ5NDI4NTksLTEwMT
-U0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5
-NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLD
-YzMTI0MTAwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4
-Njc5NzgsMzE1MzkwNzE4LDQ2MDU1NzU4MF19
+eyJoaXN0b3J5IjpbMTA3NTAwNzg0MCwyMDc0OTQyODU5LC0xMD
+E1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5Mjcx
+OTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Mi
+w2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0
+ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
