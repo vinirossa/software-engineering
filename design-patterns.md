@@ -15,59 +15,6 @@ Creates an instance of several derived classes.
 - TDD
 
 **In C#:**
-```ts
-void Main()
-{
-	new NavigationBar();
-	new DropdownMenu();
-	new AndroidNavigationBar();
-	new AndroidDropdownMenu();
-}
-
-public class Button
-{
-	public string Type { get; set; }
-}
-
-public abstract class Element
-{
-	protected abstract Button CreateButton();
-
-	public Element() => CreateButton();
-}
-
-public class NavigationBar : Element
-{
-	protected override Button CreateButton()
-	{
-		return new Button { Type = "Default Button".Dump() };
-	}
-}
-
-public class DropdownMenu : Element
-{
-	protected override Button CreateButton()
-	{
-		return new Button { Type = "Default Button".Dump() };
-	}
-}
-
-public class AndroidNavigationBar : Element
-{
-	protected override Button CreateButton()
-	{
-		return new Button { Type = "Android Button".Dump() };
-	}
-}
-
-public class AndroidDropdownMenu : Element
-{
-	protected override Button CreateButton()
-	{
-		return new Button { Type = "Android Button".Dump() };
-	}
-}
-```
 
 **In TypeScript:**
 ```ts
@@ -615,9 +562,9 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI1NDA5NTU5MiwxNzkzMDU1Nzg3LC0xOT
-EwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC01MDkyOTY1
-NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2Njc4NDQsLT
-I5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3MTgsNDYwNTU3
-NTgwXX0=
+eyJoaXN0b3J5IjpbLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMT
+kxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2
+NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC
+0yOTQ4Njk5MzUsLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MDU1
+NzU4MF19
 -->
