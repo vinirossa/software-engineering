@@ -1,7 +1,5 @@
 # Design Patterns
 
-
-
 ## Creational Design Patterns
 
 ###  Abstract Factory
@@ -9,6 +7,7 @@
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
 
 **Uses:**
+
 - Kits
 - Multiplatform Toolkits
 
@@ -523,7 +522,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0ND
-M2Njc4NDQsLTI5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMTUzOTA3
-MTgsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2Mz
+EyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0xODY0ODY3
+OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
