@@ -6,13 +6,11 @@
 
 Provide an interface for creating families of related or dependent objects without specifying their concrete classes and compromising the final objects.
 
-**Applicability:**
-
-**Known Uses:**
+**Uses:**
 - Kits
 - Multiplatform Toolkits
 
-**Example:**
+**In TypeScript:**
 
 ```ts
     abstract class Animal {}
@@ -38,8 +36,9 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
 **Known Uses:**
 - Text Editors
 
-**Example:**
+**In TypeScript:**
 
+```ts
     var Task = (name, description, finished, dueDate) => {
     
         this.name = name
@@ -80,6 +79,7 @@ A `Builder` abstract class or interface and one `ConcreteBuilder` for each varia
     
     let task = new TaskBuilder().setName('Task A').setDescription('finish book')
         .setDueDate(new Date(2019, 5, 12))
+```
 
 ###  Factory Method
 
@@ -91,8 +91,9 @@ Creates an instance of several derived classes.
 - Frameworks
 - TDD
 
-**Example:**
+**In TypeScript:**
 
+```ts
     function fabricatePerson(name, lastname) {
         let person = {}
         person.name = name
@@ -106,6 +107,7 @@ Creates an instance of several derived classes.
         
         return person
     }
+```
     
 ###  Prototype
 
@@ -509,6 +511,6 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMT
-UzOTA3MTgsNDYwNTU3NTgwXX0=
+eyJoaXN0b3J5IjpbMTQzNjE1NTQ0NywtMjk0ODY5OTM1LC0xOD
+Y0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
