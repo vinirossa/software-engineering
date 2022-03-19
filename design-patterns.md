@@ -119,8 +119,9 @@ A fully initialized instance to be copied or cloned and then modified.
 **Known Uses:**
 - JavaScript and TypeScript
 
-**Example:**
+**In TypeScript:**
 
+```ts
     interface Prototype {
         clone(): Prototype
     }
@@ -136,6 +137,7 @@ A fully initialized instance to be copied or cloned and then modified.
     
     const person1 = new Person('Luiz', 30)
     const person2 = person1.clone()
+```
 
 ###  Singleton
 
@@ -148,8 +150,9 @@ All singletons have a private constructor (`createInstance`), a public access me
 **Known Uses:**
 - Database Configuration
 
-**Example:**
+**In TypeScript:**
 
+```ts
     const database = (() => {
         var instance
     
@@ -165,6 +168,7 @@ All singletons have a private constructor (`createInstance`), a public access me
         	}
         }
     })()
+```
 
 #### Monostate...
 
@@ -185,8 +189,9 @@ Match interfaces of different classes. It's useful when you don't want your code
 - External Libraries
 - Legacy Codes
 
-**Example:**
+**In TypeScript:**
 
+```ts
 > main.ts
 
     import {
@@ -253,6 +258,7 @@ Match interfaces of different classes. It's useful when you don't want your code
     ): boolean => {
       return isEmail(value)
     }
+```
 
 ### Bridge
 
@@ -279,8 +285,9 @@ Add responsibilities to objects dynamically.
 - Add features to existent code
 - Logging
 
-**Examples:**
+**In TypeScript:**
 
+```ts
 > Class decorators
 
     function log(constructor: any) {
@@ -328,6 +335,7 @@ Add responsibilities to objects dynamically.
             throw new UserNotFoundException(userId)
         }
     }
+```
 
 ### Facade
 
@@ -339,8 +347,9 @@ A single class (`wrapper`) that represents an entire subsystem.
 **Known Uses:**
 - Operational Systems
 
-**Example:**
+**In TypeScript:**
 
+```ts
 > customer-facade.ts
 
     import { CustomerClient } from '../models/customer-client.ts'
@@ -387,6 +396,7 @@ A single class (`wrapper`) that represents an entire subsystem.
     
     Facade.CustomerFacade.removeAccount(John)
     Facade.CustomerFacade.removeAccount(Alice)
+```
 
 ### Flyweight
 
@@ -511,6 +521,6 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzNjE1NTQ0NywtMjk0ODY5OTM1LC0xOD
+eyJoaXN0b3J5IjpbLTQ0NjA5MjQ0NywtMjk0ODY5OTM1LC0xOD
 Y0ODY3OTc4LDMxNTM5MDcxOCw0NjA1NTc1ODBdfQ==
 -->
