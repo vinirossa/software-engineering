@@ -14,6 +14,7 @@ Provide an interface for creating families of related or dependent objects witho
 
 **Example:**
 
+```ts
     abstract class Animal {}
     
     abstract class Bird extends Animal {}
@@ -23,6 +24,7 @@ Provide an interface for creating families of related or dependent objects witho
     class Hawk extends Bird {}
     
     class Alligator extends Reptile {}
+```
 
 ###  Builder
 
@@ -507,6 +509,6 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NjQ4Njc5NzgsMzE1MzkwNzE4LDQ2MD
-U1NzU4MF19
+eyJoaXN0b3J5IjpbLTI5NDg2OTkzNSwtMTg2NDg2Nzk3OCwzMT
+UzOTA3MTgsNDYwNTU3NTgwXX0=
 -->
