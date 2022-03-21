@@ -93,10 +93,13 @@ Create an object without exposing the creation logic to the client and refer to 
 
 **In C#:**
 ```cs
-void Main()
+public class Program
 {
-	new NavigationBar(new Android());
-	new DropdownMenu(new Android());
+	public static void Main()
+	{
+		new NavigationBar(new Android());
+		new DropdownMenu(new Android());
+	}
 }
 
 public class Button
@@ -626,11 +629,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3OTI0MjM0NCwxNjU5NDM1OTQ4LDQzNz
-k1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4NDY1
-OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NTEsLT
-EzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNzkz
-MDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNT
-kyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0
-NDM2Njc4NDRdfQ==
+eyJoaXN0b3J5IjpbNzI4ODY0NzA4LDE2NTk0MzU5NDgsNDM3OT
+U5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4
+LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
+MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
+NTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OT
+IsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0
+MzY2Nzg0NF19
 -->
