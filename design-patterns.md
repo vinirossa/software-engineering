@@ -308,6 +308,7 @@ class Adapter : ITarget
 	{
 		Adaptee = a;
 	}
+	
 	public void Request()
 	{
 		// Logic to adapt the method
@@ -646,7 +647,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1MzE3NDk4LDE2NTk0MzU5NDgsNDM3OT
+eyJoaXN0b3J5IjpbODY1NDI5OTA0LDE2NTk0MzU5NDgsNDM3OT
 U5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4
 LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
 MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
