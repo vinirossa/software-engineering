@@ -599,7 +599,7 @@ Provide a surrogate or placeholder for another object to control access to it, w
 
 Add responsibilities and behaviours to objects dynamically without the need to change it.
 
-**Applicability:**
+**Uses:**
 - Add features to existent code
 - Logging
 
@@ -743,7 +743,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1MDgxMzIyLDE2NzI3MDg5NDIsLTY1OT
+eyJoaXN0b3J5IjpbNzM1NTc2NjY5LDE2NzI3MDg5NDIsLTY1OT
 UxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0
 NSwxNjEzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNj
 U5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0
