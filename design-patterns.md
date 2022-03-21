@@ -409,7 +409,7 @@ abstract class View
 		MediaResource = mediaResource;
 	}
 		
-	string Show() { return "html"; }
+	public virtual string Show() { return "html"; }
 }
 
 class ShortFormView : View
@@ -729,7 +729,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgzODM2NDc1NiwtNjU5NTE2MDY5LDE5Mj
+eyJoaXN0b3J5IjpbMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5Mj
 AzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1
 ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0MzU5NDgsND
 M3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0
