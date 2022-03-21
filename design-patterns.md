@@ -400,56 +400,56 @@ Separates an object’s interface / abstraction from its implementation, so that
 
 **In C#:**
 ```ts
-interface IForm
+interface IView
 {
 	IMediaResource MediaResource;
 	void Show(){}
 }
 
-class ShortForm : IForm
+class ShortFormView : IView
 {
 }
 
-class LongForm : IForm
+class LongFormView : IView
 
 interface IMediaResource
 {
 	string snippet;
 }
 
-class Artist
+class ArtistResource
 {
 	public string bio;
 }
 
 class ArtistAdapter : IMediaResource
 {
-	public Artist Artist { get; set; }
+	public ArtistResource ArtistResource { get; set; }
 	public string snippet
 	{
-		get { return Artist.bio; }
+		get { return ArtistResource.bio; }
 	}
 	
-	public AlbumAdapter (Artist artist)
+	public AlbumAdapter (ArtistResource artistResource)
 	{
-		Artist = artist;
+		ArtistResource = artistResource;
 	}	
 } 
 
-class Book
+class BookResource
 {
 	public string coverText;
 }
 
 class BookAdapter: IMediaResource
 {
-	public Book Book { get; set; }
+	public BookResource BookResource { get; set; }
 	public string snippet
 	{
-		get { return Book.coverText; }
+		get { return BookResource.coverText; }
 	}
 	
-	public AlbumAdapter (Book book)
+	public AlbumAdapter (BookResource bookRe)
 	{
 		Book = book;
 	}	
@@ -709,7 +709,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mzk1NzQ5OTgsMTkyMDMzMDI2Niw0ND
+eyJoaXN0b3J5IjpbLTE1NjcyMDcyOTYsMTkyMDMzMDI2Niw0ND
 c1ODE5OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEw
 NjEsLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLT
 I3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3Njcz
