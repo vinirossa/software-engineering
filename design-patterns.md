@@ -1,5 +1,36 @@
 # Design Patterns
 
+- [Design Patterns](#design-patterns)
+  * [Creational Design Patterns](#creational-design-patterns)
+    + [Factory Method](#factory-method)
+    + [Abstract Factory](#abstract-factory)
+    + [Builder](#builder)
+    + [Prototype](#prototype)
+    + [Singleton](#singleton)
+      - [Monostate...](#monostate)
+  * [Structural Design Patterns](#structural-design-patterns)
+    + [Adapter](#adapter)
+    + [Bridge](#bridge)
+    + [Facade](#facade)
+      - [Law of Demeter (Principle of Least Knowledge)](#law-of-demeter--principle-of-least-knowledge-)
+    + [Proxy](#proxy)
+    + [Decorator](#decorator)
+    + [Composite](#composite)
+    + [Flyweight](#flyweight)
+  * [Behavioral Patterns](#behavioral-patterns)
+    + [Chain of Responsibility](#chain-of-responsibility)
+    + [Command](#command)
+    + [Interpreter](#interpreter)
+    + [Iterator](#iterator)
+    + [Mediator](#mediator)
+    + [Memento](#memento)
+    + [Observer](#observer)
+    + [State](#state)
+    + [Strategy](#strategy)
+    + [Template Method](#template-method)
+    + [Visitor](#visitor)
+  * [Other Patterns](#other-patterns)
+
 ## Creational Design Patterns
 
 ###  Factory Method
@@ -747,11 +778,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3Mj
-cwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1
-LC0xMjk2NjE3NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMT
-g1NDE2NzIwLDE2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkx
-MTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLT
-EwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0
-OTQyODU5XX0=
+eyJoaXN0b3J5IjpbODM1MDQ0NjE0LC03MTAzNzk2MDUsNzM1NT
+c2NjY5LDE2NzI3MDg5NDIsLTY1OTUxNjA2OSwxOTIwMzMwMjY2
+LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5NTgwLDc0Mj
+U5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LDQzNzk1OTEy
+MCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4NDY1OCwxMD
+c2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NTEsLTEzMTE4
+NzcwODNdfQ==
 -->
