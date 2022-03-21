@@ -417,22 +417,22 @@ interface IMediaResource
 	string snippet;
 }
 
-class Album
+class Artist
 {
 	public string bio;
 }
 
-class AlbumAdapter : IMediaResource
+class ArtistAdapter : IMediaResource
 {
-	public Album Album { get; set; }
+	public Artist Artist { get; set; }
 	public string snippet
 	{
-		get { return Album.bio; }
+		get { return Artist.bio; }
 	}
 	
-	public AlbumAdapter (Album album)
+	public AlbumAdapter (Artist artist)
 	{
-		Album = album;
+		Artist = artist;
 	}	
 } 
 
@@ -709,11 +709,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkyMDMzMDI2Niw0NDc1ODE5OTUsLTEyOT
-Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
-MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
-Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
-NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5NDI4NT
-ksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwt
-ODkyNzE5NTAyXX0=
+eyJoaXN0b3J5IjpbLTE3Mzk1NzQ5OTgsMTkyMDMzMDI2Niw0ND
+c1ODE5OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEw
+NjEsLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLT
+I3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3Njcz
+NjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MD
+gzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4Nywt
+MTkxMDQxODY5NV19
 -->
