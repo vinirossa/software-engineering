@@ -463,6 +463,15 @@ Separates an object’s interface / abstraction from its implementation, so that
 - External Libraries
 - Legacy Codes
 
+```ts
+interface IMed
+class Form
+
+class ShortForm
+
+class LongForm
+```
+
 ### Proxy
 
 Provide a surrogate or placeholder for another object to control access to it, working as a middleware.
@@ -650,11 +659,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MT
-M3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0MzU5
-NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxOD
-I2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQz
-MDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOT
-U4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1
-NDI5MTI1OTJdfQ==
+eyJoaXN0b3J5IjpbMTE2MjMzMTYxOCw0NDc1ODE5OTUsLTEyOT
+Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
+MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
+Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
+NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5NDI4NT
+ksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwt
+ODkyNzE5NTAyXX0=
 -->
