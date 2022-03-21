@@ -266,10 +266,6 @@ Respects the S.O.L.I.D principles.
 
 Match interfaces of different classes, working as a wrapper. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
-**Applicability:**
-- Uncouple code
-- On Refactoring
-
 **Uses:**
 - Frameworks
 - External Libraries
@@ -605,11 +601,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0Nz
-YzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2
-OTQsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC
-0xMDE1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5
-MjcxOTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1Mj
-E0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0x
-ODY0ODY3OTc4XX0=
+eyJoaXN0b3J5IjpbMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3OD
+kxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1
+OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLD
+IwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkx
+MDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NT
+Q4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwxNDQzNjY3ODQ0LC0y
+OTQ4Njk5MzVdfQ==
 -->
