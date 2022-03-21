@@ -422,17 +422,34 @@ class Album
 class AlbumAdapter : IMediaResource
 {
 	public Album Album { get; set; }
-	pu
+	public string snippet
+	{
+		get { return Album.bio; }
+	}
+	
 	public AlbumAdapter (Album album)
 	{
 		Album = album;
+	}	
+} 
+
+class Album
+{
+	public string bio;
+}
+
+class AlbumAdapter : IMediaResource
+{
+	public Album Album { get; set; }
+	public string snippet
+	{
+		get { return Album.bio; }
 	}
 	
-	public void Request()
+	public AlbumAdapter (Album album)
 	{
-		// Logic to adapt the method
-		Adaptee.SpecficRequest();
-	}
+		Album = album;
+	}	
 } 
 
 class Book
@@ -691,11 +708,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjUxNzEzMDk2LDQ0NzU4MTk5NSwtMTI5Nj
-YxNzc0NSwxNjEzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcy
-MCwxNjU5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01ND
-c2MzQ0MzQsMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0
-Njk0LDEyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OS
-wtMTAxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04
-OTI3MTk1MDJdfQ==
+eyJoaXN0b3J5IjpbMTY1Mjg4NTU5OSw0NDc1ODE5OTUsLTEyOT
+Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
+MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
+Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
+NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5NDI4NT
+ksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwt
+ODkyNzE5NTAyXX0=
 -->
