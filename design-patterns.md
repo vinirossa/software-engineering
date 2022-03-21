@@ -396,7 +396,9 @@ A single class (`wrapper`) that represents an entire subsystem in higher level. 
 - Compilers
 - Complex Programs
 
-#### Law of Demeter (Principle of Known)
+#### Law of Demeter (Principle of Least Knowledge)
+
+An object should never know the internal details of other objects.
 
 > By this, ```a().b().c()``` isn't correct, however ```a().b()``` is. 
 
@@ -650,7 +652,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3MDY5OTE4Myw3NDI1OTEwNjEsLTExOD
+eyJoaXN0b3J5IjpbMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExOD
 U0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTEx
 NywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMT
 A5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5
