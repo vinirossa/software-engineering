@@ -461,9 +461,44 @@ Separates an object’s interface / abstraction from its implementation, so that
 - External Libraries
 - Legacy Codes
 
-### Composite
+### Proxy
 
-A tree structure of simple (leaf) and composite objects.
+Provide a surrogate or placeholder for another object to control access to it, working as a middleware.
+
+**Applicability:**
+- Access control
+- Logs
+- Cache
+- Lazy instanciation
+- Lazy evaluation
+
+**Uses:**
+- Networking
+- VPNs
+- Credit card validations
+
+**In TypeScript:**
+```ts
+    export interface Subject { 
+        request(): void
+    } 
+    
+    export class RealSubject implements Subject { 
+        request(): void { 
+            console.log('Something that the object do.')
+        } 
+    } 
+    
+    export class Proxy implements Subject { 
+        constructor(private subject: Subject) {} 
+    
+        request(): void { 
+            console.log('The proxy do something')
+            this.subject.request()
+            console.log('The proxy can do other thing')
+        } 
+    }
+```
 
 ### Decorator
 
@@ -523,6 +558,10 @@ Add responsibilities and behaviours to objects dynamically without the need to c
         }
     }
 ```
+
+### Composite
+
+A tree structure of simple (leaf) and composite objects.
 
 ### Flyweight
 
@@ -609,11 +648,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTUyMDI2MDIzLDE2NTk0MzU5NDgsNDM3OT
-U5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4
-LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
-MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
-NTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OT
-IsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0
-MzY2Nzg0NF19
+eyJoaXN0b3J5IjpbLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mz
+c5NTkxMjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2
+NTgsMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC
+0xMzExODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5
+MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMj
+U5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwx
+NDQzNjY3ODQ0XX0=
 -->
