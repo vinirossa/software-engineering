@@ -273,6 +273,11 @@ Match interfaces of different classes, working as a wrapper. With an adapter, ch
 - External Libraries
 - Legacy Codes
 
+**In C#:**
+```cs
+
+```
+
 **In TypeScript:**
 ```ts
 > main.ts
@@ -603,11 +608,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg3OTc0NiwxNjU5NDM1OTQ4LDQzNzk1OT
-EyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4NDY1OCwx
-MDc2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NTEsLTEzMT
-E4NzcwODMsMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNzkzMDU1
-Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNTkyLC
-01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0NDM2
-Njc4NDRdfQ==
+eyJoaXN0b3J5IjpbMTU5MDM4MjUzMSwxNjU5NDM1OTQ4LDQzNz
+k1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4NDY1
+OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NTEsLT
+EzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNzkz
+MDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNT
+kyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0
+NDM2Njc4NDRdfQ==
 -->
