@@ -456,7 +456,7 @@ An object should never know the internal details of other objects.
 
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
 
-> Different from the adapter pattern, the bridge 
+> Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.
 
 **Uses:**
 - Frameworks
@@ -650,11 +650,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1ODczOTE4NCwtMTI5NjYxNzc0NSwxNj
-EzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1
-OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMT
-gyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0
-MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAxNTQ5MT
-k1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIs
-NTQyOTEyNTkyXX0=
+eyJoaXN0b3J5IjpbNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MT
+M3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0MzU5
+NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxOD
+I2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQz
+MDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOT
+U4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1
+NDI5MTI1OTJdfQ==
 -->
