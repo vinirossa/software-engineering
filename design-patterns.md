@@ -389,14 +389,17 @@ class Adapter : ITarget
 
 ### Facade
 
-A single class (`wrapper`) that represents an entire subsystem. A facede helps to simply and unify a program.
+A single class (`wrapper`) that represents an entire subsystem in higher level. A facade helps to simply and unify a program.
 
 **Uses:**
 - Operational Systems
 - Compilers
 - Complex Programs
 
-#### Law of Demeter (Principle of 
+#### Law of Demeter (Principle of Known)
+
+> By this, ```a().b().c()``` isn't correct, however ```a().b()``` is. 
+
 **In TypeScript:**
 ```ts
 > customer-facade.ts
@@ -647,7 +650,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU3Njg5NjA2MSw3NDI1OTEwNjEsLTExOD
+eyJoaXN0b3J5IjpbMTM3MDY5OTE4Myw3NDI1OTEwNjEsLTExOD
 U0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTEx
 NywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMT
 A5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5
