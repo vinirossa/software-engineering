@@ -387,7 +387,6 @@ class Adapter : ITarget
     }
 ```
 
-
 ### Facade
 
 A single class (`wrapper`) that represents an entire subsystem. A facede helps to simply and unify a program.
@@ -647,11 +646,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcwMzM4ODkyNSwtMTE4NTQxNjcyMCwxNj
-U5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0
-MzQsMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LD
-EyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAx
-NTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MT
-k1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIs
-NjMxMjQxMDAwXX0=
+eyJoaXN0b3J5IjpbNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NT
+k0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQz
+NCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMT
+IxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1
+NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOT
+UwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2
+MzEyNDEwMDBdfQ==
 -->
