@@ -302,10 +302,18 @@ class Adapter : ITarget
 	}
 	public void Request()
 	{
-		// Logic
+		// Logic to adapt the method
 		Adaptee.SpecficRequest();
 	}
 } 
+
+class Adaptee
+{
+	public void SpecificRequest()
+	{
+		// Logic
+	}
+}
 ```
 
 **In TypeScript:**
@@ -638,11 +646,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyNTE4NzI4NjksMTY1OTQzNTk0OCw0Mz
-c5NTkxMjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2
-NTgsMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC
-0xMzExODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5
-MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMj
-U5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwx
-NDQzNjY3ODQ0XX0=
+eyJoaXN0b3J5IjpbNTQ5NDEzMDY3LDE2NTk0MzU5NDgsNDM3OT
+U5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4
+LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
+MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
+NTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOTUwMiw1NDI5MTI1OT
+IsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2MzEyNDEwMDAsMTQ0
+MzY2Nzg0NF19
 -->
