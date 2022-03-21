@@ -417,11 +417,20 @@ class ShortFormView : View
 	public override string Show()
 	{
 		// Logic
-		MediaResource.Snippet()
+		// MediaResource.Snippet;
+		return "html";
 	}
 }
 
 class LongFormView : View
+{
+	public override string Show()
+	{
+		// Logic
+		// MediaResource.Snippet;
+		return "html";
+	}
+}
 
 interface IMediaResource
 {
@@ -457,7 +466,7 @@ class BookAdapter: IMediaResource
 	public BookResource BookResource { get; set; }
 	public string Snippet
 	{
-		get { return BookResource.coverText; }
+		get { return BookResource.CoverText; }
 	}
 	
 	public AlbumAdapter (BookResource bookResource)
@@ -720,7 +729,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Njg2NTY0MjIsLTY1OTUxNjA2OSwxOT
+eyJoaXN0b3J5IjpbLTE2NTYxODY0MTAsLTY1OTUxNjA2OSwxOT
 IwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5
 NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LD
 QzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4
