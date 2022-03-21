@@ -396,6 +396,7 @@ A single class (`wrapper`) that represents an entire subsystem. A facede helps t
 - Compilers
 - Complex Programs
 
+#### Law of Demeter (Principle of 
 **In TypeScript:**
 ```ts
 > customer-facade.ts
@@ -646,11 +647,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NT
-k0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQz
-NCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMT
-IxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1
-NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5MjcxOT
-UwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1MjE0Miw2
-MzEyNDEwMDBdfQ==
+eyJoaXN0b3J5IjpbLTU3Njg5NjA2MSw3NDI1OTEwNjEsLTExOD
+U0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTEx
+NywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMT
+A5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5
+NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxOD
+Y5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0x
+OTc5NjUyMTQyXX0=
 -->
