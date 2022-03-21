@@ -395,7 +395,7 @@ Separates an object’s interface / abstraction from its implementation, so that
 
 **UML:**
 
-
+![bridge-pattern](https://user-images.githubusercontent.com/72560319/159353103-75e0b64a-b72e-46bf-bb00-c9fbd4f7a080.png)
 
 **Uses:**
 - Frameworks
