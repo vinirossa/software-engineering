@@ -404,21 +404,19 @@ interface IMediaResource
 {
 	snippet()
 }
-class Adaptee
+
+class Album
 {
-	public void SpecificRequest()
-	{
-		// Logic
-	}
+	public string bio();
 }
 
-class Adapter : IMediaResource
+class AlbumAdapter : IMediaResource
 {
-	public Adaptee Adaptee { get; set; }
+	public Album Album { get; set; }
 	
-	public Adapter(Adaptee a)
+	public AlbumAdapter (Album album)
 	{
-		Adaptee = a;
+		Album = album;
 	}
 	
 	public void Request()
@@ -427,8 +425,6 @@ class Adapter : IMediaResource
 		Adaptee.SpecficRequest();
 	}
 } 
-
-class Album
 
 class Book
 
@@ -696,7 +692,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMzY0NTkyMiw0NDc1ODE5OTUsLTEyOT
+eyJoaXN0b3J5IjpbLTM1NTMxNTY3MSw0NDc1ODE5OTUsLTEyOT
 Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
 MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
 Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
