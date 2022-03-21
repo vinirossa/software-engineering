@@ -264,7 +264,7 @@ Respects the S.O.L.I.D principles.
 
 ### Adapter
 
-Match interfaces of different classes, working as a wrapper. 
+Match interfaces of different classes, working as a wrapper. With an adapter, is change the underline behaviour is not necessary.
 
 > It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
@@ -603,11 +603,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzOTIxMTMxMDIsMTY1OTQzNTk0OCw0Mz
-c5NTkxMjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2
-NTgsMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC
-0xMzExODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5
-MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMj
-U5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwx
-NDQzNjY3ODQ0XX0=
+eyJoaXN0b3J5IjpbLTE5NzY5MTkyNiwxNjU5NDM1OTQ4LDQzNz
+k1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4NDY1
+OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NTEsLT
+EzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNzkz
+MDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MTk1MDIsNTQyOTEyNT
+kyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIsNjMxMjQxMDAwLDE0
+NDM2Njc4NDRdfQ==
 -->
