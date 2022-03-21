@@ -400,9 +400,19 @@ Separates an object’s interface / abstraction from its implementation, so that
 
 **In C#:**
 ```ts
+interface IForm
+{
+	IMediaResource MediaResource;
+	void Show(){}
+}
+
+class ShortForm : IForm
+
+class LongForm : IForm
+
 interface IMediaResource
 {
-	snippet()
+	string snippet()
 }
 
 class Album
@@ -427,16 +437,6 @@ class AlbumAdapter : IMediaResource
 } 
 
 class Book
-
-interface IForm
-{
-	IMediaResource MediaResource;
-	void Show(){}
-}
-
-class ShortForm
-
-class LongForm
 ```
 
 ### Facade
@@ -692,7 +692,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1NTMxNTY3MSw0NDc1ODE5OTUsLTEyOT
+eyJoaXN0b3J5IjpbMTAyOTUxMjY5Miw0NDc1ODE5OTUsLTEyOT
 Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
 MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
 Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
