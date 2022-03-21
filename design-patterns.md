@@ -409,7 +409,7 @@ abstract class View
 		MediaResource = mediaResource;
 	}
 		
-	string Show(){}
+	string Show() { return "html"; }
 }
 
 class ShortFormView : View
@@ -450,7 +450,7 @@ class ArtistAdapter : IMediaResource
 		get { return ArtistResource.Bio; }
 	}
 	
-	public AlbumAdapter (ArtistResource artistResource)
+	public ArtistAdapter (ArtistResource artistResource)
 	{
 		ArtistResource = artistResource;
 	}	
@@ -729,11 +729,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NTYxODY0MTAsLTY1OTUxNjA2OSwxOT
-IwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5
-NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LD
-QzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4
-NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NT
-EsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwx
-NzkzMDU1Nzg3XX0=
+eyJoaXN0b3J5IjpbMTgzODM2NDc1NiwtNjU5NTE2MDY5LDE5Mj
+AzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1
+ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0MzU5NDgsND
+M3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0
+NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MS
+wtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3
+OTMwNTU3ODddfQ==
 -->
