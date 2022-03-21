@@ -456,10 +456,6 @@ An object should never know the internal details of other objects.
 
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
 
-**Applicability:**
-- Uncouple code
-- On Planning
-
 **Uses:**
 - Frameworks
 - External Libraries
@@ -652,11 +648,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExOD
-U0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTEx
-NywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMT
-A5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5
-NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxOD
-Y5NSwtODkyNzE5NTAyLDU0MjkxMjU5MiwtNTA5Mjk2NTQ4LC0x
-OTc5NjUyMTQyXX0=
+eyJoaXN0b3J5IjpbLTEyOTY2MTc3NDUsMTYxMzc4OTU4MCw3ND
+I1OTEwNjEsLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkx
+MjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMT
+A3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzEx
+ODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NT
+c4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMjU5Miwt
+NTA5Mjk2NTQ4XX0=
 -->
