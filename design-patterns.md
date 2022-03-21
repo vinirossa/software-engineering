@@ -400,9 +400,15 @@ Separates an object’s interface / abstraction from its implementation, so that
 
 **In C#:**
 ```ts
-abstract class View
+abstract class IView
 {
-	public View (IMediaResource;
+	IMediaResource MediaResource;
+	
+	public View (IMediaResource mediaResource)
+	{
+		MediaResource = mediaResource;
+	}
+		
 	void Show(){}
 }
 
@@ -709,7 +715,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTA4OTk4NzcsLTY1OTUxNjA2OSwxOT
+eyJoaXN0b3J5IjpbLTE3ODAyODc5MDQsLTY1OTUxNjA2OSwxOT
 IwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5
 NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LD
 QzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4
