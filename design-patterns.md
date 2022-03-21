@@ -399,22 +399,27 @@ Separates an object’s interface / abstraction from its implementation, so that
 - Legacy Codes
 
 **In C#:**
-```ts
+```cs
 abstract class View
 {
-	IMediaResource MediaResource;
-	
-	public View (IMediaResource mediaResource)
+	public IMediaResource MediaResource;
+
+	public View(IMediaResource mediaResource)
 	{
 		MediaResource = mediaResource;
 	}
-		
+
 	public virtual string Show() { return "html"; }
 }
 
 class ShortFormView : View
 {
-	public override string Show()
+    public ShortFormView(IMediaResource mediaResource) : base(mediaResource)
+    {
+		MediaResource = mediaResource;
+	}
+
+    public override string Show()
 	{
 		// Logic
 		// MediaResource.Snippet;
@@ -424,6 +429,11 @@ class ShortFormView : View
 
 class LongFormView : View
 {
+	public LongFormView(IMediaResource mediaResource) : base(mediaResource)
+	{
+		MediaResource = mediaResource;
+	}
+
 	public override string Show()
 	{
 		// Logic
@@ -434,46 +444,50 @@ class LongFormView : View
 
 interface IMediaResource
 {
-	string Snippet;
+	string Snippet { get; }
 }
 
 class ArtistResource
 {
-	public string Bio;
+	public string Bio { get; set; }
+
+	public ArtistResource(string bio)
+    {
+        Bio = bio;
+    }
 }
 
 class ArtistAdapter : IMediaResource
 {
 	public ArtistResource ArtistResource { get; set; }
-	public string Snippet
-	{
-		get { return ArtistResource.Bio; }
-	}
-	
-	public ArtistAdapter (ArtistResource artistResource)
+	public string Snippet => ArtistResource.Bio;
+
+	public ArtistAdapter(ArtistResource artistResource)
 	{
 		ArtistResource = artistResource;
-	}	
-} 
+	}
+}
 
 class BookResource
 {
-	public string CoverText;
+	public string CoverText { get; set; }
+
+	public BookResource(string coverText)
+    {
+        CoverText = coverText;
+    }
 }
 
-class BookAdapter: IMediaResource
+class BookAdapter : IMediaResource
 {
 	public BookResource BookResource { get; set; }
-	public string Snippet
-	{
-		get { return BookResource.CoverText; }
-	}
-	
-	public AlbumAdapter (BookResource bookResource)
+	public string Snippet => BookResource.CoverText;
+
+	public BookAdapter(BookResource bookResource)
 	{
 		BookResource = bookResource;
-	}	
-} 
+	}
+}
 ```
 
 ### Facade
@@ -729,11 +743,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5Mj
-AzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1
-ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0MzU5NDgsND
-M3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0
-NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MS
-wtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3
-OTMwNTU3ODddfQ==
+eyJoaXN0b3J5IjpbNzg1MDgxMzIyLDE2NzI3MDg5NDIsLTY1OT
+UxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0
+NSwxNjEzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNj
+U5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0
+MzQsMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LD
+EyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAx
+NTQ5MTk1OF19
 -->
