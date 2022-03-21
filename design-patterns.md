@@ -399,7 +399,7 @@ Separates an object’s interface / abstraction from its implementation, so that
 - Legacy Codes
 
 **In C#:**
-```cs
+```ts
 abstract class View
 {
 	public IMediaResource MediaResource;
@@ -743,11 +743,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzg1MDgxMzIyLDE2NzI3MDg5NDIsLTY1OT
-UxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0
-NSwxNjEzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNj
-U5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0
-MzQsMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LD
-EyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAx
-NTQ5MTk1OF19
+eyJoaXN0b3J5IjpbLTE3MDk3NjU1MDksMTY3MjcwODk0MiwtNj
+U5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3
+NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLD
+E2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYz
+NDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2OT
+QsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC0x
+MDE1NDkxOTU4XX0=
 -->
