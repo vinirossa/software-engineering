@@ -387,6 +387,39 @@ class Adapter : ITarget
     }
 ```
 
+### Bridge
+
+Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
+
+> Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.
+
+**Uses:**
+- Frameworks
+- External Libraries
+- Legacy Codes
+
+**In C#:**
+```ts
+interface IMediaResource
+{
+	snippet()
+}
+
+class Album
+
+class Book
+
+interface IForm
+{
+	IMediaResource MediaResource;
+	void Show(){}
+}
+
+class ShortForm
+
+class LongForm
+```
+
 ### Facade
 
 A single class (`wrapper`) that represents an entire subsystem in higher level. A facade helps to simply and unify a program.
@@ -452,37 +485,6 @@ An object should never know the internal details of other objects.
     Facade.CustomerFacade.removeAccount(Alice)
 ```
 
-### Bridge
-
-Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
-
-> Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.
-
-**Uses:**
-- Frameworks
-- External Libraries
-- Legacy Codes
-
-```ts
-interface IMediaResource
-{
-	snippet()
-}
-
-class Album
-
-class Book
-
-interface IForm
-{
-	IMediaResource MediaResource;
-	void Show(){}
-}
-
-class ShortForm
-
-class LongForm
-```
 
 ### Proxy
 
@@ -671,11 +673,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU5MjE0NjE4MCw0NDc1ODE5OTUsLTEyOT
-Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
-MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
-Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
-NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MDgzLDIwNzQ5NDI4NT
-ksLTEwMTU0OTE5NTgsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwt
-ODkyNzE5NTAyXX0=
+eyJoaXN0b3J5IjpbLTE3MzM3NzI0MzUsNDQ3NTgxOTk1LC0xMj
+k2NjE3NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2
+NzIwLDE2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLT
+U0NzYzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEz
+NjQ2OTQsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyOD
+U5LC0xMDE1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUs
+LTg5MjcxOTUwMl19
 -->
