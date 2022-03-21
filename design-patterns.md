@@ -387,6 +387,67 @@ class Adapter : ITarget
     }
 ```
 
+
+### Facade
+
+A single class (`wrapper`) that represents an entire subsystem.
+
+**Applicability:**
+- Simplify and Unify
+
+**Uses:**
+- Operational Systems
+
+**In TypeScript:**
+```ts
+> customer-facade.ts
+
+    import { CustomerClient } from '../models/customer-client.ts'
+    import { CustomerAvatar } from '../models/customer-avatar.ts'
+    import { CustomerDocuments } from '../models/customer-documents.ts'
+    import { CustomerAccessHistory } from '../models/customer-access-history.ts'
+    import { CustomerService } from '../models/customer-service.ts'
+    import { CustomerEmail } from '../models/customer-email.ts'
+     
+    export module Facade { 
+        export class CustomerFacade { 
+            static removeAccount(customer: Customer) {
+                const customerAvatar = new CustomerAvatar(customer)
+                const customerDocumentos = new CustomerDocuments(customer)
+                const customerHistoricoAcesso = new CustomerAccessHistory(customer)
+                const customerService = new CustomerService(customer)
+                const customerEmail = new CustomerEmail(customer)
+    
+                customerAvatar.remove()
+                customerDocumentos.delete()
+                customerHistoricoAcesso.remove()
+                customerService.delete()
+                customerEmail.sendRemoveAccount()
+            }
+        }
+    }
+
+> main.ts
+
+    import { CustomerClient } from '../models/customer-client.ts'
+    import { Facade } from './facade/customer-facade.ts'
+    
+    const John = new Customer(
+        "John Holts",
+        "johnholts",
+        "johnholts67@hotmail.com"
+    )
+    
+    const Alice = new Customer(
+        "Alice Cooper",
+        "alicecooper",
+        "alicecooperw@gmail.com"
+    )
+    
+    Facade.CustomerFacade.removeAccount(John)
+    Facade.CustomerFacade.removeAccount(Alice)
+```
+
 ### Bridge
 
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
@@ -463,66 +524,6 @@ Add responsibilities and behaviours to objects dynamically without the need to c
     }
 ```
 
-### Facade
-
-A single class (`wrapper`) that represents an entire subsystem.
-
-**Applicability:**
-- Simplify and Unify
-
-**Uses:**
-- Operational Systems
-
-**In TypeScript:**
-```ts
-> customer-facade.ts
-
-    import { CustomerClient } from '../models/customer-client.ts'
-    import { CustomerAvatar } from '../models/customer-avatar.ts'
-    import { CustomerDocuments } from '../models/customer-documents.ts'
-    import { CustomerAccessHistory } from '../models/customer-access-history.ts'
-    import { CustomerService } from '../models/customer-service.ts'
-    import { CustomerEmail } from '../models/customer-email.ts'
-     
-    export module Facade { 
-        export class CustomerFacade { 
-            static removeAccount(customer: Customer) {
-                const customerAvatar = new CustomerAvatar(customer)
-                const customerDocumentos = new CustomerDocuments(customer)
-                const customerHistoricoAcesso = new CustomerAccessHistory(customer)
-                const customerService = new CustomerService(customer)
-                const customerEmail = new CustomerEmail(customer)
-    
-                customerAvatar.remove()
-                customerDocumentos.delete()
-                customerHistoricoAcesso.remove()
-                customerService.delete()
-                customerEmail.sendRemoveAccount()
-            }
-        }
-    }
-
-> main.ts
-
-    import { CustomerClient } from '../models/customer-client.ts'
-    import { Facade } from './facade/customer-facade.ts'
-    
-    const John = new Customer(
-        "John Holts",
-        "johnholts",
-        "johnholts67@hotmail.com"
-    )
-    
-    const Alice = new Customer(
-        "Alice Cooper",
-        "alicecooper",
-        "alicecooperw@gmail.com"
-    )
-    
-    Facade.CustomerFacade.removeAccount(John)
-    Facade.CustomerFacade.removeAccount(Alice)
-```
-
 ### Flyweight
 
 A fine-grained instance used for efficient sharing and memory saving, as if an flyweight object already exists, it will be returned and not created again.
@@ -531,45 +532,6 @@ A fine-grained instance used for efficient sharing and memory saving, as if an f
 - High memory cost softwares
 - Optimization
 - Memory saving
-
-### Proxy
-
-Provide a surrogate or placeholder for another object to control access to it, working as a middleware.
-
-**Applicability:**
-- Access control
-- Logs
-- Cache
-- Lazy instanciation
-- Lazy evaluation
-
-**Uses:**
-- Networking
-- VPNs
-- Credit card validations
-
-**In TypeScript:**
-```ts
-    export interface Subject { 
-        request(): void
-    } 
-    
-    export class RealSubject implements Subject { 
-        request(): void { 
-            console.log('Something that the object do.')
-        } 
-    } 
-    
-    export class Proxy implements Subject { 
-        constructor(private subject: Subject) {} 
-    
-        request(): void { 
-            console.log('The proxy do something')
-            this.subject.request()
-            console.log('The proxy can do other thing')
-        } 
-    }
-```
 
 ## Behavioral Patterns
 
@@ -647,7 +609,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODY1NDI5OTA0LDE2NTk0MzU5NDgsNDM3OT
+eyJoaXN0b3J5IjpbOTUyMDI2MDIzLDE2NTk0MzU5NDgsNDM3OT
 U5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4
 LDEwNzY3MzYwNTksLTEwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMT
 MxMTg3NzA4MywyMDc0OTQyODU5LC0xMDE1NDkxOTU4LDE3OTMw
