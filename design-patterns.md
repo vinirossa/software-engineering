@@ -449,9 +449,9 @@ class BookAdapter: IMediaResource
 		get { return BookResource.coverText; }
 	}
 	
-	public AlbumAdapter (BookResource bookRe)
+	public AlbumAdapter (BookResource bookResource)
 	{
-		Book = book;
+		BookResource = bookResource;
 	}	
 } 
 ```
@@ -709,11 +709,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjcyMDcyOTYsMTkyMDMzMDI2Niw0ND
-c1ODE5OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEw
-NjEsLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLT
-I3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3Njcz
-NjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC0xMzExODc3MD
-gzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5MzA1NTc4Nywt
-MTkxMDQxODY5NV19
+eyJoaXN0b3J5IjpbLTY1OTUxNjA2OSwxOTIwMzMwMjY2LDQ0Nz
+U4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5NTgwLDc0MjU5MTA2
+MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LDQzNzk1OTEyMCwtMj
+c4OTE5MTE3LC01NDc2MzQ0MzQsMTgyNjg4NDY1OCwxMDc2NzM2
+MDU5LC0xMDkxMzY0Njk0LDEyMTM0MzA4NTEsLTEzMTE4NzcwOD
+MsMjA3NDk0Mjg1OSwtMTAxNTQ5MTk1OCwxNzkzMDU1Nzg3LC0x
+OTEwNDE4Njk1XX0=
 -->
