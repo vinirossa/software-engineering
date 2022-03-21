@@ -393,6 +393,10 @@ Separates an object’s interface / abstraction from its implementation, so that
 
 > Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.
 
+**UML:**
+
+
+
 **Uses:**
 - Frameworks
 - External Libraries
@@ -743,11 +747,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzM1NTc2NjY5LDE2NzI3MDg5NDIsLTY1OT
-UxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0
-NSwxNjEzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNj
-U5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0
-MzQsMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LD
-EyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAx
-NTQ5MTk1OF19
+eyJoaXN0b3J5IjpbLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3Mj
+cwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1
+LC0xMjk2NjE3NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMT
+g1NDE2NzIwLDE2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkx
+MTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLT
+EwOTEzNjQ2OTQsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0
+OTQyODU5XX0=
 -->
