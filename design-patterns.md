@@ -390,13 +390,12 @@ class Adapter : ITarget
 
 ### Facade
 
-A single class (`wrapper`) that represents an entire subsystem.
-
-**Applicability:**
-- Simplify and Unify
+A single class (`wrapper`) that represents an entire subsystem. A facede helps to simply and unify a program.
 
 **Uses:**
 - Operational Systems
+- Compilers
+- Complex Programs
 
 **In TypeScript:**
 ```ts
@@ -648,11 +647,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mz
-c5NTkxMjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2
-NTgsMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMwODUxLC
-0xMzExODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NTgsMTc5
-MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0MjkxMj
-U5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MTAwMCwx
-NDQzNjY3ODQ0XX0=
+eyJoaXN0b3J5IjpbLTcwMzM4ODkyNSwtMTE4NTQxNjcyMCwxNj
+U5NDM1OTQ4LDQzNzk1OTEyMCwtMjc4OTE5MTE3LC01NDc2MzQ0
+MzQsMTgyNjg4NDY1OCwxMDc2NzM2MDU5LC0xMDkxMzY0Njk0LD
+EyMTM0MzA4NTEsLTEzMTE4NzcwODMsMjA3NDk0Mjg1OSwtMTAx
+NTQ5MTk1OCwxNzkzMDU1Nzg3LC0xOTEwNDE4Njk1LC04OTI3MT
+k1MDIsNTQyOTEyNTkyLC01MDkyOTY1NDgsLTE5Nzk2NTIxNDIs
+NjMxMjQxMDAwXX0=
 -->
