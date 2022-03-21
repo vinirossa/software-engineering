@@ -264,7 +264,7 @@ Respects the S.O.L.I.D principles.
 
 ### Adapter
 
-Match interfaces of different classes. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
+Match interfaces of different classes, working as a wrapper. It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
 **Applicability:**
 - Uncouple code
@@ -364,7 +364,7 @@ A tree structure of simple (leaf) and composite objects.
 
 ### Decorator
 
-Add responsibilities to objects dynamically.
+Add responsibilities and behaviours to objects dynamically without the need to change it.
 
 **Applicability:**
 - Add features to existent code
@@ -605,11 +605,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4Mj
-Y4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMw
-ODUxLC0xMzExODc3MDgzLDIwNzQ5NDI4NTksLTEwMTU0OTE5NT
-gsMTc5MzA1NTc4NywtMTkxMDQxODY5NSwtODkyNzE5NTAyLDU0
-MjkxMjU5MiwtNTA5Mjk2NTQ4LC0xOTc5NjUyMTQyLDYzMTI0MT
-AwMCwxNDQzNjY3ODQ0LC0yOTQ4Njk5MzUsLTE4NjQ4Njc5Nzgs
-MzE1MzkwNzE4XX0=
+eyJoaXN0b3J5IjpbNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0Nz
+YzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2
+OTQsMTIxMzQzMDg1MSwtMTMxMTg3NzA4MywyMDc0OTQyODU5LC
+0xMDE1NDkxOTU4LDE3OTMwNTU3ODcsLTE5MTA0MTg2OTUsLTg5
+MjcxOTUwMiw1NDI5MTI1OTIsLTUwOTI5NjU0OCwtMTk3OTY1Mj
+E0Miw2MzEyNDEwMDAsMTQ0MzY2Nzg0NCwtMjk0ODY5OTM1LC0x
+ODY0ODY3OTc4XX0=
 -->
