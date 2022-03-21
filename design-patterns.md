@@ -407,6 +407,9 @@ interface IForm
 }
 
 class ShortForm : IForm
+{
+}
+
 class LongForm : IForm
 
 interface IMediaResource
@@ -433,26 +436,24 @@ class AlbumAdapter : IMediaResource
 	}	
 } 
 
-class Album
+class Book
 {
-	public string bio;
+	public string coverText;
 }
 
-class AlbumAdapter : IMediaResource
+class BookAdapter: IMediaResource
 {
-	public Album Album { get; set; }
+	public Book Book { get; set; }
 	public string snippet
 	{
-		get { return Album.bio; }
+		get { return Book.coverText; }
 	}
 	
-	public AlbumAdapter (Album album)
+	public AlbumAdapter (Book book)
 	{
-		Album = album;
+		Book = book;
 	}	
 } 
-
-class Book
 ```
 
 ### Facade
@@ -708,7 +709,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1Mjg4NTU5OSw0NDc1ODE5OTUsLTEyOT
+eyJoaXN0b3J5IjpbMTkyMDMzMDI2Niw0NDc1ODE5OTUsLTEyOT
 Y2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3
 MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNT
 Q3NjM0NDM0LDE4MjY4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2
