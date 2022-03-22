@@ -274,6 +274,7 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 **UML:**
 
+![singleton](https://user-images.githubusercontent.com/72560319/159556077-69285a0d-d32d-4b24-ad8f-b8a8a1f301b8.png)
 
 **Uses:**
 - Database Configuration
