@@ -697,6 +697,57 @@ Add responsibilities and behaviours to objects dynamically at runtime wrapping t
 
 **In C#:**
 ```cs
+public class Program
+{
+    public static void Main()
+    {
+        var coffe = new CaramelDecorator(new ChocolateDecorator(new Expresso()));
+    }
+}
+
+interface IBeverage
+{
+    decimal Cost();
+}
+
+class Decaf : IBeverage
+{
+    public decimal Cost() => 1.10m;
+}
+
+class Expresso : IBeverage
+{
+    public decimal Cost() => 1.00m;
+}
+
+interface IAddonDecorator : IBeverage
+{
+    IBeverage Beverage { get; set; }
+}
+
+class CaramelDecorator : IAddonDecorator
+{
+    public CaramelDecorator(IBeverage beverage)
+    {
+        Beverage = beverage;
+    }
+
+    public IBeverage Beverage { get; set; }
+
+    public decimal Cost() => Beverage.Cost() + 0.50m;
+}
+
+class ChocolateDecorator : IAddonDecorator
+{
+    public ChocolateDecorator(IBeverage beverage)
+    {
+        Beverage = beverage;
+    }
+
+    public IBeverage Beverage { get; set; }
+
+    public decimal Cost() => Beverage.Cost() + 0.74m;
+}
 ```
 
 **In TypeScript:**
@@ -896,11 +947,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0OD
-I2NDE0NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMs
-MTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMT
-M0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODEx
-LDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLT
-E2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2
-MTRdfQ==
+eyJoaXN0b3J5IjpbMjExNzg3NDE1OSwxMTMwOTMzNDUwLDU3Nj
+A0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwt
+MTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MT
+EwOTcwMCwxMTIxMzQzNDQ2LDEwMTQwODcwNjksNDAxMjY1MTAz
+LDEyOTY1OTE4MTEsMTUxNTYzNzA5MSwtMTQ3NjM4ODM2NywtMT
+Q1Nzk2MzEzMSwtMTYwMDQ2MzAxNiwyNDk4MzgyNDYsNzk5NTM5
+MTMzXX0=
 -->
