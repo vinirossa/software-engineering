@@ -720,12 +720,12 @@ class Expresso : IBeverage
     public decimal Cost() => 1.00m;
 }
 
-interface IAddonDecorator : IBeverage
+interface IAdditionDecorator : IBeverage
 {
     IBeverage Beverage { get; set; }
 }
 
-class CaramelDecorator : IAddonDecorator
+class CaramelDecorator : IAdditionDecorator
 {
     public CaramelDecorator(IBeverage beverage)
     {
@@ -737,7 +737,7 @@ class CaramelDecorator : IAddonDecorator
     public decimal Cost() => Beverage.Cost() + 0.50m;
 }
 
-class ChocolateDecorator : IAddonDecorator
+class ChocolateDecorator : IAdditionDecorator
 {
     public ChocolateDecorator(IBeverage beverage)
     {
@@ -947,11 +947,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjExNzg3NDE1OSwxMTMwOTMzNDUwLDU3Nj
-A0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwt
-MTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MT
-EwOTcwMCwxMTIxMzQzNDQ2LDEwMTQwODcwNjksNDAxMjY1MTAz
-LDEyOTY1OTE4MTEsMTUxNTYzNzA5MSwtMTQ3NjM4ODM2NywtMT
-Q1Nzk2MzEzMSwtMTYwMDQ2MzAxNiwyNDk4MzgyNDYsNzk5NTM5
-MTMzXX0=
+eyJoaXN0b3J5IjpbMjA2MzQyNjkxNywyMTE3ODc0MTU5LDExMz
+A5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQxNDUsMTA5MjQ5OTAx
+LDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1NjAsLTE0Nz
+UyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0NDYsMTAxNDA4NzA2
+OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNTE1NjM3MDkxLC0xND
+c2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LDI0OTgz
+ODI0Nl19
 -->
