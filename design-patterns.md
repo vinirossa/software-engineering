@@ -916,6 +916,7 @@ Encapsulates a command request as an object, supporting undoable operations.
 **Uses:**
 - Automation
 - Request Queues
+- Editors
 - Do & Undo Operations
 - Macro Commands
 
@@ -1054,11 +1055,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNj
-gwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAz
-LC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMT
-E3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQx
-NDUsMTA5MjQ5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMT
-QwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0
-NDZdfQ==
+eyJoaXN0b3J5IjpbLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMT
+EzMjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcx
+OSwxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMj
+A2MzQyNjkxNywyMTE3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQx
+OTI0LDExNDgyNjQxNDUsMTA5MjQ5OTAxLDEwMTk5NDU0LC0xOD
+k4MzgzODkzLDEzMTQwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5
+NzAwXX0=
 -->
