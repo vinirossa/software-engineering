@@ -608,6 +608,11 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - Cache
 - Logs
 
+**In C#:**
+```ts
+
+```
+
 **In TypeScript:**
 ```ts
     export interface Subject { 
@@ -836,11 +841,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxNDA4NzA2OSw0MDEyNjUxMDMsMTI5Nj
-U5MTgxMSwxNTE1NjM3MDkxLC0xNDc2Mzg4MzY3LC0xNDU3OTYz
-MTMxLC0xNjAwNDYzMDE2LDI0OTgzODI0Niw3OTk1MzkxMzMsOD
-M1MDQ0NjE0LC03MTAzNzk2MDUsNzM1NTc2NjY5LDE2NzI3MDg5
-NDIsLTY1OTUxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMT
-I5NjYxNzc0NSwxNjEzNzg5NTgwLDc0MjU5MTA2MSwtMTE4NTQx
-NjcyMF19
+eyJoaXN0b3J5IjpbMTEyMTM0MzQ0NiwxMDE0MDg3MDY5LDQwMT
+I2NTEwMywxMjk2NTkxODExLDE1MTU2MzcwOTEsLTE0NzYzODgz
+NjcsLTE0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5ODM4MjQ2LD
+c5OTUzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNSw3MzU1NzY2
+NjksMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsND
+Q3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1ODAsNzQyNTkx
+MDYxXX0=
 -->
