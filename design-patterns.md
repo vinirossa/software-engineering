@@ -484,44 +484,44 @@ interface IMediaResource
 
 class ArtistResource
 {
-	public string Bio { get; set; }
-
 	public ArtistResource(string bio)
     {
         Bio = bio;
     }
+    
+	public string Bio { get; set; }
 }
 
 class ArtistAdapter : IMediaResource
 {
-	public ArtistResource ArtistResource { get; set; }
-	public string Snippet => ArtistResource.Bio;
-
 	public ArtistAdapter(ArtistResource artistResource)
 	{
 		ArtistResource = artistResource;
 	}
+	
+	public ArtistResource ArtistResource { get; set; }
+	public string Snippet => ArtistResource.Bio;
 }
 
 class BookResource
 {
-	public string CoverText { get; set; }
-
 	public BookResource(string coverText)
     {
         CoverText = coverText;
     }
+    
+	public string CoverText { get; set; }
 }
 
 class BookAdapter : IMediaResource
 {
-	public BookResource BookResource { get; set; }
-	public string Snippet => BookResource.CoverText;
-
 	public BookAdapter(BookResource bookResource)
 	{
 		BookResource = bookResource;
 	}
+	
+	public BookResource BookResource { get; set; }
+	public string Snippet => BookResource.CoverText;
 }
 ```
 
@@ -718,12 +718,12 @@ interface ITodoList
 
 class Todo : ITodoList
 {
-    public string Text { get; set; }
-
     public Todo(string text)
     {
         Text = text;
     }
+    
+    public string Text { get; set; }
 
     public string getHtml() 
     { 
@@ -733,14 +733,14 @@ class Todo : ITodoList
 
 class Project : ITodoList
 {
-    public string Title { get; set; }
-    public List<ITodoList> Todos { get; set; }
-
     public Project(string title, List<ITodoList> todos)
     {
         Title = title;
         Todos = todos;
     }
+    
+    public string Title { get; set; }
+    public List<ITodoList> Todos { get; set; }
 
     public string getHtml() 
     {
@@ -840,11 +840,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgwMzA3NDE3Niw4NjExMDk3MDAsMTEyMT
-M0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODEx
-LDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLT
-E2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2
-MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNj
-U5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3
-NzQ1XX0=
+eyJoaXN0b3J5IjpbLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMj
+EzNDM0NDYsMTAxNDA4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgx
+MSwxNTE1NjM3MDkxLC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC
+0xNjAwNDYzMDE2LDI0OTgzODI0Niw3OTk1MzkxMzMsODM1MDQ0
+NjE0LC03MTAzNzk2MDUsNzM1NTc2NjY5LDE2NzI3MDg5NDIsLT
+Y1OTUxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYx
+Nzc0NV19
 -->
