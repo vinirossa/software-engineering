@@ -691,7 +691,7 @@ Add responsibilities and behaviours to objects dynamically without the need to c
 
 ### Composite
 
-A tree structure of simple leaf and composite objects.
+A tree structure of composite objects and simple leaves and composite objects.
 
 
 ### Flyweight
@@ -779,11 +779,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzk5NTM5MTMzLDgzNTA0NDYxNCwtNzEwMz
-c5NjA1LDczNTU3NjY2OSwxNjcyNzA4OTQyLC02NTk1MTYwNjks
-MTkyMDMzMDI2Niw0NDc1ODE5OTUsLTEyOTY2MTc3NDUsMTYxMz
-c4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3MjAsMTY1OTQzNTk0
-OCw0Mzc5NTkxMjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4Mj
-Y4ODQ2NTgsMTA3NjczNjA1OSwtMTA5MTM2NDY5NCwxMjEzNDMw
-ODUxXX0=
+eyJoaXN0b3J5IjpbNDAzMDE0NjM3LDc5OTUzOTEzMyw4MzUwND
+Q2MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0Miwt
+NjU5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2Nj
+E3NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIw
+LDE2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0Nz
+YzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYwNTksLTEwOTEzNjQ2
+OTRdfQ==
 -->
