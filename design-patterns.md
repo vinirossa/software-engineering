@@ -675,7 +675,7 @@ class LazyBookParserProxy : IBookParser
 
 ### Decorator
 
-Add responsibilities and behaviours to objects dynamically at runtime without the need to change it.
+Add responsibilities and behaviours to objects dynamically at runtime wrapping them without the need to change them.
 
 > The decorator pattern is useful to add features to existent code.
 
@@ -880,11 +880,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAxOTk0NTQsLTE4OTgzODM4OTMsMTMxND
-A2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0
-NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODExLDE1MT
-U2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLTE2MDA0
-NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2MTQsLT
-cxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNjU5NTE2
-MDY5XX0=
+eyJoaXN0b3J5IjpbMTA5MjQ5OTAxLDEwMTk5NDU0LC0xODk4Mz
+gzODkzLDEzMTQwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5NzAw
+LDExMjEzNDM0NDYsMTAxNDA4NzA2OSw0MDEyNjUxMDMsMTI5Nj
+U5MTgxMSwxNTE1NjM3MDkxLC0xNDc2Mzg4MzY3LC0xNDU3OTYz
+MTMxLC0xNjAwNDYzMDE2LDI0OTgzODI0Niw3OTk1MzkxMzMsOD
+M1MDQ0NjE0LC03MTAzNzk2MDUsNzM1NTc2NjY5LDE2NzI3MDg5
+NDJdfQ==
 -->
