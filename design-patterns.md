@@ -599,7 +599,7 @@ Provide a surrogate or placeholder for another object to control access to it, w
 
 **UML:**
 
-
+![proxy](https://user-images.githubusercontent.com/72560319/159519195-b962a1b8-2da4-48d3-88ff-8d464bd113a7.png)
 
 **Uses:**
 - Networking
