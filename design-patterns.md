@@ -679,12 +679,15 @@ Add responsibilities and behaviours to objects dynamically at runtime wrapping t
 
 > The decorator pattern is useful to add features to existent code.
 
+**UML:**
+
+
 **Uses:**
 - Cache
 - Logging
 
 **In C#:**
-```ts
+```cs
 ```
 
 **In TypeScript:**
@@ -884,11 +887,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0ODI2NDE0NSwxMDkyNDk5MDEsMTAxOT
-k0NTQsLTE4OTgzODM4OTMsMTMxNDA2MTU2MCwtMTQ3NTI5NDk3
-NCw4NjExMDk3MDAsMTEyMTM0MzQ0NiwxMDE0MDg3MDY5LDQwMT
-I2NTEwMywxMjk2NTkxODExLDE1MTU2MzcwOTEsLTE0NzYzODgz
-NjcsLTE0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5ODM4MjQ2LD
-c5OTUzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNSw3MzU1NzY2
-NjldfQ==
+eyJoaXN0b3J5IjpbNTc2MDQxOTI0LDExNDgyNjQxNDUsMTA5Mj
+Q5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1NjAs
+LTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0NDYsMTAxND
+A4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNTE1NjM3MDkx
+LC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LD
+I0OTgzODI0Niw3OTk1MzkxMzMsODM1MDQ0NjE0LC03MTAzNzk2
+MDVdfQ==
 -->
