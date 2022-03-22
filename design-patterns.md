@@ -905,7 +905,7 @@ A way of passing a request between a chain of objects, similar to middlewares.
 
 ### Command
 
-Encapsulate a command request as an object.
+Encapsulates a command request as an object, letting you parametrize with differente requests, queue or long requests, and support undoable operation.
 
 > With this pattern, instead of just perform some action, it's possible to wrap that action in a command and make sure it is undoable.
 
@@ -975,11 +975,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDAxNjg4MCwtMTEzMjU3OTc2NCwtNj
-gwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAz
-LC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMT
-E3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQx
-NDUsMTA5MjQ5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMT
-QwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0
-NDZdfQ==
+eyJoaXN0b3J5IjpbNDgzMjgyODU2LC0xMTMyNTc5NzY0LC02OD
+A1NTI3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MDMs
+LTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIxMT
+c4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0ODI2NDE0
+NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMsMTMxND
+A2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0
+Nl19
 -->
