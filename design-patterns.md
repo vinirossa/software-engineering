@@ -907,6 +907,8 @@ A way of passing a request between a chain of objects, similar to middlewares.
 
 Encapsulate a command request as an object.
 
+> With this pattern, instead of just perform some action, it's possible to wrap that action in a command and make sure it is undoable.
+
 **Uses:**
 - Automation
 - Request Queues
@@ -973,7 +975,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ4NDg4Mzk1MCwtMTEzMjU3OTc2NCwtNj
+eyJoaXN0b3J5IjpbMTExNDAxNjg4MCwtMTEzMjU3OTc2NCwtNj
 gwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAz
 LC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMT
 E3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQx
