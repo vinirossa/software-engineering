@@ -907,6 +907,9 @@ A way of passing a request between a chain of objects, similar to middlewares.
 
 Encapsulate a command request as an object.
 
+**Uses:**
+- Automation
+
 ### Interpreter
 
 A way to include language elements in a program.
@@ -967,11 +970,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMz
-I0MDMsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3
-LDIxMTc4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0OD
-I2NDE0NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMs
-MTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMT
-M0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODEx
+eyJoaXN0b3J5IjpbLTY4MDU1MjcxMywtMjg0MjY1NjcsODAxMz
+Q3MTksMTM4MTIzMjQwMywtMzQ0MDI4NjQxLC0xNzM1Nzc1NTU5
+LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMwOTMzNDUwLDU3Nj
+A0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwt
+MTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MT
+EwOTcwMCwxMTIxMzQzNDQ2LDEwMTQwODcwNjksNDAxMjY1MTAz
 XX0=
 -->
