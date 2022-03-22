@@ -593,15 +593,15 @@ An object should never know the internal details of other objects.
 
 ### Proxy
 
-Provide a surrogate or placeholder for another object to control access to it, working as a middleware.
+Provide a surrogate or placeholder for another object to control access to it, working as a middleware and adding a level of indirection.
+
+> There is remote proxi
 
 **Uses:**
 - Networking
 - VPNs
 - Credit card validations
-- Logs
-- Cache
-- Acess control
+- Access control
 
 **In TypeScript:**
 ```ts
@@ -831,11 +831,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI5NjU5MTgxMSwxNTE1NjM3MDkxLC0xND
-c2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LDI0OTgz
-ODI0Niw3OTk1MzkxMzMsODM1MDQ0NjE0LC03MTAzNzk2MDUsNz
-M1NTc2NjY5LDE2NzI3MDg5NDIsLTY1OTUxNjA2OSwxOTIwMzMw
-MjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5NTgwLD
-c0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LDQzNzk1
-OTEyMF19
+eyJoaXN0b3J5IjpbLTMwNjUxMTQ3LDEyOTY1OTE4MTEsMTUxNT
+YzNzA5MSwtMTQ3NjM4ODM2NywtMTQ1Nzk2MzEzMSwtMTYwMDQ2
+MzAxNiwyNDk4MzgyNDYsNzk5NTM5MTMzLDgzNTA0NDYxNCwtNz
+EwMzc5NjA1LDczNTU3NjY2OSwxNjcyNzA4OTQyLC02NTk1MTYw
+NjksMTkyMDMzMDI2Niw0NDc1ODE5OTUsLTEyOTY2MTc3NDUsMT
+YxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3MjAsMTY1OTQz
+NTk0OF19
 -->
