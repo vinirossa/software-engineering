@@ -1017,7 +1017,7 @@ A way of notifying change to a number of classes.
 
 ### State
 
-Alter an object's behavior when its state changes.
+Alter an object's behavior when its state changes, .
 
 ### Strategy
 
@@ -1055,11 +1055,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMT
-EzMjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcx
-OSwxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMj
-A2MzQyNjkxNywyMTE3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQx
-OTI0LDExNDgyNjQxNDUsMTA5MjQ5OTAxLDEwMTk5NDU0LC0xOD
-k4MzgzODkzLDEzMTQwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5
-NzAwXX0=
+eyJoaXN0b3J5IjpbNzE0NTczMDQ0LC0xODk1OTg5MTg0LDEzMD
+c3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1MjcxMywtMjg0MjY1
+NjcsODAxMzQ3MTksMTM4MTIzMjQwMywtMzQ0MDI4NjQxLC0xNz
+M1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMwOTMz
+NDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMD
+E5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0
+OTc0XX0=
 -->
