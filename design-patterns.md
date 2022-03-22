@@ -302,6 +302,8 @@ Match interfaces of different classes, working as a wrapper. With an adapter, ch
 
 > It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
 
+> **Changes the interface** but **doesn't change the implementation**.
+
 **Uses:**
 - Frameworks
 - External Libraries
@@ -888,11 +890,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTc2MDQxOTI0LDExNDgyNjQxNDUsMTA5Mj
-Q5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1NjAs
-LTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0NDYsMTAxND
-A4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNTE1NjM3MDkx
-LC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LD
-I0OTgzODI0Niw3OTk1MzkxMzMsODM1MDQ0NjE0LC03MTAzNzk2
-MDVdfQ==
+eyJoaXN0b3J5IjpbNzEyMDk0MTgyLDU3NjA0MTkyNCwxMTQ4Mj
+Y0MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5Mywx
+MzE0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMz
+QzNDQ2LDEwMTQwODcwNjksNDAxMjY1MTAzLDEyOTY1OTE4MTEs
+MTUxNTYzNzA5MSwtMTQ3NjM4ODM2NywtMTQ1Nzk2MzEzMSwtMT
+YwMDQ2MzAxNiwyNDk4MzgyNDYsNzk5NTM5MTMzLDgzNTA0NDYx
+NF19
 -->
