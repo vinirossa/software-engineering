@@ -598,6 +598,8 @@ Provide a surrogate or placeholder for another object to control access to it, w
 
 > There is remote proxies (different context), virtual proxies (expensive crafting resources) and protection proxies (access management).
 
+> **Changes the implementation** but **doesn't change the interface**.
+
 **UML:**
 
 ![proxy](https://user-images.githubusercontent.com/72560319/159519195-b962a1b8-2da4-48d3-88ff-8d464bd113a7.png)
@@ -680,6 +682,8 @@ class LazyBookParserProxy : IBookParser
 Add responsibilities and behaviours to objects dynamically at runtime wrapping them without the need to change them.
 
 > The decorator pattern is useful to add features to existent code.
+
+> **Changes the implementation** but **doesn't change the interface**.
 
 **UML:**
 
@@ -890,7 +894,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzEyMDk0MTgyLDU3NjA0MTkyNCwxMTQ4Mj
+eyJoaXN0b3J5IjpbNTUxNjE3NjkyLDU3NjA0MTkyNCwxMTQ4Mj
 Y0MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5Mywx
 MzE0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMz
 QzNDQ2LDEwMTQwODcwNjksNDAxMjY1MTAzLDEyOTY1OTE4MTEs
