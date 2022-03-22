@@ -693,7 +693,13 @@ Add responsibilities and behaviours to objects dynamically without the need to c
 
 A tree structure of composite objects and leaf objects.
 
-> Composite pattern is ubetter with abstractions that can be hierarchically organized.
+> Composite pattern is useful with abstractions that can be hierarchically organized.
+
+**Uses:**
+- DOM
+- TodoLists
+- Genealogy
+**In C#:**
 
 
 ### Flyweight
@@ -781,7 +787,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk0NTQ4MDU4MywtMTYwMDQ2MzAxNiwyND
+eyJoaXN0b3J5IjpbLTY1MDMwMzM2NCwtMTYwMDQ2MzAxNiwyND
 k4MzgyNDYsNzk5NTM5MTMzLDgzNTA0NDYxNCwtNzEwMzc5NjA1
 LDczNTU3NjY2OSwxNjcyNzA4OTQyLC02NTk1MTYwNjksMTkyMD
 MzMDI2Niw0NDc1ODE5OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4
