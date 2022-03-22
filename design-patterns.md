@@ -268,6 +268,7 @@ A class of which only a single instance can exist and that provides a global acc
 
 All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
+> Avoid singletons at all cost. They can be very trick to escalate and work with TDD, as one's man constant is one's man variable.
 **Uses:**
 - Database Configuration
 
@@ -947,11 +948,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMD
-YzNDI2OTE3LDIxMTc4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5
-MjQsMTE0ODI2NDE0NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OT
-gzODM4OTMsMTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3
-MDAsMTEyMTM0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMj
-k2NTkxODExLDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5
-NjMxMzFdfQ==
+eyJoaXN0b3J5IjpbLTczODA3MjU0MiwtMzQ0MDI4NjQxLC0xNz
+M1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMwOTMz
+NDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMD
+E5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0
+OTc0LDg2MTEwOTcwMCwxMTIxMzQzNDQ2LDEwMTQwODcwNjksND
+AxMjY1MTAzLDEyOTY1OTE4MTEsMTUxNTYzNzA5MSwtMTQ3NjM4
+ODM2N119
 -->
