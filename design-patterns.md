@@ -675,7 +675,7 @@ class LazyBookParserProxy : IBookParser
 
 ### Decorator
 
-Add responsibilities and behaviours to objects dynamically without the need to change it.
+Add responsibilities and behaviours to objects dynamically at runtime without the need to change it.
 
 **Uses:**
 - Add features to existent code
@@ -878,11 +878,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4Nj
-ExMDk3MDAsMTEyMTM0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEw
-MywxMjk2NTkxODExLDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLT
-E0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUz
-OTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMT
-Y3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgx
-OTk1XX0=
+eyJoaXN0b3J5IjpbLTE4OTgzODM4OTMsMTMxNDA2MTU2MCwtMT
+Q3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0NiwxMDE0MDg3
+MDY5LDQwMTI2NTEwMywxMjk2NTkxODExLDE1MTU2MzcwOTEsLT
+E0NzYzODgzNjcsLTE0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5
+ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNS
+w3MzU1NzY2NjksMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAz
+MzAyNjZdfQ==
 -->
