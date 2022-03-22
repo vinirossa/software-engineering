@@ -531,6 +531,8 @@ class BookAdapter : IMediaResource
 
 A single class (`wrapper`) that represents an entire subsystem in higher level. A facade helps to simply and unify a program.
 
+> High-level level abstraction over low-level components, where the **interface is changed** and the **implementation is not**.
+
 **Uses:**
 - Operational Systems
 - Compilers
@@ -894,11 +896,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTUxNjE3NjkyLDU3NjA0MTkyNCwxMTQ4Mj
-Y0MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5Mywx
-MzE0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMz
-QzNDQ2LDEwMTQwODcwNjksNDAxMjY1MTAzLDEyOTY1OTE4MTEs
-MTUxNTYzNzA5MSwtMTQ3NjM4ODM2NywtMTQ1Nzk2MzEzMSwtMT
-YwMDQ2MzAxNiwyNDk4MzgyNDYsNzk5NTM5MTMzLDgzNTA0NDYx
-NF19
+eyJoaXN0b3J5IjpbMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0OD
+I2NDE0NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMs
+MTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMT
+M0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODEx
+LDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLT
+E2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2
+MTRdfQ==
 -->
