@@ -911,6 +911,8 @@ Encapsulates a command request as an object, supporting undoable operations.
 
 **UML:**
 
+![command](https://user-images.githubusercontent.com/72560319/159564163-dc0e989b-49e8-4fda-9c7b-b0e0f7e3f1b9.png)
+
 **Uses:**
 - Automation
 - Request Queues
