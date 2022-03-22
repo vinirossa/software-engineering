@@ -1015,6 +1015,8 @@ Capture and restore an object's internal state.
 
 Alter an object's behavior when its state changes, machines with no memory.
 
+> The state is not an enum or property, it is the own object. Therefore, it replaces a conditional with polymorphism.
+
 ### Observer
 
 A way of notifying state change to a number of classes.
@@ -1056,11 +1058,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNz
-c1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2
-Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3Mz
-U3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0MTU5LDExMzA5MzM0
-NTAsNTc2MDQxOTI0LDExNDgyNjQxNDUsMTA5MjQ5OTAxLDEwMT
-k5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1NjAsLTE0NzUyOTQ5
-NzRdfQ==
+eyJoaXN0b3J5IjpbLTE1NTIyNDkxNzcsLTI0MjA5NDUsLTE4OT
+U5ODkxODQsMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUy
+NzEzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zND
+QwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0
+MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQxNDUsMT
+A5MjQ5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1
+NjBdfQ==
 -->
