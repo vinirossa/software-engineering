@@ -595,7 +595,7 @@ An object should never know the internal details of other objects.
 
 Provide a surrogate or placeholder for another object to control access to it, working as a middleware and adding a level of indirection.
 
-> There is remote proxi
+> There is remote (different context), virtual and protection proxies.
 
 **Uses:**
 - Networking
@@ -831,11 +831,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjUxMTQ3LDEyOTY1OTE4MTEsMTUxNT
-YzNzA5MSwtMTQ3NjM4ODM2NywtMTQ1Nzk2MzEzMSwtMTYwMDQ2
-MzAxNiwyNDk4MzgyNDYsNzk5NTM5MTMzLDgzNTA0NDYxNCwtNz
-EwMzc5NjA1LDczNTU3NjY2OSwxNjcyNzA4OTQyLC02NTk1MTYw
-NjksMTkyMDMzMDI2Niw0NDc1ODE5OTUsLTEyOTY2MTc3NDUsMT
-YxMzc4OTU4MCw3NDI1OTEwNjEsLTExODU0MTY3MjAsMTY1OTQz
-NTk0OF19
+eyJoaXN0b3J5IjpbLTMxNDAyODQ1MSwxMjk2NTkxODExLDE1MT
+U2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLTE2MDA0
+NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2MTQsLT
+cxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNjU5NTE2
+MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LD
+E2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0
+MzU5NDhdfQ==
 -->
