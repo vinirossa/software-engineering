@@ -608,8 +608,46 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - Logs
 
 **In C#:**
-```ts
+```cs
+interface IBookParser
+{
+    string Book { get; set; } 
+    int GetNumPages();
+}
 
+class BookParser : IBookParser
+{
+    public BookParser(string book)
+    {
+        // Expensive parsing
+        Book = book;
+    }
+
+    public string Book { get; set; }
+
+    public int GetNumPages() => 0; // get the number of pages
+}
+
+class LazyBookParserProxy : IBookParser
+{
+    public LazyBookParserProxy(string book)
+    {
+        BookParser = null;
+        Book = book;
+    }
+
+    private BookParser? BookParser;
+    public string Book { get; set; }
+
+    public int GetNumPages()
+    {
+        if (BookParser == null)
+            return 0;
+
+        BookParser = new BookParser(Book);
+        return BookParser.GetNumPages();
+    }
+}
 ```
 
 **In TypeScript:**
@@ -840,11 +878,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMj
-EzNDM0NDYsMTAxNDA4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgx
-MSwxNTE1NjM3MDkxLC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC
-0xNjAwNDYzMDE2LDI0OTgzODI0Niw3OTk1MzkxMzMsODM1MDQ0
-NjE0LC03MTAzNzk2MDUsNzM1NTc2NjY5LDE2NzI3MDg5NDIsLT
-Y1OTUxNjA2OSwxOTIwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYx
-Nzc0NV19
+eyJoaXN0b3J5IjpbMTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4Nj
+ExMDk3MDAsMTEyMTM0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEw
+MywxMjk2NTkxODExLDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLT
+E0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUz
+OTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMT
+Y3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgx
+OTk1XX0=
 -->
