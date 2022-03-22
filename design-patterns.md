@@ -605,7 +605,7 @@ Provide a surrogate or placeholder for another object to control access to it, w
 - VPNs
 - Credit card validations
 - Cache
-- Logs
+- Logging
 
 **In C#:**
 ```cs
@@ -677,8 +677,10 @@ class LazyBookParserProxy : IBookParser
 
 Add responsibilities and behaviours to objects dynamically at runtime without the need to change it.
 
+> The decorator pattern is useful to add features to existent code.
+
 **Uses:**
-- Add features to existent code
+- Cache
 - Logging
 
 **In TypeScript:**
@@ -878,11 +880,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4OTgzODM4OTMsMTMxNDA2MTU2MCwtMT
-Q3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0NiwxMDE0MDg3
-MDY5LDQwMTI2NTEwMywxMjk2NTkxODExLDE1MTU2MzcwOTEsLT
-E0NzYzODgzNjcsLTE0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5
-ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNS
-w3MzU1NzY2NjksMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAz
-MzAyNjZdfQ==
+eyJoaXN0b3J5IjpbMTAxOTk0NTQsLTE4OTgzODM4OTMsMTMxND
+A2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0
+NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODExLDE1MT
+U2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLTE2MDA0
+NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2MTQsLT
+cxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNjU5NTE2
+MDY5XX0=
 -->
