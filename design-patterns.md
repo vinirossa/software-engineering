@@ -697,7 +697,7 @@ A tree structure of composite objects and leaf objects.
 
 **UML:**
 
-
+![composite-pattern](https://user-images.githubusercontent.com/72560319/159482200-4908a097-ae9d-4f25-8f8d-a4ffc76b1395.png)
 
 **Uses:**
 - DOM
