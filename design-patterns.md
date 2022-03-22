@@ -264,7 +264,7 @@ A fully initialized instance to be copied or cloned and then modified.
 
 ###  Singleton
 
-A class of which only a single instance can exist and that provides. 
+A class of which only a single instance can exist and that provides a global access to it. 
 
 All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
@@ -947,11 +947,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQyODU1MjI2MywyMDYzNDI2OTE3LDIxMT
-c4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0ODI2NDE0
-NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMsMTMxND
-A2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0
-NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODExLDE1MT
-U2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLTE2MDA0
-NjMwMTZdfQ==
+eyJoaXN0b3J5IjpbLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMT
+E3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQx
+NDUsMTA5MjQ5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMT
+QwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0
+NDYsMTAxNDA4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNT
+E1NjM3MDkxLC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAw
+NDYzMDE2XX0=
 -->
