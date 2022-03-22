@@ -333,12 +333,12 @@ interface ITarget
 
 class Adapter : ITarget
 {
-	public Adaptee Adaptee { get; set; }
-	
 	public Adapter(Adaptee a)
 	{
 		Adaptee = a;
 	}
+	
+	public Adaptee Adaptee { get; set; }
 	
 	public void Request()
 	{
@@ -437,12 +437,12 @@ Separates an object’s interface / abstraction from its implementation, so that
 ```cs
 abstract class View
 {
-	public IMediaResource MediaResource;
-
 	public View(IMediaResource mediaResource)
 	{
 		MediaResource = mediaResource;
 	}
+	
+	public IMediaResource MediaResource;
 
 	public virtual string Show() { return "html"; }
 }
@@ -840,11 +840,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODYxMTA5NzAwLDExMjEzNDM0NDYsMTAxND
-A4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNTE1NjM3MDkx
-LC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LD
-I0OTgzODI0Niw3OTk1MzkxMzMsODM1MDQ0NjE0LC03MTAzNzk2
-MDUsNzM1NTc2NjY5LDE2NzI3MDg5NDIsLTY1OTUxNjA2OSwxOT
-IwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5
-NTgwXX0=
+eyJoaXN0b3J5IjpbLTgwMzA3NDE3Niw4NjExMDk3MDAsMTEyMT
+M0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODEx
+LDE1MTU2MzcwOTEsLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLT
+E2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2
+MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNj
+U5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3
+NzQ1XX0=
 -->
