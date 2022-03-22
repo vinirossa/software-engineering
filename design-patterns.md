@@ -268,7 +268,7 @@ A class of which only a single instance can exist and that provides a global acc
 
 All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
-> If possible, avoid singletons at all. They can be very trick to escalate and work with TDD, as one man's constant is one man's variable.
+> If possible, avoid singletons at all. They can be very tricky to escalate and to work with TDD, as one man's constant is one man's variable.
 
 > In a way, it's completely fine to have a single object within an application, but it isn't to make it impossible to create a second instance.
 
@@ -951,11 +951,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc2NTk0MDIwNSwxMzgxMjMyNDAzLC0zND
-QwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0
-MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQxNDUsMT
-A5MjQ5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1
-NjAsLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0NDYsMT
-AxNDA4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNTE1NjM3
-MDkxXX0=
+eyJoaXN0b3J5IjpbLTE2MTg0MjUyODcsMTM4MTIzMjQwMywtMz
+Q0MDI4NjQxLC0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3
+NDE1OSwxMTMwOTMzNDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LD
+EwOTI0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYx
+NTYwLC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMzQzNDQ2LD
+EwMTQwODcwNjksNDAxMjY1MTAzLDEyOTY1OTE4MTEsMTUxNTYz
+NzA5MV19
 -->
