@@ -272,8 +272,38 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 > In a way, it's completely fine to have a single object within an application, but it isn't to make it impossible to create a second instance.
 
+**UML:**
+class Singleton
+{
+    private Singleton() { }
+
+    private static Singleton? Instance;
+
+    public static void GetInstance()
+    {
+        if (Instance == null)
+            Instance = new Singleton();
+    }
+}
+
 **Uses:**
 - Database Configuration
+
+**In C#:**
+```cs
+class Singleton
+{
+    private Singleton() { }
+
+    private static Singleton? Instance;
+
+    public static void GetInstance()
+    {
+        if (Instance == null)
+            Instance = new Singleton();
+    }
+}
+```
 
 **In TypeScript:**
 ```ts
@@ -951,11 +981,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTg0MjUyODcsMTM4MTIzMjQwMywtMz
-Q0MDI4NjQxLC0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3
-NDE1OSwxMTMwOTMzNDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LD
-EwOTI0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYx
-NTYwLC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMzQzNDQ2LD
-EwMTQwODcwNjksNDAxMjY1MTAzLDEyOTY1OTE4MTEsMTUxNTYz
-NzA5MV19
+eyJoaXN0b3J5IjpbOTMwNjk2NjAwLDEzODEyMzI0MDMsLTM0ND
+AyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIxMTc4NzQx
+NTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0ODI2NDE0NSwxMD
+kyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMsMTMxNDA2MTU2
+MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMTM0MzQ0NiwxMD
+E0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODExLDE1MTU2Mzcw
+OTFdfQ==
 -->
