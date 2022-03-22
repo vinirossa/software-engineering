@@ -681,6 +681,7 @@ Add responsibilities and behaviours to objects dynamically at runtime wrapping t
 
 **UML:**
 
+![decorator](https://user-images.githubusercontent.com/72560319/159546636-9b279668-9f9d-40db-a87a-888dd913b008.png)
 
 **Uses:**
 - Cache
