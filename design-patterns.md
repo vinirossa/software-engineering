@@ -270,7 +270,8 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 > If possible, avoid singletons at all. They can be very trick to escalate and work with TDD, as one's man constant is one's man variable.
 
-> In a way, it's completely fine to have a single object within an application , but it isn't to make it impossible to create a second instance.
+> In a way, it's completely fine to have a single object within an application, but it isn't to make it impossible to create a second instance.
+
 **Uses:**
 - Database Configuration
 
@@ -950,7 +951,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg3OTYzMzk3OSwtMzQ0MDI4NjQxLC0xNz
+eyJoaXN0b3J5IjpbMTM4MTIzMjQwMywtMzQ0MDI4NjQxLC0xNz
 M1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMwOTMz
 NDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMD
 E5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0
