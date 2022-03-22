@@ -701,18 +701,49 @@ A tree structure of composite objects and leaf objects.
 - Genealogy
 
 **In C#:**
-```ts
-interface TodoList
+```cs
+interface ITodoList
 {
 	string getHtml();
 }
 
-class Todo : TodoList
+class Todo : ITodoList
 {
-	public string text;
+    public string Text { get; set; }
+
+    public Todo(string text)
+    {
+        Text = text;
+    }
+
+    public string getHtml() 
+    { 
+        return "<li>" + Text + "</li>"; 
+    }
 }
 
-class Project : TodoList
+class Project : ITodoList
+{
+    public string Title { get; set; }
+    public List<ITodoList> Todos { get; set; }
+
+    public Project(string title, List<ITodoList> todos)
+    {
+        Title = title;
+        Todos = todos;
+    }
+
+    public string getHtml() 
+    {
+        var html = "<h1>" + Title + "</h1>";
+
+        html += "<ul>";
+        Todos.ForEach(t => html += t.getHtml());
+        html += "</ul>";
+
+        return html;
+    }
+}
 ```
 
 ### Flyweight
@@ -800,11 +831,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMj
-Q5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYw
-NSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5Mj
-AzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1
-ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLDE2NTk0MzU5NDgsND
-M3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0
-NjU4XX0=
+eyJoaXN0b3J5IjpbLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLT
+E2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2
+MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNj
+U5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3
+NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLD
+E2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYz
+NDQzNF19
 -->
