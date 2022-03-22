@@ -905,16 +905,92 @@ A way of passing a request between a chain of objects, similar to middlewares.
 
 ### Command
 
-Encapsulates a command request as an object, letting you parametrize with differente requests, queue or log requests, and support undoable operation.
-
+Encapsulates a command request as an object, supporting undoable operations.
 
 > With this pattern, instead of just perform some action, it's possible to wrap that action in a command and make sure it is undoable.
+
+**UML:**
 
 **Uses:**
 - Automation
 - Request Queues
 - Do & Undo Operations
 - Macro Commands
+
+**In C#:**
+```cs
+
+public class Program
+{
+    public static void Main()
+    {
+        var receiver = new Light();
+        var invoker = new RemoteControl(
+                        new LightOnCommand(receiver),
+                        new LightOnCommand(receiver),
+                        new LightOffCommand(receiver),
+                        new LightOffCommand(receiver)
+                      );
+    }
+}
+
+class RemoteControl // Invoker
+{
+    public RemoteControl(ICommand on, ICommand up, ICommand down, ICommand off)
+    {
+        On = on;
+        Up = up;
+        Down = down;
+        Off = off;
+    }
+
+    private ICommand On { get; set; }
+    private ICommand Up { get; set; }
+    private ICommand Down { get; set; }
+    private ICommand Off { get; set; }
+
+    public void ClickOn() => On.Execute();
+    public void ClickOff() => Off.Execute();
+}
+
+interface ICommand
+{
+    void Execute();
+    void Unexecute();
+}
+
+class LightOnCommand : ICommand
+{
+    public LightOnCommand(Light light)
+    {
+        Light = light;
+    }
+
+    public Light Light { get; set; }
+
+    public void Execute() => Light.On();
+    public void Unexecute() => Light.Off();
+}
+
+class LightOffCommand : ICommand
+{
+    public LightOffCommand(Light light)
+    {
+        Light = light;
+    }
+
+    public Light Light { get; set; }
+
+    public void Execute() => Light.Off();
+    public void Unexecute() => Light.On();
+}
+
+class Light // Receiver
+{
+    public void On() { }
+    public void Off() { }
+}
+```
 
 ### Interpreter
 
@@ -976,11 +1052,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5OTI2NzMxODQsLTExMzI1Nzk3NjQsLT
-Y4MDU1MjcxMywtMjg0MjY1NjcsODAxMzQ3MTksMTM4MTIzMjQw
-MywtMzQ0MDI4NjQxLC0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMj
-ExNzg3NDE1OSwxMTMwOTMzNDUwLDU3NjA0MTkyNCwxMTQ4MjY0
-MTQ1LDEwOTI0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5MywxMz
-E0MDYxNTYwLC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMzQz
-NDQ2XX0=
+eyJoaXN0b3J5IjpbMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNj
+gwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAz
+LC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMT
+E3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQx
+NDUsMTA5MjQ5OTAxLDEwMTk5NDU0LC0xODk4MzgzODkzLDEzMT
+QwNjE1NjAsLTE0NzUyOTQ5NzQsODYxMTA5NzAwLDExMjEzNDM0
+NDZdfQ==
 -->
