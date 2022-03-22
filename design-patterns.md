@@ -37,9 +37,7 @@
 
 Creates an instance of several derived classes.
 
-> Abstract the instantiation of objects by wrapping them in a Factory method.
-
-> [Complete explanation](https://www.youtube.com/watch?v=EcFVTgRHJLM&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=4&ab_channel=ChristopherOkhravi). 
+> *Abstract the instantiation of objects by wrapping them in a Factory method.*
 
 **Uses:**
 - Frameworks
@@ -110,8 +108,6 @@ public class RandomAnimalFactory : IAnimalFactory
 ###  Abstract Factory
 
 Create an object without exposing the creation logic to the client and refer to newly created object using a common interface.
-
-> [Complete explanation](https://www.youtube.com/watch?v=v-GiuMmsXj4&list=PLrhzvIcii6GNjpARdnO4ueTUAVR9eMBpc&index=5&ab_channel=ChristopherOkhravi). 
 
 **Uses:**
 - UI Controls
@@ -326,7 +322,7 @@ Match interfaces of different classes, working as a wrapper. With an adapter, ch
 
 > *It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.*
 
-> *Changes the interface but doesn't change the implementation*.
+> **Changes the interface** but **doesn't change the implementation**.
 
 **Uses:**
 - Frameworks
@@ -448,7 +444,7 @@ class Adapter : ITarget
 
 Separates an object’s interface / abstraction from its implementation, so that the both can vary and evolve independently.
 
-> Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.
+> *Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.*
 
 **UML:**
 
@@ -622,7 +618,7 @@ An object should never know the internal details of other objects.
 
 Provide a surrogate or placeholder for another object to control access to it, working as a middleware and adding a level of indirection.
 
-> There is remote proxies (different context), virtual proxies (expensive crafting resources) and protection proxies (access management).
+> *There is remote proxies (different context), virtual proxies (expensive crafting resources) and protection proxies (access management).*
 
 > **Changes the implementation** but **doesn't change the interface**.
 
@@ -707,7 +703,7 @@ class LazyBookParserProxy : IBookParser
 
 Add responsibilities and behaviours to objects dynamically at runtime wrapping them without the need to change them.
 
-> The decorator pattern is useful to add features to existent code.
+> *The decorator pattern is useful to add features to existent code.*
 
 > **Changes the implementation** but **doesn't change the interface**.
 
@@ -829,7 +825,7 @@ class ChocolateDecorator : IAdditionDecorator
 
 A tree structure of composite objects and leaf objects.
 
-> Composite pattern is useful with abstractions that can be hierarchically organized.
+> *Composite pattern is useful with abstractions that can be hierarchically organized.*
 
 **UML:**
 
@@ -971,7 +967,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTI4NTczMzY1LDgwMTM0NzE5LDEzODEyMz
+eyJoaXN0b3J5IjpbLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMz
 I0MDMsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3
 LDIxMTc4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0OD
 I2NDE0NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMs
