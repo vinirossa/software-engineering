@@ -324,9 +324,9 @@ Respects the S.O.L.I.D principles.
 
 Match interfaces of different classes, working as a wrapper. With an adapter, change the underline behaviour is not necessary.
 
-> It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.
+> *It's useful when you don't want your code to directly depend on third party code or legacy, uncoupling your code.*
 
-> **Changes the interface** but **doesn't change the implementation**.
+> *Changes the interface but doesn't change the implementation*.
 
 **Uses:**
 - Frameworks
@@ -971,11 +971,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAxMzQ3MTksMTM4MTIzMjQwMywtMzQ0MD
-I4NjQxLC0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1
-OSwxMTMwOTMzNDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LDEwOT
-I0OTkwMSwxMDE5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYxNTYw
-LC0xNDc1Mjk0OTc0LDg2MTEwOTcwMCwxMTIxMzQzNDQ2LDEwMT
-QwODcwNjksNDAxMjY1MTAzLDEyOTY1OTE4MTEsMTUxNTYzNzA5
-MV19
+eyJoaXN0b3J5IjpbNTI4NTczMzY1LDgwMTM0NzE5LDEzODEyMz
+I0MDMsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3
+LDIxMTc4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0OD
+I2NDE0NSwxMDkyNDk5MDEsMTAxOTk0NTQsLTE4OTgzODM4OTMs
+MTMxNDA2MTU2MCwtMTQ3NTI5NDk3NCw4NjExMDk3MDAsMTEyMT
+M0MzQ0NiwxMDE0MDg3MDY5LDQwMTI2NTEwMywxMjk2NTkxODEx
+XX0=
 -->
