@@ -590,7 +590,6 @@ An object should never know the internal details of other objects.
     Facade.CustomerFacade.removeAccount(Alice)
 ```
 
-
 ### Proxy
 
 Provide a surrogate or placeholder for another object to control access to it, working as a middleware and adding a level of indirection.
@@ -841,11 +840,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyMTM0MzQ0NiwxMDE0MDg3MDY5LDQwMT
-I2NTEwMywxMjk2NTkxODExLDE1MTU2MzcwOTEsLTE0NzYzODgz
-NjcsLTE0NTc5NjMxMzEsLTE2MDA0NjMwMTYsMjQ5ODM4MjQ2LD
-c5OTUzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNSw3MzU1NzY2
-NjksMTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsND
-Q3NTgxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1ODAsNzQyNTkx
-MDYxXX0=
+eyJoaXN0b3J5IjpbODYxMTA5NzAwLDExMjEzNDM0NDYsMTAxND
+A4NzA2OSw0MDEyNjUxMDMsMTI5NjU5MTgxMSwxNTE1NjM3MDkx
+LC0xNDc2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LD
+I0OTgzODI0Niw3OTk1MzkxMzMsODM1MDQ0NjE0LC03MTAzNzk2
+MDUsNzM1NTc2NjY5LDE2NzI3MDg5NDIsLTY1OTUxNjA2OSwxOT
+IwMzMwMjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5
+NTgwXX0=
 -->
