@@ -595,17 +595,13 @@ An object should never know the internal details of other objects.
 
 Provide a surrogate or placeholder for another object to control access to it, working as a middleware.
 
-**Applicability:**
-- Access control
-- Logs
-- Cache
-- Lazy instanciation
-- Lazy evaluation
-
 **Uses:**
 - Networking
 - VPNs
 - Credit card validations
+- Logs
+- Cache
+- Acess control
 
 **In TypeScript:**
 ```ts
@@ -835,11 +831,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxNTYzNzA5MSwtMTQ3NjM4ODM2NywtMT
-Q1Nzk2MzEzMSwtMTYwMDQ2MzAxNiwyNDk4MzgyNDYsNzk5NTM5
-MTMzLDgzNTA0NDYxNCwtNzEwMzc5NjA1LDczNTU3NjY2OSwxNj
-cyNzA4OTQyLC02NTk1MTYwNjksMTkyMDMzMDI2Niw0NDc1ODE5
-OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLT
-ExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkx
-OTExN119
+eyJoaXN0b3J5IjpbMTI5NjU5MTgxMSwxNTE1NjM3MDkxLC0xND
+c2Mzg4MzY3LC0xNDU3OTYzMTMxLC0xNjAwNDYzMDE2LDI0OTgz
+ODI0Niw3OTk1MzkxMzMsODM1MDQ0NjE0LC03MTAzNzk2MDUsNz
+M1NTc2NjY5LDE2NzI3MDg5NDIsLTY1OTUxNjA2OSwxOTIwMzMw
+MjY2LDQ0NzU4MTk5NSwtMTI5NjYxNzc0NSwxNjEzNzg5NTgwLD
+c0MjU5MTA2MSwtMTE4NTQxNjcyMCwxNjU5NDM1OTQ4LDQzNzk1
+OTEyMF19
 -->
