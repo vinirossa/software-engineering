@@ -695,6 +695,10 @@ A tree structure of composite objects and leaf objects.
 
 > Composite pattern is useful with abstractions that can be hierarchically organized.
 
+**UML:**
+
+
+
 **Uses:**
 - DOM
 - TodoLists
@@ -831,11 +835,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NzYzODgzNjcsLTE0NTc5NjMxMzEsLT
-E2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OTUzOTEzMyw4MzUwNDQ2
-MTQsLTcxMDM3OTYwNSw3MzU1NzY2NjksMTY3MjcwODk0MiwtNj
-U5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NTgxOTk1LC0xMjk2NjE3
-NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYxLC0xMTg1NDE2NzIwLD
-E2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNzg5MTkxMTcsLTU0NzYz
-NDQzNF19
+eyJoaXN0b3J5IjpbMTUxNTYzNzA5MSwtMTQ3NjM4ODM2NywtMT
+Q1Nzk2MzEzMSwtMTYwMDQ2MzAxNiwyNDk4MzgyNDYsNzk5NTM5
+MTMzLDgzNTA0NDYxNCwtNzEwMzc5NjA1LDczNTU3NjY2OSwxNj
+cyNzA4OTQyLC02NTk1MTYwNjksMTkyMDMzMDI2Niw0NDc1ODE5
+OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4MCw3NDI1OTEwNjEsLT
+ExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mzc5NTkxMjAsLTI3ODkx
+OTExN119
 -->
