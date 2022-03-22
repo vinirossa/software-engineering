@@ -1011,13 +1011,14 @@ Defines simplified communication between classes.
 
 Capture and restore an object's internal state.
 
-### Observer
-
-A way of notifying change to a number of classes.
-
 ### State
 
-Alter an object's behavior when its state changes, .
+Alter an object's behavior when its state changes, machines with no memory.
+
+### Observer
+
+A way of notifying state change to a number of classes.
+
 
 ### Strategy
 
@@ -1055,11 +1056,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE0NTczMDQ0LC0xODk1OTg5MTg0LDEzMD
-c3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1MjcxMywtMjg0MjY1
-NjcsODAxMzQ3MTksMTM4MTIzMjQwMywtMzQ0MDI4NjQxLC0xNz
-M1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMwOTMz
-NDUwLDU3NjA0MTkyNCwxMTQ4MjY0MTQ1LDEwOTI0OTkwMSwxMD
-E5OTQ1NCwtMTg5ODM4Mzg5MywxMzE0MDYxNTYwLC0xNDc1Mjk0
-OTc0XX0=
+eyJoaXN0b3J5IjpbLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNz
+c1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2
+Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3Mz
+U3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0MTU5LDExMzA5MzM0
+NTAsNTc2MDQxOTI0LDExNDgyNjQxNDUsMTA5MjQ5OTAxLDEwMT
+k5NDU0LC0xODk4MzgzODkzLDEzMTQwNjE1NjAsLTE0NzUyOTQ5
+NzRdfQ==
 -->
