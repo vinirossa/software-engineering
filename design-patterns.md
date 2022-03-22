@@ -693,7 +693,7 @@ Add responsibilities and behaviours to objects dynamically without the need to c
 
 A tree structure of composite objects and leaf objects.
 
-> Composite pattern works better with abstractions that can be hierarchically organized.
+> Composite pattern is ubetter with abstractions that can be hierarchically organized.
 
 
 ### Flyweight
@@ -781,11 +781,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDA0NjMwMTYsMjQ5ODM4MjQ2LDc5OT
-UzOTEzMyw4MzUwNDQ2MTQsLTcxMDM3OTYwNSw3MzU1NzY2Njks
-MTY3MjcwODk0MiwtNjU5NTE2MDY5LDE5MjAzMzAyNjYsNDQ3NT
-gxOTk1LC0xMjk2NjE3NzQ1LDE2MTM3ODk1ODAsNzQyNTkxMDYx
-LC0xMTg1NDE2NzIwLDE2NTk0MzU5NDgsNDM3OTU5MTIwLC0yNz
-g5MTkxMTcsLTU0NzYzNDQzNCwxODI2ODg0NjU4LDEwNzY3MzYw
-NTldfQ==
+eyJoaXN0b3J5IjpbLTk0NTQ4MDU4MywtMTYwMDQ2MzAxNiwyND
+k4MzgyNDYsNzk5NTM5MTMzLDgzNTA0NDYxNCwtNzEwMzc5NjA1
+LDczNTU3NjY2OSwxNjcyNzA4OTQyLC02NTk1MTYwNjksMTkyMD
+MzMDI2Niw0NDc1ODE5OTUsLTEyOTY2MTc3NDUsMTYxMzc4OTU4
+MCw3NDI1OTEwNjEsLTExODU0MTY3MjAsMTY1OTQzNTk0OCw0Mz
+c5NTkxMjAsLTI3ODkxOTExNywtNTQ3NjM0NDM0LDE4MjY4ODQ2
+NThdfQ==
 -->
