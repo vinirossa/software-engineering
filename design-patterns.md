@@ -1108,9 +1108,10 @@ public class Program
 {
 	public static void Main()
 	{
-		var station = new WeatherStation();
-		station.Add(new PhoneDisplay(station));
-		station.Add(new WindowDisplay(station));
+		var cityDuck = new Duck(new SimpleQuacking(), new SimpleFlying(), new DisplayAsText());
+		var wildDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsGraphics());
+		var mountainDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsText());
+		var rubberDuck = new Duck(new NoQuacking(), new SimpleFlying(), new DisplayAsGraphics());
 	}
 }
 
@@ -1246,11 +1247,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYyOT
-A4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMs
-MTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtND
-IwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0
-OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC
-0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0
-NzE5XX0=
+eyJoaXN0b3J5IjpbMjEyMDY5NjEwMSw2NDU5MzI5NCw3MDQzMj
+gyMDIsMTE4NjI5MDg5NywtNjQ4MTU5NTkxLDQwNTYyNTcwNywt
+MTIxMTM4MTcxMywxNjAxNTMyNzQyLC0yMDE2Nzk4MDYwLC0yMD
+IyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcx
+NTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LD
+EzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1MjcxMywtMjg0
+MjY1NjddfQ==
 -->
