@@ -1222,6 +1222,10 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 - Finances
 - Law
 
+**UML:**
+
+
+
 **In C#:**
 ```cs
 public class Program
@@ -1341,11 +1345,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0Mz
-I4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcs
-LTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMj
-AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
-MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
-wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
-NDI2NTY3XX0=
+eyJoaXN0b3J5IjpbLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNj
+Q1OTMyOTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5
+MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMj
+AxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYz
+MzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NS
+wtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02
+ODA1NTI3MTNdfQ==
 -->
