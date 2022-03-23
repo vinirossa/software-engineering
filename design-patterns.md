@@ -1030,6 +1030,52 @@ Alter an object's behavior when its internal state changes, machines with no mem
 
 **In C#:**
 ```cs
+class Gate
+{
+    public Gate(IGateState initialState)
+    {
+        State = initialState;
+    }
+
+    public IGateState State { get; set; }
+
+    public void Enter() => State = State.Enter(); 
+    public void Pay() => State = State.Pay(); 
+    public void PayOk() => State = State.PayOk(); 
+    public void PayFailed() => State = State.PayFailed(); 
+}
+
+interface IGateState
+{
+    IGateState Enter();
+    IGateState Pay();
+    IGateState PayOk();
+    IGateState PayFailed();
+}
+
+class ClosedGateState : IGateState
+{
+    public IGateState Enter() => new ClosedGateState();
+    public IGateState Pay() => new ProcessingPaymentGateState();
+    public IGateState PayOk() => new ClosedGateState();
+    public IGateState PayFailed() => new ClosedGateState();
+}
+
+class ProcessingPaymentGateState : IGateState
+{
+    public IGateState Enter() => new ProcessingPaymentGateState();
+    public IGateState Pay() => new ProcessingPaymentGateState();
+    public IGateState PayOk() => new OpenGateState();
+    public IGateState PayFailed() => new ClosedGateState();
+}
+
+class OpenGateState : IGateState
+{
+    public IGateState Enter() => new ClosedGateState();
+    public IGateState Pay() => new OpenGateState();
+    public IGateState PayOk() => new OpenGateState();
+    public IGateState PayFailed() => new OpenGateState();
+}
 ```
 
 ### Observer
@@ -1073,11 +1119,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTY3OTgwNjAsLTIwMjI2ODYyODYsLT
-QyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIy
-NDkxNzcsLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2Mi
-wtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEz
-NDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NT
-ksMjA2MzQyNjkxNywyMTE3ODc0MTU5LDExMzA5MzM0NTAsNTc2
-MDQxOTI0XX0=
+eyJoaXN0b3J5IjpbLTIwNTk1OTgzNzYsLTIwMTY3OTgwNjAsLT
+IwMjI2ODYyODYsLTQyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4
+NzE1NjUsLTE1NTIyNDkxNzcsLTI0MjA5NDUsLTE4OTU5ODkxOD
+QsMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC0y
+ODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2ND
+EsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0MTU5LDEx
+MzA5MzM0NTBdfQ==
 -->
