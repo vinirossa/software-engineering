@@ -1088,7 +1088,7 @@ class OpenGateState : IGateState
 
 ### Observer
 
-A way of notifying state change to a number of classes.
+A way of notifying state change to a number of classes, Defines an one to many dependency between objects, so that when one object changes state all of its dependecies .
 
 
 ### Strategy
@@ -1127,11 +1127,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMj
-AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
-MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
-wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
-NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MDMsLTM0NDAyODY0MS
-wtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIxMTc4NzQxNTksMTEz
-MDkzMzQ1MF19
+eyJoaXN0b3J5IjpbLTY4NDk2MzYyMywxNjAxNTMyNzQyLC0yMD
+E2Nzk4MDYwLC0yMDIyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMz
+NzE2MiwxNTg3ODcxNTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC
+0xODk1OTg5MTg0LDEzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4
+MDU1MjcxMywtMjg0MjY1NjcsODAxMzQ3MTksMTM4MTIzMjQwMy
+wtMzQ0MDI4NjQxLC0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjEx
+Nzg3NDE1OV19
 -->
