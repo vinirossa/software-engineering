@@ -268,12 +268,12 @@ All singletons have a private constructor (`createInstance`), a public access me
 
 > In a way, it's completely fine to have a single object within an application, but it isn't to make it impossible to create a second instance.
 
+**Uses:**
+- Database Configuration
+
 **UML:**
 
 ![singleton](https://user-images.githubusercontent.com/72560319/159556077-69285a0d-d32d-4b24-ad8f-b8a8a1f301b8.png)
-
-**Uses:**
-- Database Configuration
 
 **In C#:**
 ```cs
@@ -446,14 +446,14 @@ Separates an object’s interface / abstraction from its implementation, so that
 
 > *Different from the adapter pattern, the bridge pattern is usually used before the project started, while the adapter is used after the project is already ongoing.*
 
-**UML:**
-
-![bridge-pattern](https://user-images.githubusercontent.com/72560319/159353103-75e0b64a-b72e-46bf-bb00-c9fbd4f7a080.png)
-
 **Uses:**
 - Frameworks
 - External Libraries
 - Legacy Codes
+
+**UML:**
+
+![bridge-pattern](https://user-images.githubusercontent.com/72560319/159353103-75e0b64a-b72e-46bf-bb00-c9fbd4f7a080.png)
 
 **In C#:**
 ```cs
@@ -622,16 +622,16 @@ Provide a surrogate or placeholder for another object to control access to it, w
 
 > **Changes the implementation** but **doesn't change the interface**.
 
-**UML:**
-
-![proxy](https://user-images.githubusercontent.com/72560319/159519195-b962a1b8-2da4-48d3-88ff-8d464bd113a7.png)
-
 **Uses:**
 - Networking
 - VPNs
 - Credit card validations
 - Cache
 - Logging
+
+**UML:**
+
+![proxy](https://user-images.githubusercontent.com/72560319/159519195-b962a1b8-2da4-48d3-88ff-8d464bd113a7.png)
 
 **In C#:**
 ```cs
@@ -707,13 +707,13 @@ Add responsibilities and behaviours to objects dynamically at runtime wrapping t
 
 > **Changes the implementation** but **doesn't change the interface**.
 
-**UML:**
-
-![decorator](https://user-images.githubusercontent.com/72560319/159546636-9b279668-9f9d-40db-a87a-888dd913b008.png)
-
 **Uses:**
 - Cache
 - Logging
+
+**UML:**
+
+![decorator](https://user-images.githubusercontent.com/72560319/159546636-9b279668-9f9d-40db-a87a-888dd913b008.png)
 
 **In C#:**
 ```cs
@@ -1119,7 +1119,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU5NzIwMTQwMCwtMjAxNjc5ODA2MCwtMj
+eyJoaXN0b3J5IjpbMTk3MjU3NTc4OCwtMjAxNjc5ODA2MCwtMj
 AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
 MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
 wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
