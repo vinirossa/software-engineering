@@ -1331,25 +1331,25 @@ Defines a new operation to a class without change.
 
 ## Other Patterns
 
--   **Rules Design Patterns**
 -   **Dependency Injection**
 -   **Inversion of Control**
 -   **Inversion of Dependency**
--   **Intercepting Filter**
 -   **Lazy Loading**
--   **Mock Object**
--   **Method Chaining**
--   **Unit of Work**
 -   **Object Pool:** avoid expensive acquisition and release of resources by recycling objects that are no longer in use
 - **Null Object:** designed to act as a default value of an object
 - **Private Class Data:** restricts accessor/mutator access.
+-   **Mock Object**
+-   **Rules Design Patterns**
+-   **Intercepting Filter**
+-   **Method Chaining**
+-   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4MDYyOTAyNiwtMTgzNzQyODgwMCwtMT
-k1NTA4MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5
-NywtNjQ4MTU5NTkxLDQwNTYyNTcwNywtMTIxMTM4MTcxMywxNj
-AxNTMyNzQyLC0yMDE2Nzk4MDYwLC0yMDIyNjg2Mjg2LC00MjA2
-NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcxNTY1LC0xNTUyMjQ5MT
-c3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LDEzMDc3NTIxNjIsLTEx
-MzI1Nzk3NjRdfQ==
+eyJoaXN0b3J5IjpbMTUyODY0Nzk0LC0xODM3NDI4ODAwLC0xOT
+U1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMTg2MjkwODk3
+LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgxNzEzLDE2MD
+E1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2ODYyODYsLTQyMDY2
+OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIyNDkxNz
+csLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMTEz
+MjU3OTc2NF19
 -->
