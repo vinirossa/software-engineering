@@ -1219,6 +1219,7 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 
 **Uses:**
 - Ecommerces
+- 
 
 ### Template Method
 
@@ -1244,11 +1245,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjI5MDg5NywtNjQ4MTU5NTkxLDQwNT
-YyNTcwNywtMTIxMTM4MTcxMywxNjAxNTMyNzQyLC0yMDE2Nzk4
-MDYwLC0yMDIyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2Mi
-wxNTg3ODcxNTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1
-OTg5MTg0LDEzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1Mj
-cxMywtMjg0MjY1NjcsODAxMzQ3MTksMTM4MTIzMjQwMywtMzQ0
-MDI4NjQxXX0=
+eyJoaXN0b3J5IjpbNDc2Nzg4OTQwLDExODYyOTA4OTcsLTY0OD
+E1OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0
+MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLD
+IwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQy
+MDk0NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5Nz
+Y0LC02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEy
+MzI0MDNdfQ==
 -->
