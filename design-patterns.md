@@ -1013,7 +1013,7 @@ Capture and restore an object's internal state.
 
 ### State
 
-Alter an object's behavior when its internal state changes, machines with no memory.
+Alter an object's behavior at runtime when its internal state changes.
 
 > The state is not an enum or property, it is an object. Therefore, it replaces a conditional with polymorphism.
 
@@ -1024,7 +1024,7 @@ Alter an object's behavior when its internal state changes, machines with no mem
 ![state](https://user-images.githubusercontent.com/72560319/159712692-cf90884f-1bee-475d-94d7-e02a630e9bec.png)
 
 **Uses:**
-- No memory machines**
+- No-Memory Machines**
 - Requests
 - UI Components
 
@@ -1119,11 +1119,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTk1OTgzNzYsLTIwMTY3OTgwNjAsLT
-IwMjI2ODYyODYsLTQyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4
-NzE1NjUsLTE1NTIyNDkxNzcsLTI0MjA5NDUsLTE4OTU5ODkxOD
-QsMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC0y
-ODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2ND
-EsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0MTU5LDEx
-MzA5MzM0NTBdfQ==
+eyJoaXN0b3J5IjpbMTExMzUxODUzMCwtMjAxNjc5ODA2MCwtMj
+AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
+MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
+wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
+NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MDMsLTM0NDAyODY0MS
+wtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIxMTc4NzQxNTksMTEz
+MDkzMzQ1MF19
 -->
