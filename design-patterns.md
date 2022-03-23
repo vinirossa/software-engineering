@@ -1090,6 +1090,8 @@ class OpenGateState : IGateState
 
 Defines an one to many dependency between objects, so that when the observable changes state all of its dependecies are notified and updated automatically.
 
+> *The observable is the object that changes and the observers are the objects interested in the observable changes.*
+
 ### Strategy
 
 Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at run time.
@@ -1126,11 +1128,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NDcwMTQ4MCwxNjAxNTMyNzQyLC0yMD
-E2Nzk4MDYwLC0yMDIyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMz
-NzE2MiwxNTg3ODcxNTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC
-0xODk1OTg5MTg0LDEzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4
-MDU1MjcxMywtMjg0MjY1NjcsODAxMzQ3MTksMTM4MTIzMjQwMy
-wtMzQ0MDI4NjQxLC0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjEx
-Nzg3NDE1OV19
+eyJoaXN0b3J5IjpbLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMj
+AxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYz
+MzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NS
+wtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02
+ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MD
+MsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIx
+MTc4NzQxNTldfQ==
 -->
