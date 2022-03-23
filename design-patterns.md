@@ -1024,9 +1024,9 @@ Alter an object's behavior at runtime when its internal state changes.
 ![state](https://user-images.githubusercontent.com/72560319/159712692-cf90884f-1bee-475d-94d7-e02a630e9bec.png)
 
 **Uses:**
-- No-Memory Machines**
-- Requests
+- Network Requests
 - UI Components
+- No-Memory Machines
 
 **In C#:**
 ```cs
@@ -1119,7 +1119,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExMzUxODUzMCwtMjAxNjc5ODA2MCwtMj
+eyJoaXN0b3J5IjpbMTU5NzIwMTQwMCwtMjAxNjc5ODA2MCwtMj
 AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
 MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
 wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
