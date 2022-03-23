@@ -1325,6 +1325,9 @@ class DisplayAsGraphics : IDisplayBehaviour
 
 Defer the exact steps of an algorithm to a subclass, working as a blueprint for methods.
 
+**Uses:**
+- Frameworks
+
 ### Visitor
 
 Defines a new operation to a class without change.
@@ -1345,11 +1348,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUyODY0Nzk0LC0xODM3NDI4ODAwLC0xOT
-U1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMTg2MjkwODk3
-LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgxNzEzLDE2MD
-E1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2ODYyODYsLTQyMDY2
-OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIyNDkxNz
-csLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMTEz
-MjU3OTc2NF19
+eyJoaXN0b3J5IjpbLTIwNTQ0MzI5NiwxNTI4NjQ3OTQsLTE4Mz
+c0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAy
+LDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcsLTEyMT
+EzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4
+NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NS
+wtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3
+NzUyMTYyXX0=
 -->
