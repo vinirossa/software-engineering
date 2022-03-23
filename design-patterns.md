@@ -329,6 +329,10 @@ Match interfaces of different classes, working as a wrapper. With an adapter, ch
 - External Libraries
 - Legacy Codes
 
+**UML:**
+
+![adapter](https://user-images.githubusercontent.com/72560319/159727140-5ee62fd8-c556-47d4-b8e8-b2138c76c243.png)
+
 **In C#:**
 ```cs
 public class Program
