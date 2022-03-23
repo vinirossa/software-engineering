@@ -568,6 +568,10 @@ An object should never know the internal details of other objects.
 
 > By this, ```a().b().c()``` isn't correct, however ```a().b()``` is. 
 
+**UML:**
+
+![facade](https://user-images.githubusercontent.com/72560319/159728186-1c2659b3-5f89-43d5-beec-2c67ca9b71c0.png)
+
 **In TypeScript:**
 ```ts
 > customer-facade.ts
