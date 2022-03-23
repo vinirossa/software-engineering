@@ -1088,7 +1088,7 @@ class OpenGateState : IGateState
 
 ### Observer
 
-A way of notifying state change to a number of classes, Defines an one to many dependency between objects, so that when one object changes state all of its dependecies .
+Defines an one to many dependency between objects, so that when one object changes state all of its dependecies are notified and updated automatically.
 
 
 ### Strategy
@@ -1127,7 +1127,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY4NDk2MzYyMywxNjAxNTMyNzQyLC0yMD
+eyJoaXN0b3J5IjpbMTE5MTIzNjAxMywxNjAxNTMyNzQyLC0yMD
 E2Nzk4MDYwLC0yMDIyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMz
 NzE2MiwxNTg3ODcxNTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC
 0xODk1OTg5MTg0LDEzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4
