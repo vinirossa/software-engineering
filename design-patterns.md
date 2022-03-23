@@ -1017,8 +1017,9 @@ Alter an object's behavior when its internal state changes, machines with no mem
 
 > The state is not an enum or property, it is an object. Therefore, it replaces a conditional with polymorphism.
 
-Uses:
-- No memory machines
+**UML:
+**Uses:**
+- No memory machines**
 - Requests
 - UI Components
 
@@ -1063,11 +1064,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyMDY2OTIxMywyMDE2MzM3MTYyLDE1OD
-c4NzE1NjUsLTE1NTIyNDkxNzcsLTI0MjA5NDUsLTE4OTU5ODkx
-ODQsMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC
-0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2
-NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNywyMTE3ODc0MTU5LD
-ExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgyNjQxNDUsMTA5MjQ5
-OTAxXX0=
+eyJoaXN0b3J5IjpbLTkwNzUyNzk0MSwtNDIwNjY5MjEzLDIwMT
+YzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0
+NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC
+02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0
+MDMsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3LD
+IxMTc4NzQxNTksMTEzMDkzMzQ1MCw1NzYwNDE5MjQsMTE0ODI2
+NDE0NV19
 -->
