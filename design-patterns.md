@@ -1108,10 +1108,9 @@ public class Program
 {
 	public static void Main()
 	{
-		var cityDuck = new Duck(new SimpleQuacking(), new SimpleFlying(), new DisplayAsText());
-		var wildDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsGraphics());
-		var mountainDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsText());
-		var rubberDuck = new Duck(new NoQuacking(), new SimpleFlying(), new DisplayAsGraphics());
+		var station = new WeatherStation();
+		station.Add(new PhoneDisplay(station));
+		station.Add(new WindowDisplay(station));
 	}
 }
 
@@ -1223,6 +1222,101 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 - Finances
 - Law
 
+**In C#:**
+```cs
+public class Program
+{
+    public static void Main()
+    {
+        var cityDuck = new Duck(new SimpleQuacking(), new SimpleFlying(), new DisplayAsText());
+        var wildDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsGraphics());
+        var mountainDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsText());
+        var rubberDuck = new Duck(new NoQuacking(), new SimpleFlying(), new DisplayAsGraphics());
+    }
+}
+
+class Duck
+{
+    public Duck(IQuackBehaviour quackBehaviour, IFlyBehaviour flyBehaviour, IDisplayBehaviour displayBehaviour)
+    {
+        QuackBehaviour = quackBehaviour;
+        FlyBehaviour = flyBehaviour;
+        DisplayBehaviour = displayBehaviour;
+    }
+
+    public IQuackBehaviour QuackBehaviour { get; set; }
+    public IFlyBehaviour FlyBehaviour { get; set; }
+    public IDisplayBehaviour DisplayBehaviour { get; set; }
+
+    public void Quack() => QuackBehaviour.Quack();
+    public void Fly() => FlyBehaviour.Fly();
+    public void Display() => DisplayBehaviour.Display();
+}
+
+interface IQuackBehaviour
+{
+    void Quack();
+}
+
+class SimpleQuacking : IQuackBehaviour
+{
+    public void Quack()
+    {
+        // Logic
+    }
+}
+
+class NoQuacking : IQuackBehaviour
+{
+    public void Quack()
+    {
+        // Logic
+    }
+}
+
+interface IFlyBehaviour
+{
+    void Fly();
+}
+
+class SimpleFlying : IFlyBehaviour
+{
+    public void Fly()
+    {
+        // Logic
+    }
+}
+
+class JetFlying : IFlyBehaviour
+{
+    public void Fly()
+    {
+        // Logic
+    }
+}
+
+interface IDisplayBehaviour
+{
+    void Display();
+}
+
+class DisplayAsText : IDisplayBehaviour
+{
+    public void Display()
+    {
+        // Logic
+    }
+}
+
+class DisplayAsGraphics : IDisplayBehaviour
+{
+    public void Display()
+    {
+        // Logic
+    }
+}
+```
+
 ### Template Method
 
 Defer the exact steps of an algorithm to a subclass.
@@ -1247,11 +1341,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyMDY5NjEwMSw2NDU5MzI5NCw3MDQzMj
-gyMDIsMTE4NjI5MDg5NywtNjQ4MTU5NTkxLDQwNTYyNTcwNywt
-MTIxMTM4MTcxMywxNjAxNTMyNzQyLC0yMDE2Nzk4MDYwLC0yMD
-IyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcx
-NTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LD
-EzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1MjcxMywtMjg0
-MjY1NjddfQ==
+eyJoaXN0b3J5IjpbLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0Mz
+I4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcs
+LTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMj
+AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
+MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
+wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
+NDI2NTY3XX0=
 -->
