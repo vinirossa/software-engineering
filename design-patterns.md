@@ -1017,8 +1017,11 @@ Alter an object's behavior when its internal state changes, machines with no mem
 
 > The state is not an enum or property, it is an object. Therefore, it replaces a conditional with polymorphism.
 
+![state-example](https://user-images.githubusercontent.com/72560319/159712767-c29a028c-22a5-4be6-9a2d-7390e533e2a8.png)
+
 **UML:**
 
+![state](https://user-images.githubusercontent.com/72560319/159712692-cf90884f-1bee-475d-94d7-e02a630e9bec.png)
 
 **Uses:**
 - No memory machines**
