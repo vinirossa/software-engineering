@@ -909,16 +909,16 @@ Encapsulates a command request as an object, supporting undoable operations.
 
 > With this pattern, instead of just perform some action, it's possible to wrap that action in a command and make sure it is undoable.
 
-**UML:**
-
-![command](https://user-images.githubusercontent.com/72560319/159564163-dc0e989b-49e8-4fda-9c7b-b0e0f7e3f1b9.png)
-
 **Uses:**
 - Automation
 - Request Queues
 - Editors
 - Do & Undo Operations
 - Macro Commands
+
+**UML:**
+
+![command](https://user-images.githubusercontent.com/72560319/159564163-dc0e989b-49e8-4fda-9c7b-b0e0f7e3f1b9.png)
 
 **In C#:**
 ```cs
@@ -1017,16 +1017,16 @@ Alter an object's behavior at runtime when its internal state changes.
 
 > The state is not an enum or property, it is an object. Therefore, it replaces a conditional with polymorphism.
 
+**Uses:**
+- Network Requests
+- UI Components
+- No-Memory Machines
+
 ![state-example](https://user-images.githubusercontent.com/72560319/159712767-c29a028c-22a5-4be6-9a2d-7390e533e2a8.png)
 
 **UML:**
 
 ![state](https://user-images.githubusercontent.com/72560319/159712692-cf90884f-1bee-475d-94d7-e02a630e9bec.png)
-
-**Uses:**
-- Network Requests
-- UI Components
-- No-Memory Machines
 
 **In C#:**
 ```cs
@@ -1119,11 +1119,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODE5MDE5MDc0LC0yMDE2Nzk4MDYwLC0yMD
-IyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcx
-NTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LD
-EzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1MjcxMywtMjg0
-MjY1NjcsODAxMzQ3MTksMTM4MTIzMjQwMywtMzQ0MDI4NjQxLC
-0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMw
-OTMzNDUwXX0=
+eyJoaXN0b3J5IjpbMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMj
+AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
+MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
+wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
+NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MDMsLTM0NDAyODY0MS
+wtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIxMTc4NzQxNTksMTEz
+MDkzMzQ1MF19
 -->
