@@ -1323,7 +1323,7 @@ class DisplayAsGraphics : IDisplayBehaviour
 
 ### Template Method
 
-Defer the exact steps of an algorithm to a subclass.
+Defer the exact steps of an algorithm to a subclass, working as a blueprint for methods.
 
 ### Visitor
 
@@ -1345,11 +1345,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNj
-Q1OTMyOTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5
-MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMj
-AxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYz
-MzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NS
-wtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02
-ODA1NTI3MTNdfQ==
+eyJoaXN0b3J5IjpbLTY4MDYyOTAyNiwtMTgzNzQyODgwMCwtMT
+k1NTA4MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5
+NywtNjQ4MTU5NTkxLDQwNTYyNTcwNywtMTIxMTM4MTcxMywxNj
+AxNTMyNzQyLC0yMDE2Nzk4MDYwLC0yMDIyNjg2Mjg2LC00MjA2
+NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcxNTY1LC0xNTUyMjQ5MT
+c3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LDEzMDc3NTIxNjIsLTEx
+MzI1Nzk3NjRdfQ==
 -->
