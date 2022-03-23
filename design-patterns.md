@@ -1092,6 +1092,16 @@ Defines an one to many dependency between objects, so that when the observable c
 
 > *The observable is the object that changes and the observers are the objects interested in the observable changes.*
 
+**Uses:**
+- Chats
+- Sensors
+- Newsletters
+- Notifications
+
+**UML:**
+
+**In C#:**
+```cs
 interface IObservable
 {
     List<IObserver> Observers { get; }
@@ -1185,6 +1195,7 @@ class WindowDisplay : IObserver
 
     public void Display() { } // Refreshes humidity on display
 }
+```
 
 ### Strategy
 
@@ -1222,11 +1233,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTE0MzYyOTAsLTEyMTEzODE3MTMsMT
-YwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIw
-NjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OT
-E3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0x
-MTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0Nz
-E5LDEzODEyMzI0MDMsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwy
-MDYzNDI2OTE3XX0=
+eyJoaXN0b3J5IjpbNDA1NjI1NzA3LC0xMjExMzgxNzEzLDE2MD
+E1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2ODYyODYsLTQyMDY2
+OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIyNDkxNz
+csLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMTEz
+MjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOS
+wxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2
+MzQyNjkxN119
 -->
