@@ -1211,9 +1211,11 @@ class WindowDisplay : IObserver
 
 ### Strategy
 
-Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at run time.
+Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at runtime.
 
 > *The strategy pattern is about using composition instead of inheritance.*
+
+> This pattern is useful to encapsulate
 
 **Applicability:**
 - Many algorithms and need to change them at run time
@@ -1247,11 +1249,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzYzMTUwMzQ5LC02NDgxNTk1OTEsNDA1Nj
-I1NzA3LC0xMjExMzgxNzEzLDE2MDE1MzI3NDIsLTIwMTY3OTgw
-NjAsLTIwMjI2ODYyODYsLTQyMDY2OTIxMywyMDE2MzM3MTYyLD
-E1ODc4NzE1NjUsLTE1NTIyNDkxNzcsLTI0MjA5NDUsLTE4OTU5
-ODkxODQsMTMwNzc1MjE2MiwtMTEzMjU3OTc2NCwtNjgwNTUyNz
-EzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMyNDAzLC0zNDQw
-Mjg2NDFdfQ==
+eyJoaXN0b3J5IjpbLTEwMDY5MzAzMTMsLTY0ODE1OTU5MSw0MD
+U2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5
+ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNj
+IsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5
+NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NT
+I3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MDMsLTM0
+NDAyODY0MV19
 -->
