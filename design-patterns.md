@@ -827,14 +827,14 @@ A tree structure of composite objects and leaf objects.
 
 > *Composite pattern is useful with abstractions that can be hierarchically organized.*
 
-**UML:**
-
-![composite-pattern](https://user-images.githubusercontent.com/72560319/159482200-4908a097-ae9d-4f25-8f8d-a4ffc76b1395.png)
-
 **Uses:**
 - DOM
 - TodoLists
 - Genealogy
+
+**UML:**
+
+![composite-pattern](https://user-images.githubusercontent.com/72560319/159482200-4908a097-ae9d-4f25-8f8d-a4ffc76b1395.png)
 
 **In C#:**
 ```cs
@@ -1119,11 +1119,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk3MjU3NTc4OCwtMjAxNjc5ODA2MCwtMj
-AyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3
-MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NC
-wxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4
-NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MDMsLTM0NDAyODY0MS
-wtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIxMTc4NzQxNTksMTEz
-MDkzMzQ1MF19
+eyJoaXN0b3J5IjpbODE5MDE5MDc0LC0yMDE2Nzk4MDYwLC0yMD
+IyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcx
+NTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LD
+EzMDc3NTIxNjIsLTExMzI1Nzk3NjQsLTY4MDU1MjcxMywtMjg0
+MjY1NjcsODAxMzQ3MTksMTM4MTIzMjQwMywtMzQ0MDI4NjQxLC
+0xNzM1Nzc1NTU5LDIwNjM0MjY5MTcsMjExNzg3NDE1OSwxMTMw
+OTMzNDUwXX0=
 -->
