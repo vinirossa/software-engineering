@@ -1219,7 +1219,8 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 
 **Uses:**
 - Ecommerces
-- 
+- Finances
+- Law
 
 ### Template Method
 
@@ -1245,7 +1246,7 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDc2Nzg4OTQwLDExODYyOTA4OTcsLTY0OD
+eyJoaXN0b3J5IjpbNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0OD
 E1OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0
 MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLD
 IwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQy
