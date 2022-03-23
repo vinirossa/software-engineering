@@ -1100,6 +1100,8 @@ Defines an one to many dependency between objects, so that when the observable c
 
 **UML:**
 
+![observer](https://user-images.githubusercontent.com/72560319/159771101-5af99680-3192-430e-ac3e-ff87cc54c350.png)
+
 **In C#:**
 ```cs
 public class Program
