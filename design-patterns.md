@@ -1092,6 +1092,100 @@ Defines an one to many dependency between objects, so that when the observable c
 
 > *The observable is the object that changes and the observers are the objects interested in the observable changes.*
 
+interface IObservable
+{
+    List<IObserver> Observers { get; }
+
+    void Add(IObserver observer);
+    void Remove(IObserver observer);
+    void Notify();
+}
+
+class WeatherStation : IObservable
+{
+    public WeatherStation()
+    {
+        Observers = new List<IObserver> { };
+    }
+
+    public List<IObserver> Observers { get; private set; }
+
+    private decimal _temperature { get; set; }
+    public decimal Temperature
+    {
+        get => _temperature;
+        set 
+        { 
+            _temperature = value;
+            Notify();
+        }
+    }
+
+    private decimal _humidity { get; set; }
+    public decimal Humidity
+    {
+        get => _humidity;
+        set
+        {
+            _humidity = value;
+            Notify();
+        }
+    }
+
+    public void Add(IObserver observer) => Observers.Add(observer);
+    public void Remove(IObserver observer) => Observers.Remove(observer);
+    public void Notify() => Observers.ForEach(o => o.Update());
+}
+
+interface IObserver
+{
+    void Update();
+}
+
+class PhoneDisplay : IObserver
+{
+    public PhoneDisplay(WeatherStation station)
+    {
+        Station = station;
+    }
+
+    public WeatherStation Station { get; init; }
+    public decimal Temperature { get; private set; } // Only this state matters for this object
+
+    public void Update() 
+    {
+        if (Temperature != Station.Temperature)
+        {
+            Temperature = Station.Temperature;
+            Display();
+        }
+    }
+
+    public void Display() { } // Refreshes temperature on display
+}
+
+class WindowDisplay : IObserver
+{
+    public WindowDisplay(WeatherStation station)
+    {
+        Station = station;
+    }
+
+    public WeatherStation Station { get; init; }
+    public decimal Humidity { get; private set; } // Only this state matters for this object
+
+    public void Update()
+    {
+        if (Humidity != Station.Humidity)
+        {
+            Humidity = Station.Humidity;
+            Display();
+        }
+    }
+
+    public void Display() { } // Refreshes humidity on display
+}
+
 ### Strategy
 
 Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at run time.
@@ -1128,11 +1222,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMj
-AxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYz
-MzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NS
-wtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5NzY0LC02
-ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEyMzI0MD
-MsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwyMDYzNDI2OTE3LDIx
-MTc4NzQxNTldfQ==
+eyJoaXN0b3J5IjpbLTE2MTE0MzYyOTAsLTEyMTEzODE3MTMsMT
+YwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIw
+NjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OT
+E3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0x
+MTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0Nz
+E5LDEzODEyMzI0MDMsLTM0NDAyODY0MSwtMTczNTc3NTU1OSwy
+MDYzNDI2OTE3XX0=
 -->
