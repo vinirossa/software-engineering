@@ -1224,7 +1224,7 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 
 **UML:**
 
-
+![strategy](https://user-images.githubusercontent.com/72560319/159779934-01d3c83e-a469-4b82-812f-d52cb7e443fb.png)
 
 **In C#:**
 ```cs
