@@ -1325,7 +1325,7 @@ class DisplayAsGraphics : IDisplayBehaviour
 
 Defer the exact steps of an algorithm to a subclass, working as a blueprint for methods.
 
-> *Template method pattern works better in cases where strategy doesn't fit and there is fixed logic on the template. Anyway, tit can be very dangerous given that it uses inheritance over composition.*
+> *Template method pattern works better in cases where strategy doesn't fit and there is fixed logic on the template. Anyway, it can be very dangerous given that it uses inheritance over composition.*
 
 **Uses:**
 - Frameworks
@@ -1350,11 +1350,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2ODEyMjgzMSwxNTI4NjQ3OTQsLTE4Mz
-c0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAy
-LDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcsLTEyMT
-EzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4
-NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NS
-wtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3
-NzUyMTYyXX0=
+eyJoaXN0b3J5IjpbLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xOD
+M3NDI4ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIw
+MiwxMTg2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMj
+ExMzgxNzEzLDE2MDE1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2
+ODYyODYsLTQyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1Nj
+UsLTE1NTIyNDkxNzcsLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMw
+Nzc1MjE2Ml19
 -->
