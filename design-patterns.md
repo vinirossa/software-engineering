@@ -1327,7 +1327,7 @@ Defer the exact steps of an algorithm to a subclass, working as a blueprint for 
 
 > *Template method pattern works better in cases where strategy doesn't fit and there is fixed logic on the template. Anyway, it can be very dangerous given that it uses inheritance over composition.*
 
-> This pattern is similitar to inversion of dependency pattern, like a Hollywood principle: "Don't call us, we'll call you. Or not. 
+> *This pattern is similitar to inversion of dependency pattern, like a Hollywood principle: "Don't call us, we'll call you. Or not."* 
 
 **Uses:**
 - Frameworks
@@ -1352,11 +1352,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NDQyNDUyLC0xMTM5ODI0NDE1LDE1Mj
-g2NDc5NCwtMTgzNzQyODgwMCwtMTk1NTA4MjAzNCw2NDU5MzI5
-NCw3MDQzMjgyMDIsMTE4NjI5MDg5NywtNjQ4MTU5NTkxLDQwNT
-YyNTcwNywtMTIxMTM4MTcxMywxNjAxNTMyNzQyLC0yMDE2Nzk4
-MDYwLC0yMDIyNjg2Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2Mi
-wxNTg3ODcxNTY1LC0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1
-OTg5MTg0XX0=
+eyJoaXN0b3J5IjpbLTc5ODkxMTIyMCwtMTEzOTgyNDQxNSwxNT
+I4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMy
+OTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MD
+U2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5
+ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNj
+IsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5
+NTk4OTE4NF19
 -->
