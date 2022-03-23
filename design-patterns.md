@@ -24,8 +24,8 @@
     + [Iterator](#iterator)
     + [Mediator](#mediator)
     + [Memento](#memento)
-    + [Observer](#observer)
     + [State](#state)
+    + [Observer](#observer)
     + [Strategy](#strategy)
     + [Template Method](#template-method)
     + [Visitor](#visitor)
@@ -1073,11 +1073,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMjI2ODYyODYsLTQyMDY2OTIxMywyMD
-E2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIyNDkxNzcsLTI0MjA5
-NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMTEzMjU3OTc2NC
-wtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOSwxMzgxMjMy
-NDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2MzQyNjkxNy
-wyMTE3ODc0MTU5LDExMzA5MzM0NTAsNTc2MDQxOTI0LDExNDgy
-NjQxNDVdfQ==
+eyJoaXN0b3J5IjpbLTIwMTY3OTgwNjAsLTIwMjI2ODYyODYsLT
+QyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIy
+NDkxNzcsLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2Mi
+wtMTEzMjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEz
+NDcxOSwxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NT
+ksMjA2MzQyNjkxNywyMTE3ODc0MTU5LDExMzA5MzM0NTAsNTc2
+MDQxOTI0XX0=
 -->
