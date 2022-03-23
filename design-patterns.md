@@ -1325,6 +1325,8 @@ class DisplayAsGraphics : IDisplayBehaviour
 
 Defer the exact steps of an algorithm to a subclass, working as a blueprint for methods.
 
+> Template method pattern works better in cases where strategy doesn't fit and there is fixed logic on the template. Anyways, templ
+
 **Uses:**
 - Frameworks
 
@@ -1348,11 +1350,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQ0MzI5NiwxNTI4NjQ3OTQsLTE4Mz
-c0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAy
-LDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcsLTEyMT
-EzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4
-NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NS
-wtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3
-NzUyMTYyXX0=
+eyJoaXN0b3J5IjpbMTM0NTA2ODgxLDE1Mjg2NDc5NCwtMTgzNz
+QyODgwMCwtMTk1NTA4MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIs
+MTE4NjI5MDg5NywtNjQ4MTU5NTkxLDQwNTYyNTcwNywtMTIxMT
+M4MTcxMywxNjAxNTMyNzQyLC0yMDE2Nzk4MDYwLC0yMDIyNjg2
+Mjg2LC00MjA2NjkyMTMsMjAxNjMzNzE2MiwxNTg3ODcxNTY1LC
+0xNTUyMjQ5MTc3LC0yNDIwOTQ1LC0xODk1OTg5MTg0LDEzMDc3
+NTIxNjJdfQ==
 -->
