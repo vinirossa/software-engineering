@@ -1102,6 +1102,16 @@ Defines an one to many dependency between objects, so that when the observable c
 
 **In C#:**
 ```cs
+public class Program
+{
+	public static void Main()
+	{
+		var station = new WeatherStation();
+station.Add(new PhoneDisplay(station));
+station.Add(new WindowDisplay(station));
+	}
+}
+
 interface IObservable
 {
     List<IObserver> Observers { get; }
@@ -1233,11 +1243,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDA1NjI1NzA3LC0xMjExMzgxNzEzLDE2MD
-E1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2ODYyODYsLTQyMDY2
-OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1NTIyNDkxNz
-csLTI0MjA5NDUsLTE4OTU5ODkxODQsMTMwNzc1MjE2MiwtMTEz
-MjU3OTc2NCwtNjgwNTUyNzEzLC0yODQyNjU2Nyw4MDEzNDcxOS
-wxMzgxMjMyNDAzLC0zNDQwMjg2NDEsLTE3MzU3NzU1NTksMjA2
-MzQyNjkxN119
+eyJoaXN0b3J5IjpbMTk1MTc0OTAxNyw0MDU2MjU3MDcsLTEyMT
+EzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4
+NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NS
+wtMTU1MjI0OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3
+NzUyMTYyLC0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4NDI2NT
+Y3LDgwMTM0NzE5LDEzODEyMzI0MDMsLTM0NDAyODY0MSwtMTcz
+NTc3NTU1OV19
 -->
