@@ -1215,7 +1215,7 @@ Encapsulates an algorithm inside a class and allows that a class behavior or its
 
 > *The strategy pattern is about using composition and dependency injection instead of inheritance.*
 
-> *This pattern is useful to encapsulate business rules.*
+> *This pattern is useful to encapsulate business rules, once it can remove the need of subclasses and transform abstract classes into normal classes.*
 
 **Uses:**
 - Ecommerces
@@ -1246,11 +1246,11 @@ Defines a new operation to a class without change.
 - **Private Class Data:** restricts accessor/mutator access.
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0OD
-E1OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0
-MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLD
-IwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0OTE3NywtMjQy
-MDk0NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC0xMTMyNTc5Nz
-Y0LC02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0NzE5LDEzODEy
-MzI0MDNdfQ==
+eyJoaXN0b3J5IjpbNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYyOT
+A4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMs
+MTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtND
+IwNjY5MjEzLDIwMTYzMzcxNjIsMTU4Nzg3MTU2NSwtMTU1MjI0
+OTE3NywtMjQyMDk0NSwtMTg5NTk4OTE4NCwxMzA3NzUyMTYyLC
+0xMTMyNTc5NzY0LC02ODA1NTI3MTMsLTI4NDI2NTY3LDgwMTM0
+NzE5XX0=
 -->
