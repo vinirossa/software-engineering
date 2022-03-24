@@ -929,7 +929,110 @@ A way of passing a request between a chain of objects called handlers that pass 
 
 
 **In C#:**
+```cs
+// Client
+class Attendance
+{
+    public void Treat(Call call)
+    {
+        var handler = new SalesHandler();
+        handler
+            .SetNextHandler(new RefoundHandler())
+            .SetNextHandler(new MarketingHandler())
+            .SetNextHandler(new OtherHandler());
 
+        handler.Handle(call);
+    }
+}
+
+
+// Request
+class Call
+{
+    public Call(uint option)
+    {
+        Option = option;
+    }
+
+    public uint Option { get; set; }
+    public bool Solved { get; set; }
+}
+
+// Handlers
+abstract class BaseHandler
+{
+    protected BaseHandler? _nextHandler { get; set; }
+
+    public BaseHandler SetNextHandler(BaseHandler nextHandler)
+    {
+        _nextHandler = nextHandler;
+        return _nextHandler;
+    }
+
+    public virtual Call Handle(Call call)
+    {
+        if (_nextHandler == null)
+            return call;
+
+        return _nextHandler.Handle(call);
+    }
+}
+
+class SalesHandler : BaseHandler
+{
+    public override Call Handle(Call call)
+    {
+        if (call.Option == 1)
+        {
+            Console.WriteLine("Forwarding your call to Sales...");
+            call.Solved = true;
+            return call;
+        }
+
+        return base.Handle(call);
+    }
+}
+
+class RefoundHandler : BaseHandler
+{
+    public override Call Handle(Call call)
+    {
+        if (call.Option == 2)
+        {
+            Console.WriteLine("Forwarding your call to Refound...");
+            call.Solved = true;
+            return call;
+        }
+
+        return base.Handle(call);
+    }
+}
+
+class MarketingHandler : BaseHandler
+{
+    public override Call Handle(Call call)
+    {
+        if (call.Option == 3)
+        {
+            Console.WriteLine("Forwarding your call to Marketing...");
+            call.Solved = true;
+            return call;
+        }
+
+        return base.Handle(call);
+    }
+}
+
+class OtherHandler : BaseHandler
+{
+    public override Call Handle(Call call)
+    {
+        Console.WriteLine("Forwarding your call to another sector...");
+        call.Solved = true;
+        return call;
+    }
+}
+```
 
 ### Command
 
@@ -1628,11 +1731,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3Mjk3NjI5MTEsMTkwOTAwMTk1MCwtNj
-I2ODE4MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0
-LDM0NTI3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NT
-QxMTM0LC00MzM1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4
-MCw1MDEyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xND
-kxNjQ3ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgw
-ODUwXX0=
+eyJoaXN0b3J5IjpbNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNj
+gxODM2LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwz
+NDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MT
+EzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAs
+NTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MT
+Y0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1
+MF19
 -->
