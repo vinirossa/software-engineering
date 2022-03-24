@@ -1198,30 +1198,19 @@ Defines an always null iterator.
 
 **In C#:**
 ```cs
-class NullIterator: IIterator
+class NullIterator : IIterator
 {
     public NullIterator(IIterable iterable)
     {
         _iterable = iterable;
     }
 
-    private HandHeldInventory _inventory { get; set; } // Iterable
+    private IIterable _iterable { get; set; }
     private uint _index = 0;
 
-    public bool IsDone() => _index < 2;
-    public void Next() => _index++;
-    public IItem? Current()
-    {
-        switch (_index)
-        {
-            case 0:
-                return _inventory.LeftItem;
-            case 1:
-                return _inventory.RightItem;
-            default:
-                return null;
-        }
-    }
+    public bool IsDone() => true;
+    public void Next() { }
+    public IItem? Current() => null;
 }
 ```
 
@@ -1621,11 +1610,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMDU1Mjc5MzIsLTg0NDU0MTEzNCwtND
-MzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMjYw
-NTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0Ny
-wtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNzk4
-OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQyOD
-gwMCwtMTk1NTA4MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4
-NjI5MDg5N119
+eyJoaXN0b3J5IjpbMTg2MDI1NTQ2MSwtODQ0NTQxMTM0LC00Mz
+M1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1
+NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC
+0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5
+MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4OD
+AwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMTg2
+MjkwODk3XX0=
 -->
