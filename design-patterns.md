@@ -1015,10 +1015,113 @@ Sequentially access the elements of a collection, without exposing its underlyin
 
 **Uses:**
 - Custom Collections
+- Games
 
 **UML:**
 
 **In C#:**
+```cs
+public class Program
+{
+    public static void Main()
+    {
+        var handHeldInventory = new HandHeldInventory(new FoodItem(1, "Apple", 20.00), new WeaponIem(2, "Sword", 60.00));
+        var it = handHeldInventory.GetIterator();
+
+        while (!it.IsDone())
+        {
+            Console.WriteLine(it.Current());
+            it.Next();
+        }
+    }
+}
+
+interface IItem
+{
+    uint Id { get; set; }
+    string Name { get; set; }
+}
+
+class FoodItem : IItem
+{
+    public FoodItem(uint id, string name, double regeneration)
+    {
+        Id = id;
+        Name = name;
+        Regeneration = regeneration;
+    }
+
+    public uint Id { get; set; }
+    public string Name { get; set; }
+    public double Regeneration { get; set; }
+}
+
+class WeaponIem : IItem
+{
+    public WeaponIem(uint id, string name, double damage)
+    {
+        Id = id;
+        Name = name;
+        Damage = damage;
+    }
+
+    public uint Id { get; set; }
+    public string Name { get; set; }
+    public double Damage { get; set; }
+}
+
+interface IInventory
+{
+    IInventoryIterator GetIterator();
+}
+
+class HandHeldInventory : IInventory
+{
+    public HandHeldInventory(IItem leftItem, IItem rightItem)
+    {
+        LeftItem = leftItem;
+        RightItem = rightItem;
+    }
+
+    public IItem LeftItem { get; set; }
+    public IItem RightItem { get; set; }
+
+    public IInventoryIterator GetIterator() => new HandHeldInventoryIterator(this); // Factory Method
+}
+
+interface IInventoryIterator
+{
+    bool IsDone();
+    void Next();
+    IItem? Current();
+}
+
+class HandHeldInventoryIterator : IInventoryIterator
+{
+    public HandHeldInventoryIterator(HandHeldInventory inventory)
+    {
+        _inventory = inventory;
+    }
+
+    private HandHeldInventory _inventory { get; set; } // Iterable
+    private uint _index = 0;
+
+    public bool IsDone() => _index < 2;
+    public void Next() => _index++;
+    public IItem? Current()
+    {
+        switch (_index)
+        {
+            case 0:
+                return _inventory.LeftItem;
+            case 1:
+                return _inventory.RightItem;
+            default:
+                return null;
+        }
+    }
+}
+```
 
 ### Mediator
 
@@ -1413,11 +1516,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4ND
-g0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIy
-NTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0NDE1LD
-E1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1NTA4MjAzNCw2NDU5
-MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5NywtNjQ4MTU5NTkxLD
-QwNTYyNTcwNywtMTIxMTM4MTcxMywxNjAxNTMyNzQyLC0yMDE2
-Nzk4MDYwXX0=
+eyJoaXN0b3J5IjpbMTcxMjc5MjU3NCw1MDEyNjA1NDksOTI5Mj
+A5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMjYxMzgx
+MjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5MTEyMjAsLT
+ExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4ODAwLC0xOTU1
+MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMTg2MjkwODk3LC
+02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgxNzEzLDE2MDE1
+MzI3NDJdfQ==
 -->
