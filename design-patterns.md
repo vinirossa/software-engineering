@@ -1636,7 +1636,8 @@ class WindowDisplay : IObserver
 
 Capture and restore an object's internal state.
 
-> Because memento pattern stor
+> Because memento pattern stores the objects' states in memory, it can consume a large amount of RAM. However, this problem can be solved with , for example.
+
 ### Template Method
 
 Defer the exact steps of an algorithm to a subclass, working as a blueprint for methods.
@@ -1727,7 +1728,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjA0MDA1NDEsLTM0OTI1NzU2OSwtMj
+eyJoaXN0b3J5IjpbLTIwMDUxMTQxNDUsLTM0OTI1NzU2OSwtMj
 AxNTUxODE3Niw0OTk0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4
 MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NT
 I3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0
