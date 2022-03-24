@@ -911,6 +911,10 @@ A fine-grained instance used for efficient sharing and memory saving, as if an f
 
 A way of passing a request between a chain of objects, similar to middlewares.
 
+> This pattern is useful when:
+> - More than one object may process a request
+> - It's needed to execute seve
+
 **Applicability:**
 - Task delegation
 
@@ -1615,11 +1619,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ1Mjc4NzU3LC0zNjYwMTg5MDYsNDYxMj
-EwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OTM4MTgy
-LC0xNzU5ODAzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzYsLTE0OD
-Q4NDMwOTUsLTE0OTE2NDc4NDcsLTIyNjEzODEyNywxNTEwOTYy
-MjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNS
-wxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1
-OTMyOTRdfQ==
+eyJoaXN0b3J5IjpbLTE5MTI1NDcwNDUsMzQ1Mjc4NzU3LC0zNj
+YwMTg5MDYsNDYxMjEwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYw
+MiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0OSw5Mj
+kyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4NDcsLTIyNjEz
+ODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMC
+wtMTEzOTgyNDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5
+NTUwODIwMzRdfQ==
 -->
