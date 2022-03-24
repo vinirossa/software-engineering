@@ -1641,6 +1641,8 @@ Capture and restore an object's internal state.
 > *Because Memento Pattern stores the objects' states in memory, it can consume a large amount of RAM. However, this problem can be solved with [Flyweight Pattern](#flyweight), for example.*
 
 **Uses:**
+- Editors
+- Do & Undo Operations
 
 **UML:**
 
@@ -1738,11 +1740,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MDg1MzMwNSwzNjkwNzA4ODgsLTM1Nj
-g4Mjk5LC0zNDkyNTc1NjksLTIwMTU1MTgxNzYsNDk5NDQzOTg2
-LDE5MDkwMDE5NTAsLTYyNjgxODM2LDEwMzA0MDEwNzIsNDAzOD
-c5NTQxLDQxMjk5Nzg0NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0
-NjEyMTA5MTEsLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zNDU5Mz
-gxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3Nl19
-
+eyJoaXN0b3J5IjpbLTE1MTA2NzA4MjIsMzY5MDcwODg4LC0zNT
+Y4ODI5OSwtMzQ5MjU3NTY5LC0yMDE1NTE4MTc2LDQ5OTQ0Mzk4
+NiwxOTA5MDAxOTUwLC02MjY4MTgzNiwxMDMwNDAxMDcyLDQwMz
+g3OTU0MSw0MTI5OTc4NDQsMzQ1Mjc4NzU3LC0zNjYwMTg5MDYs
+NDYxMjEwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OT
+M4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzZd
+fQ==
 -->
