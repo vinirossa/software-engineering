@@ -913,7 +913,8 @@ A way of passing a request between a chain of objects, similar to middlewares.
 
 > This pattern is useful when:
 > - More than one object may process a request
-> - It's needed to execute seve
+> - It's needed to execute several handlers in a particular order
+> - Handlers can be specified dynamically
 
 **Applicability:**
 - Task delegation
@@ -1619,11 +1620,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MTI1NDcwNDUsMzQ1Mjc4NzU3LC0zNj
-YwMTg5MDYsNDYxMjEwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYw
-MiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0OSw5Mj
-kyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4NDcsLTIyNjEz
-ODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMC
-wtMTEzOTgyNDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5
-NTUwODIwMzRdfQ==
+eyJoaXN0b3J5IjpbNDEyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MD
+E4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NTk2MDIs
+LTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1NDksOTI5Mj
+A5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMjYxMzgx
+MjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5MTEyMjAsLT
+ExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4ODAwLC0xOTU1
+MDgyMDM0XX0=
 -->
