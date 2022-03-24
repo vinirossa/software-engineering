@@ -1026,12 +1026,12 @@ public class Program
     public static void Main()
     {
         var handHeldInventory = new HandHeldInventory(new FoodItem(1, "Apple", 20.00), new WeaponIem(2, "Sword", 60.00));
-        var it = handHeldInventory.GetIterator();
+        var itor = handHeldInventory.GetIterator();
 
-        while (!it.IsDone())
+        while (!itor.IsDone())
         {
-            Console.WriteLine(it.Current());
-            it.Next();
+            Console.WriteLine(itor.Current());
+            itor.Next();
         }
     }
 }
@@ -1516,11 +1516,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMjc5MjU3NCw1MDEyNjA1NDksOTI5Mj
-A5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMjYxMzgx
-MjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5MTEyMjAsLT
-ExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4ODAwLC0xOTU1
-MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMTg2MjkwODk3LC
-02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgxNzEzLDE2MDE1
-MzI3NDJdfQ==
+eyJoaXN0b3J5IjpbLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOT
+IwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4
+MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC
+0xMTM5ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1
+NTA4MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5Ny
+wtNjQ4MTU5NTkxLDQwNTYyNTcwNywtMTIxMTM4MTcxMywxNjAx
+NTMyNzQyXX0=
 -->
