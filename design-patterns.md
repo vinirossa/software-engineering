@@ -34,12 +34,6 @@
     + [Null Object](#null-object)
     + [Honorable Mentions](#honorable-mentions)
 
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
-
 ## Creational Design Patterns
 
 ###  Factory Method
@@ -1732,7 +1726,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk5MzA4MzAyMywtMjAxNTUxODE3Niw0OT
+eyJoaXN0b3J5IjpbLTM0OTI1NzU2OSwtMjAxNTUxODE3Niw0OT
 k0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4MzYsMTAzMDQwMTA3
 Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MD
 E4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NTk2MDIs
