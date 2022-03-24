@@ -558,7 +558,7 @@ class BookAdapter : IMediaResource
 
 A single class (`wrapper`) that represents an entire subsystem in higher level. A facade helps to simply and unify a program.
 
-> High-level level abstraction over low-level components, where the **interface is changed** and the **implementation is not**.
+> *High-level level abstraction over low-level components, where the **interface is changed** and the **implementation is not**.*
 
 **Uses:**
 - Operational Systems
@@ -1145,7 +1145,7 @@ class OtherHandler : BaseHandler
 
 Encapsulates a command request as an object, supporting undoable operations.
 
-> With this pattern, instead of just perform some action, it's possible to wrap that action in a command and make sure it is undoable.
+> *With this pattern, instead of just perform some action, it's possible to wrap that action in a command and make sure it is undoable.*
 
 **Uses:**
 - Automation
@@ -1244,7 +1244,7 @@ A way to include language elements in a program.
 
 Sequentially access the elements of a collection, without exposing its underlying representation, that is, not exposing all the items right away.
 
-> Some benefits of iterator pattern is that is possible to create infinite collections and to pause the iteration to continue it later in a much easier way than `foreach`s with an index.
+> *Some benefits of iterator pattern is that is possible to create infinite collections and to pause the iteration to continue it later in a much easier way than `foreach`s with an index.*
 
 **Uses:**
 - Custom Collections
@@ -1728,7 +1728,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg4MTExMTMzLC0zNDkyNTc1NjksLTIwMT
+eyJoaXN0b3J5IjpbLTM1Njg4Mjk5LC0zNDkyNTc1NjksLTIwMT
 U1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2
 LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
 g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
