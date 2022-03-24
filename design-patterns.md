@@ -904,6 +904,118 @@ A fine-grained instance used for efficient sharing and memory saving, as if an f
 
 ## Behavioral Patterns
 
+### Strategy
+
+Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at runtime.
+
+> *The strategy pattern is about using composition and dependency injection instead of inheritance.*
+
+> *This pattern is useful to encapsulate business rules, once it can remove the need of subclasses and transform abstract classes into normal classes.*
+
+**Uses:**
+- Ecommerces
+- Finances
+- Law
+
+**UML:**
+
+![strategy](https://user-images.githubusercontent.com/72560319/159779934-01d3c83e-a469-4b82-812f-d52cb7e443fb.png)
+
+**In C#:**
+```cs
+public class Program
+{
+    public static void Main()
+    {
+        var cityDuck = new Duck(new SimpleQuacking(), new SimpleFlying(), new DisplayAsText());
+        var wildDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsGraphics());
+        var mountainDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsText());
+        var rubberDuck = new Duck(new NoQuacking(), new SimpleFlying(), new DisplayAsGraphics());
+    }
+}
+
+class Duck
+{
+    public Duck(IQuackBehaviour quackBehaviour, IFlyBehaviour flyBehaviour, IDisplayBehaviour displayBehaviour)
+    {
+        QuackBehaviour = quackBehaviour;
+        FlyBehaviour = flyBehaviour;
+        DisplayBehaviour = displayBehaviour;
+    }
+
+    public IQuackBehaviour QuackBehaviour { get; set; }
+    public IFlyBehaviour FlyBehaviour { get; set; }
+    public IDisplayBehaviour DisplayBehaviour { get; set; }
+
+    public void Quack() => QuackBehaviour.Quack();
+    public void Fly() => FlyBehaviour.Fly();
+    public void Display() => DisplayBehaviour.Display();
+}
+
+interface IQuackBehaviour
+{
+    void Quack();
+}
+
+class SimpleQuacking : IQuackBehaviour
+{
+    public void Quack()
+    {
+        // Logic
+    }
+}
+
+class NoQuacking : IQuackBehaviour
+{
+    public void Quack()
+    {
+        // Logic
+    }
+}
+
+interface IFlyBehaviour
+{
+    void Fly();
+}
+
+class SimpleFlying : IFlyBehaviour
+{
+    public void Fly()
+    {
+        // Logic
+    }
+}
+
+class JetFlying : IFlyBehaviour
+{
+    public void Fly()
+    {
+        // Logic
+    }
+}
+
+interface IDisplayBehaviour
+{
+    void Display();
+}
+
+class DisplayAsText : IDisplayBehaviour
+{
+    public void Display()
+    {
+        // Logic
+    }
+}
+
+class DisplayAsGraphics : IDisplayBehaviour
+{
+    public void Display()
+    {
+        // Logic
+    }
+}
+```
+
 ### Chain of Responsibility
 
 A way of passing a request between a chain of objects called handlers that pass the request forward until it is solved, similar to middlewares.
@@ -1330,10 +1442,6 @@ class NullIterator : IIterator
 }
 ```
 
-### Memento
-
-Capture and restore an object's internal state.
-
 ### State
 
 Alter an object's behavior at runtime when its internal state changes.
@@ -1524,117 +1632,9 @@ class WindowDisplay : IObserver
 }
 ```
 
-### Strategy
+### Memento
 
-Encapsulates an algorithm inside a class and allows that a class behavior or its algorithm can be changed at runtime.
-
-> *The strategy pattern is about using composition and dependency injection instead of inheritance.*
-
-> *This pattern is useful to encapsulate business rules, once it can remove the need of subclasses and transform abstract classes into normal classes.*
-
-**Uses:**
-- Ecommerces
-- Finances
-- Law
-
-**UML:**
-
-![strategy](https://user-images.githubusercontent.com/72560319/159779934-01d3c83e-a469-4b82-812f-d52cb7e443fb.png)
-
-**In C#:**
-```cs
-public class Program
-{
-    public static void Main()
-    {
-        var cityDuck = new Duck(new SimpleQuacking(), new SimpleFlying(), new DisplayAsText());
-        var wildDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsGraphics());
-        var mountainDuck = new Duck(new SimpleQuacking(), new JetFlying(), new DisplayAsText());
-        var rubberDuck = new Duck(new NoQuacking(), new SimpleFlying(), new DisplayAsGraphics());
-    }
-}
-
-class Duck
-{
-    public Duck(IQuackBehaviour quackBehaviour, IFlyBehaviour flyBehaviour, IDisplayBehaviour displayBehaviour)
-    {
-        QuackBehaviour = quackBehaviour;
-        FlyBehaviour = flyBehaviour;
-        DisplayBehaviour = displayBehaviour;
-    }
-
-    public IQuackBehaviour QuackBehaviour { get; set; }
-    public IFlyBehaviour FlyBehaviour { get; set; }
-    public IDisplayBehaviour DisplayBehaviour { get; set; }
-
-    public void Quack() => QuackBehaviour.Quack();
-    public void Fly() => FlyBehaviour.Fly();
-    public void Display() => DisplayBehaviour.Display();
-}
-
-interface IQuackBehaviour
-{
-    void Quack();
-}
-
-class SimpleQuacking : IQuackBehaviour
-{
-    public void Quack()
-    {
-        // Logic
-    }
-}
-
-class NoQuacking : IQuackBehaviour
-{
-    public void Quack()
-    {
-        // Logic
-    }
-}
-
-interface IFlyBehaviour
-{
-    void Fly();
-}
-
-class SimpleFlying : IFlyBehaviour
-{
-    public void Fly()
-    {
-        // Logic
-    }
-}
-
-class JetFlying : IFlyBehaviour
-{
-    public void Fly()
-    {
-        // Logic
-    }
-}
-
-interface IDisplayBehaviour
-{
-    void Display();
-}
-
-class DisplayAsText : IDisplayBehaviour
-{
-    public void Display()
-    {
-        // Logic
-    }
-}
-
-class DisplayAsGraphics : IDisplayBehaviour
-{
-    public void Display()
-    {
-        // Logic
-    }
-}
-```
+Capture and restore an object's internal state.
 
 ### Template Method
 
@@ -1726,7 +1726,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjU3ODYyMTk5LC0zNDkyNTc1NjksLTIwMT
+eyJoaXN0b3J5IjpbMTgwODcyODE1LC0zNDkyNTc1NjksLTIwMT
 U1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2
 LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
 g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
