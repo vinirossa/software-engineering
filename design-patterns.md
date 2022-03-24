@@ -918,15 +918,16 @@ A way of passing a request between a chain of objects called handlers that pass 
 
 > Chain of responsability pattern is useful to apply Single Responsability principle,  structure your code with an business rule, make easy to add features and alter these responsabilities without affecting the others.
 
-**Applicability:**
-- Task delegation
-
 **Uses:**
 - HTTP Requisitions
 - Finances
 - Validators
 
-In c
+**UML:**
+
+
+**In C#:**
+
 ### Command
 
 Encapsulates a command request as an object, supporting undoable operations.
@@ -1625,7 +1626,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjEyODUxODk1OCwtNjI2ODE4MzYsMTAzMD
+eyJoaXN0b3J5IjpbMTkwOTAwMTk1MCwtNjI2ODE4MzYsMTAzMD
 QwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1Nywt
 MzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NT
 k2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1NDks
