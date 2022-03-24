@@ -1009,7 +1009,7 @@ A way to include language elements in a program.
 
 ### Iterator
 
-Sequentially access the elements of a collection, without exposing its underlying, that is, not exposing all items right away.
+Sequentially access the elements of a collection, without exposing its underlying representation, that is, not exposing all the items right away.
 
 > Some benefits of iterator pattern is that is possible to create infinite collections and to pause the iteration to continue it later in a much easier way than `foreach`s with an index.
 
@@ -1413,7 +1413,7 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1NDc2NDE0LC0xNDg0ODQzMDk1LC0xND
+eyJoaXN0b3J5IjpbOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xND
 kxNjQ3ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgw
 ODUwLC03OTg5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC
 0xODM3NDI4ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMy
