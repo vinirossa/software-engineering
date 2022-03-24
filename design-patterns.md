@@ -1645,6 +1645,7 @@ Capture and restore an object's internal state.
 **Uses:**
 - Editors
 - Do & Undo Operations
+- Crash Recovery
 
 **UML:**
 
@@ -1744,11 +1745,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyNTg3OTE2OCwtMTUxMDY3MDgyMiwzNj
-kwNzA4ODgsLTM1Njg4Mjk5LC0zNDkyNTc1NjksLTIwMTU1MTgx
-NzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2LDEwMz
-A0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNzg3NTcs
-LTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwtNDMzNT
-U5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5
-XX0=
+eyJoaXN0b3J5IjpbLTIwOTAzNzcwMTEsLTcyNTg3OTE2OCwtMT
+UxMDY3MDgyMiwzNjkwNzA4ODgsLTM1Njg4Mjk5LC0zNDkyNTc1
+NjksLTIwMTU1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLT
+YyNjgxODM2LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0
+NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0ND
+U0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4
+ODBdfQ==
 -->
