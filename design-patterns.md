@@ -1560,13 +1560,16 @@ class PostRecord : Record
 Defines a new operation to a class without change.
 
 ## Other Patterns
+### Null Object
 
+Designed to act as a default value of an object.
+
+### ...
 -   **Dependency Injection**
 -   **Inversion of Control**
 -   **Inversion of Dependency**
 -   **Lazy Loading**
 -   **Object Pool:** avoid expensive acquisition and release of resources by recycling objects that are no longer in use
-- **Null Object:** designed to act as a default value of an object
 - **Private Class Data:** restricts accessor/mutator access.
 -   **Mock Object**
 -   **Rules Design Patterns**
@@ -1575,11 +1578,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MD
-EyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3
-ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC
-03OTg5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3
-NDI4ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMi
-wxMTg2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjEx
-MzgxNzEzXX0=
+eyJoaXN0b3J5IjpbLTQzMzU1OTYwMiwtMzQ1OTM4MTgyLC0xNz
+U5ODAzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzYsLTE0ODQ4NDMw
+OTUsLTE0OTE2NDc4NDcsLTIyNjEzODEyNywxNTEwOTYyMjUyLC
+03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNSwxNTI4
+NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOT
+QsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2
+MjU3MDddfQ==
 -->
