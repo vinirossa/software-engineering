@@ -1646,6 +1646,8 @@ Capture and restore an object's internal state.
 
 **UML:**
 
+![memento](https://user-images.githubusercontent.com/72560319/159993929-ce206993-de13-4f51-bb59-6fcd6a15982e.png)
+
 **In C#:**
 ```cs
 ```
