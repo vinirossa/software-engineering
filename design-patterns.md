@@ -924,7 +924,7 @@ A way of passing a request between a chain of objects called handlers that pass 
 
 **UML:**
 
-![template-method](https://user-images.githubusercontent.com/72560319/159989992-f6133065-712b-4d65-9bb0-0114530f1c67.png)
+![chain-of-responsability](https://user-images.githubusercontent.com/72560319/159990391-5a84726d-1cde-4838-a199-1db692df49ed.png)
 
 **In C#:**
 ```cs
