@@ -1013,12 +1013,12 @@ Sequentially access the elements of a collection, without exposing its underlyin
 
 > Some benefits of iterator pattern is that is possible to create infinite collections and to pause the iteration to continue it later in a much easier way than `foreach`s with an index.
 
-**- Uses:**
+**Uses:**
 - Custom Collections
 
-**- UML:**
+**UML:**
 
-**- In C#:**
+**In C#:**
 
 ### Mediator
 
@@ -1413,11 +1413,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xND
-kxNjQ3ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgw
-ODUwLC03OTg5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC
-0xODM3NDI4ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMy
-ODIwMiwxMTg2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC
-0xMjExMzgxNzEzLDE2MDE1MzI3NDIsLTIwMTY3OTgwNjAsLTIw
-MjI2ODYyODZdfQ==
+eyJoaXN0b3J5IjpbNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4ND
+g0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIy
+NTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0NDE1LD
+E1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1NTA4MjAzNCw2NDU5
+MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5NywtNjQ4MTU5NTkxLD
+QwNTYyNTcwNywtMTIxMTM4MTcxMywxNjAxNTMyNzQyLC0yMDE2
+Nzk4MDYwXX0=
 -->
