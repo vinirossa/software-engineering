@@ -1329,7 +1329,7 @@ Defer the exact steps of an algorithm to a subclass, working as a blueprint for 
 
 > *A template method class is composed by a defined method (template method) and the empty methods (hooks) that are called inside the template method.*
 
-> *This pattern is similitar to inversion of dependency pattern, like a Hollywood principle: "Don't call us, we'll call you. Or not."* 
+> *This pattern is similitar to inversion of dependency pattern, like the Hollywood principle: "Don't call us, we'll call you. Or not."* 
 
 **Uses:**
 - Frameworks
@@ -1404,7 +1404,7 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxNzE0MjIwOSwxNTEwOTYyMjUyLC03OD
+eyJoaXN0b3J5IjpbLTIyNjEzODEyNywxNTEwOTYyMjUyLC03OD
 MxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3
 OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNz
 A0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3
