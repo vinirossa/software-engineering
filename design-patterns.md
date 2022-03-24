@@ -1600,11 +1600,6 @@ Designed to act as a default value of an object, working as a null state.
 
 > *This pattern make it possible to handle nullness in the same way that somethingness is handled.*
 
-**In C#:**
-```cs
-
-```
-
 ### Honorable Mentions
 
 -   **Dependency Injection**
@@ -1620,11 +1615,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0ND
-U0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4
-ODAsNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMT
-Q5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4
-MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2NDc5NC
-wtMTgzNzQyODgwMCwtMTk1NTA4MjAzNCw2NDU5MzI5NCw3MDQz
-MjgyMDJdfQ==
+eyJoaXN0b3J5IjpbMzQ1Mjc4NzU3LC0zNjYwMTg5MDYsNDYxMj
+EwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OTM4MTgy
+LC0xNzU5ODAzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzYsLTE0OD
+Q4NDMwOTUsLTE0OTE2NDc4NDcsLTIyNjEzODEyNywxNTEwOTYy
+MjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNS
+wxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1
+OTMyOTRdfQ==
 -->
