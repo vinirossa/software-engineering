@@ -1011,6 +1011,8 @@ A way to include language elements in a program.
 
 Sequentially access the elements of a collection, not exposing all items right away.
 
+> One benefit of iterator pattern is that is possible to create infinite collections.
+
 **- Uses:**
 - Custom Collections
 
@@ -1411,7 +1413,7 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDQ0NjU2MzksLTIyNjEzODEyNywxNT
+eyJoaXN0b3J5IjpbLTE0OTE2NDc4NDcsLTIyNjEzODEyNywxNT
 EwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgy
 NDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMz
 QsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1
