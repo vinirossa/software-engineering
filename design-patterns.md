@@ -1636,6 +1636,7 @@ class WindowDisplay : IObserver
 
 Capture and restore an object's internal state.
 
+> Because memento pattern stor
 ### Template Method
 
 Defer the exact steps of an algorithm to a subclass, working as a blueprint for methods.
@@ -1726,11 +1727,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1MTYwNjg3NCwtMzQ5MjU3NTY5LC0yMD
-E1NTE4MTc2LDQ5OTQ0Mzk4NiwxOTA5MDAxOTUwLC02MjY4MTgz
-NiwxMDMwNDAxMDcyLDQwMzg3OTU0MSw0MTI5OTc4NDQsMzQ1Mj
-c4NzU3LC0zNjYwMTg5MDYsNDYxMjEwOTExLC04NDQ1NDExMzQs
-LTQzMzU1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMT
-I2MDU0OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4
-NDddfQ==
+eyJoaXN0b3J5IjpbLTExNjA0MDA1NDEsLTM0OTI1NzU2OSwtMj
+AxNTUxODE3Niw0OTk0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4
+MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NT
+I3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0
+LC00MzM1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MD
+EyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3
+ODQ3XX0=
 -->
