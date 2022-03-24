@@ -37,6 +37,9 @@
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
 
 
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Creational Design Patterns
 
 ###  Factory Method
@@ -1729,11 +1732,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwMTU1MTgxNzYsNDk5NDQzOTg2LDE5MD
-kwMDE5NTAsLTYyNjgxODM2LDEwMzA0MDEwNzIsNDAzODc5NTQx
-LDQxMjk5Nzg0NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMT
-A5MTEsLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIs
-LTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4ND
-g0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIy
-NTJdfQ==
+eyJoaXN0b3J5IjpbMTk5MzA4MzAyMywtMjAxNTUxODE3Niw0OT
+k0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4MzYsMTAzMDQwMTA3
+Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MD
+E4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NTk2MDIs
+LTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1NDksOTI5Mj
+A5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMjYxMzgx
+MjddfQ==
 -->
