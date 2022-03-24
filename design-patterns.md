@@ -1593,13 +1593,15 @@ class PostRecord : Record
 Defines a new operation to a class without change.
 
 ## Other Patterns
+
 ### Null Object
 
 Designed to act as a default value of an object, working as a null state.
 
-> This patt
+> *This pattern make it possible to handle nullness in the same way that somethingness is handled.*
 
 ### Honorable Mentions
+
 -   **Dependency Injection**
 -   **Inversion of Control**
 -   **Inversion of Dependency**
@@ -1613,11 +1615,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg4Mjk5OTUyNiw0NjEyMTA5MTEsLTg0ND
-U0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4
-ODAsNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMT
-Q5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4
-MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2NDc5NC
-wtMTgzNzQyODgwMCwtMTk1NTA4MjAzNCw2NDU5MzI5NCw3MDQz
-MjgyMDJdfQ==
+eyJoaXN0b3J5IjpbMzQ1Mjc4NzU3LDQ2MTIxMDkxMSwtODQ0NT
+QxMTM0LC00MzM1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4
+MCw1MDEyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xND
+kxNjQ3ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgw
+ODUwLC03OTg5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC
+0xODM3NDI4ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMy
+ODIwMl19
 -->
