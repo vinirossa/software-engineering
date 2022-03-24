@@ -1562,7 +1562,7 @@ Defines a new operation to a class without change.
 ## Other Patterns
 ### Null Object
 
-Designed to act as a default value of an object.
+Designed to act as a default value of an object, working as a null state.
 
 ### ...
 -   **Dependency Injection**
@@ -1578,11 +1578,11 @@ Designed to act as a default value of an object.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzMzU1OTYwMiwtMzQ1OTM4MTgyLC0xNz
-U5ODAzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzYsLTE0ODQ4NDMw
-OTUsLTE0OTE2NDc4NDcsLTIyNjEzODEyNywxNTEwOTYyMjUyLC
-03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNSwxNTI4
-NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOT
-QsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2
-MjU3MDddfQ==
+eyJoaXN0b3J5IjpbLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zND
+U5MzgxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3
+NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LD
+E1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5
+ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1NTA4Mj
+AzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5NywtNjQ4
+MTU5NTkxXX0=
 -->
