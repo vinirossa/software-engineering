@@ -1327,7 +1327,8 @@ Defer the exact steps of an algorithm to a subclass, working as a blueprint for 
 
 > *Template method pattern works better in cases where strategy doesn't fit and there is fixed logic on the template. Anyway, it can be very dangerous given that it uses inheritance over composition.*
 
-> A template method class is composed by a defined method (template method) and the empty methods (hooks) that are called inside the template method.
+> *A template method class is composed by a defined method (template method) and the empty methods (hooks) that are called inside the template method.*
+
 > *This pattern is similitar to inversion of dependency pattern, like a Hollywood principle: "Don't call us, we'll call you. Or not."* 
 
 **Uses:**
@@ -1403,11 +1404,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OT
-g5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4
-ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMT
-g2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgx
-NzEzLDE2MDE1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2ODYyOD
-YsLTQyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1
-NTIyNDkxNzddfQ==
+eyJoaXN0b3J5IjpbMTkxNzE0MjIwOSwxNTEwOTYyMjUyLC03OD
+MxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3
+OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNz
+A0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3
+MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MC
+wtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4
+Nzg3MTU2NV19
 -->
