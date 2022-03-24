@@ -922,7 +922,9 @@ A way of passing a request between a chain of objects called handlers that pass 
 - Task delegation
 
 **Uses:**
-- HTTP requisitions
+- HTTP Requisitions
+- Finances
+- Validators
 
 ### Command
 
@@ -1622,11 +1624,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOT
-k3ODQ0LDM0NTI3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwt
-ODQ0NTQxMTM0LC00MzM1NTk2MDIsLTM0NTkzODE4MiwtMTc1OT
-gwMzg4MCw1MDEyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1
-LC0xNDkxNjQ3ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNz
-gzMTgwODUwLC03OTg5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0
-Nzk0XX0=
+eyJoaXN0b3J5IjpbLTYyNjgxODM2LDEwMzA0MDEwNzIsNDAzOD
+c5NTQxLDQxMjk5Nzg0NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0
+NjEyMTA5MTEsLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zNDU5Mz
+gxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3Niwt
+MTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MT
+A5NjIyNTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0
+NDE1XX0=
 -->
