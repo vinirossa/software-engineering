@@ -1333,6 +1333,51 @@ Defer the exact steps of an algorithm to a subclass, working as a blueprint for 
 **Uses:**
 - Frameworks
 
+**In C#:**
+```cs
+abstract class Record
+{
+    public void Save()
+    {
+        Validate();
+        BeforeSave();
+        // Save to DB
+        AfterSave();
+    }
+
+    // Hooks
+    public virtual void Validate() { }
+    public virtual void BeforeSave() { }
+    public virtual void AfterSave() { }
+}
+
+class UserRecord : Record
+{
+    public override void Validate()
+    {
+        // Logic
+    }
+
+    public override void BeforeSave()
+    {
+        // Logic
+    }
+}
+
+class PostRecord : Record
+{
+    public override void Validate()
+    {
+        // Logic
+    }
+
+    public override void AfterSave()
+    {
+        // Logic
+    }
+}
+```
+
 ### Visitor
 
 Defines a new operation to a class without change.
@@ -1353,11 +1398,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMT
-M5ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1NTA4
-MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5NywtNj
-Q4MTU5NTkxLDQwNTYyNTcwNywtMTIxMTM4MTcxMywxNjAxNTMy
-NzQyLC0yMDE2Nzk4MDYwLC0yMDIyNjg2Mjg2LC00MjA2NjkyMT
-MsMjAxNjMzNzE2MiwxNTg3ODcxNTY1LC0xNTUyMjQ5MTc3LC0y
-NDIwOTQ1XX0=
+eyJoaXN0b3J5IjpbLTM4MjQ5NzkyNCwtNzgzMTgwODUwLC03OT
+g5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4
+ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMT
+g2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgx
+NzEzLDE2MDE1MzI3NDIsLTIwMTY3OTgwNjAsLTIwMjI2ODYyOD
+YsLTQyMDY2OTIxMywyMDE2MzM3MTYyLDE1ODc4NzE1NjUsLTE1
+NTIyNDkxNzddfQ==
 -->
