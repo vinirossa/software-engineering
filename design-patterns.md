@@ -1009,7 +1009,7 @@ A way to include language elements in a program.
 
 ### Iterator
 
-Sequentially access the elements of a collection.
+Sequentially access the elements of a collection, not exposing all items right away.
 
 **- Uses:**
 - Custom Collections
@@ -1411,7 +1411,7 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwOTA0MDQxMDgsLTIyNjEzODEyNywxNT
+eyJoaXN0b3J5IjpbLTE5NDQ0NjU2MzksLTIyNjEzODEyNywxNT
 EwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgy
 NDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMz
 QsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1
