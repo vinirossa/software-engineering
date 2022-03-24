@@ -911,12 +911,9 @@ A fine-grained instance used for efficient sharing and memory saving, as if an f
 
 A way of passing a request between a chain of objects called handlers that pass the request forward until it is solved, similar to middlewares.
 
-> This pattern is useful when:
-> - More than one object may process a request
-> - It's needed to execute several handlers in a particular order
-> - Handlers can be specified dynamically
+> This pattern can be used when it's needed to execute several handlers in a particular order and handlers need to be specified dynamically.
 
-> Chain of responsability pattern is useful to apply Single Responsability principle,  structure your code with an business rule, make easy to add features and alter these responsabilities without affecting the others.
+> Chain of responsability pattern is useful to apply Single Responsability principle,  to structure your code with an business rule, to make it easy to add features and to alter these responsabilities without affecting the others.
 
 **Uses:**
 - HTTP Requisitions
@@ -1732,11 +1729,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNj
-gxODM2LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwz
-NDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MT
-EzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAs
-NTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MT
-Y0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1
-MF19
+eyJoaXN0b3J5IjpbLTIwMTU1MTgxNzYsNDk5NDQzOTg2LDE5MD
+kwMDE5NTAsLTYyNjgxODM2LDEwMzA0MDEwNzIsNDAzODc5NTQx
+LDQxMjk5Nzg0NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMT
+A5MTEsLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIs
+LTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4ND
+g0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIy
+NTJdfQ==
 -->
