@@ -1597,6 +1597,8 @@ Defines a new operation to a class without change.
 
 Designed to act as a default value of an object, working as a null state.
 
+> This patt
+
 ### Honorable Mentions
 -   **Dependency Injection**
 -   **Inversion of Control**
@@ -1611,11 +1613,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDYxMjEwOTExLC04NDQ1NDExMzQsLTQzMz
-U1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0
-OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4NDcsLT
-IyNjEzODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkx
-MTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MD
-AsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYy
-OTA4OTddfQ==
+eyJoaXN0b3J5IjpbLTg4Mjk5OTUyNiw0NjEyMTA5MTEsLTg0ND
+U0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4
+ODAsNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMT
+Q5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4
+MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2NDc5NC
+wtMTgzNzQyODgwMCwtMTk1NTA4MjAzNCw2NDU5MzI5NCw3MDQz
+MjgyMDJdfQ==
 -->
