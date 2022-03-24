@@ -1195,6 +1195,7 @@ Defines an always null iterator.
 
 **Uses:**
 - Component Leaves (Composite Pattern)
+- Null States (State Pattern)
 
 **In C#:**
 ```cs
@@ -1610,11 +1611,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2MDI1NTQ2MSwtODQ0NTQxMTM0LC00Mz
-M1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1
-NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC
-0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5
-MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4OD
-AwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMTg2
-MjkwODk3XX0=
+eyJoaXN0b3J5IjpbNDYxMjEwOTExLC04NDQ1NDExMzQsLTQzMz
+U1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0
+OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4NDcsLT
+IyNjEzODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkx
+MTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MD
+AsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYy
+OTA4OTddfQ==
 -->
