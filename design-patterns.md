@@ -1701,7 +1701,7 @@ class PostRecord : Record
 
 ### Visitor
 
-Defines a new operation to a class without change.
+Defines a new operation to a class without change it.
 
 ## Other Patterns
 
@@ -1726,11 +1726,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwODcyODE1LC0zNDkyNTc1NjksLTIwMT
-U1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2
-LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
-g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
-NDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMj
-YwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0
-N119
+eyJoaXN0b3J5IjpbMTM1MTYwNjg3NCwtMzQ5MjU3NTY5LC0yMD
+E1NTE4MTc2LDQ5OTQ0Mzk4NiwxOTA5MDAxOTUwLC02MjY4MTgz
+NiwxMDMwNDAxMDcyLDQwMzg3OTU0MSw0MTI5OTc4NDQsMzQ1Mj
+c4NzU3LC0zNjYwMTg5MDYsNDYxMjEwOTExLC04NDQ1NDExMzQs
+LTQzMzU1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMT
+I2MDU0OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4
+NDddfQ==
 -->
