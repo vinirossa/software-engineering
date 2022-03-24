@@ -930,6 +930,7 @@ A way of passing a request between a chain of objects called handlers that pass 
 
 **In C#:**
 
+
 ### Command
 
 Encapsulates a command request as an object, supporting undoable operations.
@@ -949,7 +950,6 @@ Encapsulates a command request as an object, supporting undoable operations.
 
 **In C#:**
 ```cs
-
 public class Program
 {
     public static void Main()
@@ -1628,7 +1628,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTE2OTk5MDcsMTkwOTAwMTk1MCwtNj
+eyJoaXN0b3J5IjpbLTE3Mjk3NjI5MTEsMTkwOTAwMTk1MCwtNj
 I2ODE4MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0
 LDM0NTI3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NT
 QxMTM0LC00MzM1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4
