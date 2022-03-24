@@ -1246,6 +1246,8 @@ Sequentially access the elements of a collection, without exposing its underlyin
 
 > *Some benefits of iterator pattern is that is possible to create infinite collections and to pause the iteration to continue it later in a much easier way than `foreach`s with an index.*
 
+> *Generic types can be very powerful with iterator pattern.*
+
 **Uses:**
 - Custom Collections
 - Games
@@ -1728,11 +1730,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM1Njg4Mjk5LC0zNDkyNTc1NjksLTIwMT
-U1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2
-LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
-g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
-NDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMj
-YwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0
-N119
+eyJoaXN0b3J5IjpbMzY5MDcwODg4LC0zNTY4ODI5OSwtMzQ5Mj
+U3NTY5LC0yMDE1NTE4MTc2LDQ5OTQ0Mzk4NiwxOTA5MDAxOTUw
+LC02MjY4MTgzNiwxMDMwNDAxMDcyLDQwMzg3OTU0MSw0MTI5OT
+c4NDQsMzQ1Mjc4NzU3LC0zNjYwMTg5MDYsNDYxMjEwOTExLC04
+NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5OD
+AzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTVd
+fQ==
 -->
