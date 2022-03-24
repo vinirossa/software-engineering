@@ -1183,7 +1183,8 @@ class BackpackInventoryIterator : IInventoryIterator
 ```
 #### Null Iterator
 
-For better undestanding, check the [Null Object Pattern](#null-object).
+> *For better undestanding, check the [Null Object Pattern](#null-object)*.
+
 ### Mediator
 
 Defines simplified communication between classes.
@@ -1580,7 +1581,7 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTg2MTQyMTk4LC04NDQ1NDExMzQsLTQzMz
+eyJoaXN0b3J5IjpbMzA0MzEyOTU2LC04NDQ1NDExMzQsLTQzMz
 U1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0
 OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4NDcsLT
 IyNjEzODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkx
