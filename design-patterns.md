@@ -1011,7 +1011,7 @@ A way to include language elements in a program.
 
 Sequentially access the elements of a collection, not exposing all items right away.
 
-> One benefit of iterator pattern is that is possible to create infinite collections.
+> One benefit of iterator pattern is that is possible to create infinite collections and to pause the iterat.
 
 **- Uses:**
 - Custom Collections
@@ -1413,11 +1413,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0OTE2NDc4NDcsLTIyNjEzODEyNywxNT
-EwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgy
-NDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMz
-QsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1
-OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0Mi
-wtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIw
-MTYzMzcxNjJdfQ==
+eyJoaXN0b3J5IjpbLTIwMTA2MzQyNDcsLTE0OTE2NDc4NDcsLT
+IyNjEzODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkx
+MTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MD
+AsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYy
+OTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MT
+MsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MCwtMjAyMjY4NjI4Niwt
+NDIwNjY5MjEzXX0=
 -->
