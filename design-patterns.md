@@ -1181,7 +1181,9 @@ class BackpackInventoryIterator : IInventoryIterator
     }
 }
 ```
+#### Null Iterator
 
+For better undestanding, check the [Null Object Pattern](#null-object).
 ### Mediator
 
 Defines simplified communication between classes.
@@ -1578,11 +1580,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zND
-U5MzgxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3
-NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LD
-E1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5
-ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1NTA4Mj
-AzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5NywtNjQ4
-MTU5NTkxXX0=
+eyJoaXN0b3J5IjpbNTg2MTQyMTk4LC04NDQ1NDExMzQsLTQzMz
+U1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0
+OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4NDcsLT
+IyNjEzODEyNywxNTEwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkx
+MTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MD
+AsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYy
+OTA4OTddfQ==
 -->
