@@ -1026,16 +1026,26 @@ public class Program
     public static void Main()
     {
         var handHeldInventory = new HandHeldInventory(new FoodItem(1, "Apple", 20.00), new WeaponIem(2, "Sword", 60.00));
-        var itor = handHeldInventory.GetIterator();
+        var handItor = handHeldInventory.GetIterator();
 
-        while (!itor.IsDone())
+        while (!handItor.IsDone()) // Abstraction
         {
-            Console.WriteLine(itor.Current());
-            itor.Next();
+            Console.WriteLine(handItor.Current());
+            handItor.Next();
+        }        
+        
+        var backpackInventory = new BackpackInventory(new FoodItem(1, "Apple", 20.00), new FoodItem(1, "Bread", 40.00), new WeaponIem(2, "Sword", 60.00));
+        var backpackItor = backpackInventory.GetIterator();
+
+        while (!backpackItor.IsDone()) // Same abstraction
+        {
+            Console.WriteLine(backpackItor.Current());
+            backpackItor.Next();
         }
     }
 }
 
+// Items
 interface IItem
 {
     uint Id { get; set; }
@@ -1070,6 +1080,7 @@ class WeaponIem : IItem
     public double Damage { get; set; }
 }
 
+// Iterables
 interface IInventory
 {
     IInventoryIterator GetIterator();
@@ -1089,6 +1100,24 @@ class HandHeldInventory : IInventory
     public IInventoryIterator GetIterator() => new HandHeldInventoryIterator(this); // Factory Method
 }
 
+class BackpackInventory : IInventory
+{
+    public BackpackInventory(IItem item1, IItem item2, IItem item3)
+    {
+        Item1 = item1;
+        Item2 = item2;
+        Item3 = item3;
+    }
+
+    public IItem Item1 { get; set; }
+    public IItem Item2 { get; set; }
+    public IItem Item3 { get; set; }
+    // ...
+
+    public IInventoryIterator GetIterator() => new HandHeldInventoryIterator(this); // Factory Method
+}
+
+// Iterators
 interface IInventoryIterator
 {
     bool IsDone();
@@ -1116,6 +1145,34 @@ class HandHeldInventoryIterator : IInventoryIterator
                 return _inventory.LeftItem;
             case 1:
                 return _inventory.RightItem;
+            default:
+                return null;
+        }
+    }
+}
+
+class BackpackInventoryIterator : IInventoryIterator
+{
+    public BackpackInventoryIterator(BackpackInventory inventory)
+    {
+        _inventory = inventory;
+    }
+
+    private BackpackInventory _inventory { get; set; } // Iterable
+    private uint _index = 0;
+
+    public bool IsDone() => _index < 3;
+    public void Next() => _index++;
+    public IItem? Current()
+    {
+        switch (_index)
+        {
+            case 0:
+                return _inventory.Item1;
+            case 1:
+                return _inventory.Item2;
+            case 2:
+                return _inventory.Item3;
             default:
                 return null;
         }
@@ -1516,11 +1573,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOT
-IwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4
-MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC
-0xMTM5ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQyODgwMCwtMTk1
-NTA4MjAzNCw2NDU5MzI5NCw3MDQzMjgyMDIsMTE4NjI5MDg5Ny
-wtNjQ4MTU5NTkxLDQwNTYyNTcwNywtMTIxMTM4MTcxMywxNjAx
-NTMyNzQyXX0=
+eyJoaXN0b3J5IjpbLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MD
+EyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3
+ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC
+03OTg5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3
+NDI4ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMi
+wxMTg2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjEx
+MzgxNzEzXX0=
 -->
