@@ -926,6 +926,7 @@ A way of passing a request between a chain of objects called handlers that pass 
 - Finances
 - Validators
 
+In c
 ### Command
 
 Encapsulates a command request as an object, supporting undoable operations.
@@ -1624,11 +1625,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYyNjgxODM2LDEwMzA0MDEwNzIsNDAzOD
-c5NTQxLDQxMjk5Nzg0NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0
-NjEyMTA5MTEsLTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zNDU5Mz
-gxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3Niwt
-MTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MT
-A5NjIyNTIsLTc4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0
-NDE1XX0=
+eyJoaXN0b3J5IjpbMjEyODUxODk1OCwtNjI2ODE4MzYsMTAzMD
+QwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1Nywt
+MzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NT
+k2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1NDks
+OTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMj
+YxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5MTEy
+MjBdfQ==
 -->
