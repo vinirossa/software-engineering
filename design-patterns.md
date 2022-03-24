@@ -1336,6 +1336,8 @@ Defer the exact steps of an algorithm to a subclass, working as a blueprint for 
 
 **UML:**
 
+![template-method](https://user-images.githubusercontent.com/72560319/159915346-6633ca6f-0198-43cb-b041-3090c50ebe83.png)
+
 **In C#:**
 ```cs
 abstract class Record
