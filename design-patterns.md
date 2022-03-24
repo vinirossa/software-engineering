@@ -1011,6 +1011,13 @@ A way to include language elements in a program.
 
 Sequentially access the elements of a collection.
 
+**- Uses:**
+- Custom Collections
+
+**- UML:**
+
+**- In C#:**
+
 ### Mediator
 
 Defines simplified communication between classes.
@@ -1404,11 +1411,11 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIyNjEzODEyNywxNTEwOTYyMjUyLC03OD
-MxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgyNDQxNSwxNTI4NjQ3
-OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMzQsNjQ1OTMyOTQsNz
-A0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1OTU5MSw0MDU2MjU3
-MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0MiwtMjAxNjc5ODA2MC
-wtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIwMTYzMzcxNjIsMTU4
-Nzg3MTU2NV19
+eyJoaXN0b3J5IjpbLTEwOTA0MDQxMDgsLTIyNjEzODEyNywxNT
+EwOTYyMjUyLC03ODMxODA4NTAsLTc5ODkxMTIyMCwtMTEzOTgy
+NDQxNSwxNTI4NjQ3OTQsLTE4Mzc0Mjg4MDAsLTE5NTUwODIwMz
+QsNjQ1OTMyOTQsNzA0MzI4MjAyLDExODYyOTA4OTcsLTY0ODE1
+OTU5MSw0MDU2MjU3MDcsLTEyMTEzODE3MTMsMTYwMTUzMjc0Mi
+wtMjAxNjc5ODA2MCwtMjAyMjY4NjI4NiwtNDIwNjY5MjEzLDIw
+MTYzMzcxNjJdfQ==
 -->
