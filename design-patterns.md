@@ -1019,6 +1019,8 @@ Sequentially access the elements of a collection, without exposing its underlyin
 
 **UML:**
 
+![iterator](https://user-images.githubusercontent.com/72560319/159944504-30077262-791e-433d-80c7-f25f24322081.png)
+
 **In C#:**
 ```cs
 public class Program
