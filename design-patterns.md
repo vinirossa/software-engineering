@@ -922,6 +922,8 @@ A way of passing a request between a chain of objects called handlers that pass 
 - HTTP Requisitions
 - Finances
 - Validators
+- Attendance Chain
+- Rules Engine
 
 **UML:**
 
@@ -1626,11 +1628,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkwOTAwMTk1MCwtNjI2ODE4MzYsMTAzMD
-QwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1Nywt
-MzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NT
-k2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1NDks
-OTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMj
-YxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5MTEy
-MjBdfQ==
+eyJoaXN0b3J5IjpbLTE0MTE2OTk5MDcsMTkwOTAwMTk1MCwtNj
+I2ODE4MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0
+LDM0NTI3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NT
+QxMTM0LC00MzM1NTk2MDIsLTM0NTkzODE4MiwtMTc1OTgwMzg4
+MCw1MDEyNjA1NDksOTI5MjA5OTc2LC0xNDg0ODQzMDk1LC0xND
+kxNjQ3ODQ3LC0yMjYxMzgxMjcsMTUxMDk2MjI1MiwtNzgzMTgw
+ODUwXX0=
 -->
