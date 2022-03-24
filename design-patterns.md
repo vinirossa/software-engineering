@@ -1332,6 +1332,9 @@ Defer the exact steps of an algorithm to a subclass, working as a blueprint for 
 
 **Uses:**
 - Frameworks
+- Database Operations
+
+**UML:**
 
 **In C#:**
 ```cs
@@ -1398,7 +1401,7 @@ Defines a new operation to a class without change.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MjQ5NzkyNCwtNzgzMTgwODUwLC03OT
+eyJoaXN0b3J5IjpbMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OT
 g5MTEyMjAsLTExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4
 ODAwLC0xOTU1MDgyMDM0LDY0NTkzMjk0LDcwNDMyODIwMiwxMT
 g2MjkwODk3LC02NDgxNTk1OTEsNDA1NjI1NzA3LC0xMjExMzgx
