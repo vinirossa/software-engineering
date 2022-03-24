@@ -916,6 +916,8 @@ A way of passing a request between a chain of objects called handlers that pass 
 > - It's needed to execute several handlers in a particular order
 > - Handlers can be specified dynamically
 
+> Chain of responsability pattern is useful to apply Single Responsability principle,  
+
 **Applicability:**
 - Task delegation
 
@@ -1620,11 +1622,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
-g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
-NDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMj
-YwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0
-NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNz
-k4OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQy
-ODgwMF19
+eyJoaXN0b3J5IjpbLTE5NzU2OTY1OTYsNDAzODc5NTQxLDQxMj
+k5Nzg0NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEs
+LTg0NDU0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NT
+k4MDM4ODAsNTAxMjYwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5
+NSwtMTQ5MTY0Nzg0NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLT
+c4MzE4MDg1MCwtNzk4OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2
+NDc5NF19
 -->
