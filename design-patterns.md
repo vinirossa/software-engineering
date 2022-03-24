@@ -1638,6 +1638,8 @@ class WindowDisplay : IObserver
 
 Capture and restore an object's internal state.
 
+> This pattern is similitar to [Command Pattern](#command), but the main difference is that instead of requests or actions, it control
+
 > *Because Memento Pattern stores the objects' states in memory, it can consume a large amount of RAM. However, this problem can be solved with [Flyweight Pattern](#flyweight), for example.*
 
 **Uses:**
@@ -1742,11 +1744,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTA2NzA4MjIsMzY5MDcwODg4LC0zNT
-Y4ODI5OSwtMzQ5MjU3NTY5LC0yMDE1NTE4MTc2LDQ5OTQ0Mzk4
-NiwxOTA5MDAxOTUwLC02MjY4MTgzNiwxMDMwNDAxMDcyLDQwMz
-g3OTU0MSw0MTI5OTc4NDQsMzQ1Mjc4NzU3LC0zNjYwMTg5MDYs
-NDYxMjEwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OT
-M4MTgyLC0xNzU5ODAzODgwLDUwMTI2MDU0OSw5MjkyMDk5NzZd
-fQ==
+eyJoaXN0b3J5IjpbLTU0NDE2Mjg2MiwtMTUxMDY3MDgyMiwzNj
+kwNzA4ODgsLTM1Njg4Mjk5LC0zNDkyNTc1NjksLTIwMTU1MTgx
+NzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2LDEwMz
+A0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNzg3NTcs
+LTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwtNDMzNT
+U5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMjYwNTQ5
+XX0=
 -->
