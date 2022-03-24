@@ -267,9 +267,9 @@ A class of which only a single instance can exist and that provides a global acc
 
 All singletons have a private constructor (`createInstance`), a public access method (`getInstance`) and a static attribute (`instance`).
 
-> If possible, avoid singletons at all. They can be very tricky to escalate and to work with TDD, as one man's constant is one man's variable.
+> *If possible, avoid singletons at all. They can be very tricky to escalate and to work with TDD, as one man's constant is one man's variable.*
 
-> In a way, it's completely fine to have a single object within an application, but it isn't to make it impossible to create a second instance.
+> *In a way, it's completely fine to have a single object within an application, but it isn't to make it impossible to create a second instance.*
 
 **Uses:**
 - Database Configuration
@@ -1446,7 +1446,7 @@ class NullIterator : IIterator
 
 Alter an object's behavior at runtime when its internal state changes.
 
-> The state is not an enum or property, it is an object. Therefore, it replaces a conditional with polymorphism.
+> *The state is not an enum or property, it is an object. Therefore, it replaces a conditional with polymorphism.*
 
 **Uses:**
 - Network Requests
@@ -1728,11 +1728,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NTM0Njc2NywtMzQ5MjU3NTY5LC0yMD
-E1NTE4MTc2LDQ5OTQ0Mzk4NiwxOTA5MDAxOTUwLC02MjY4MTgz
-NiwxMDMwNDAxMDcyLDQwMzg3OTU0MSw0MTI5OTc4NDQsMzQ1Mj
-c4NzU3LC0zNjYwMTg5MDYsNDYxMjEwOTExLC04NDQ1NDExMzQs
-LTQzMzU1OTYwMiwtMzQ1OTM4MTgyLC0xNzU5ODAzODgwLDUwMT
-I2MDU0OSw5MjkyMDk5NzYsLTE0ODQ4NDMwOTUsLTE0OTE2NDc4
-NDddfQ==
+eyJoaXN0b3J5IjpbODg4MTExMTMzLC0zNDkyNTc1NjksLTIwMT
+U1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLTYyNjgxODM2
+LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
+g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
+NDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMj
+YwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0
+N119
 -->
