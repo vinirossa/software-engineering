@@ -909,7 +909,7 @@ A fine-grained instance used for efficient sharing and memory saving, as if an f
 
 ### Chain of Responsibility
 
-A way of passing a request between a chain of objects, similar to middlewares.
+A way of passing a request between a chain of objects called handlers that pass the request forward until it is solved, similar to middlewares.
 
 > This pattern is useful when:
 > - More than one object may process a request
@@ -1620,11 +1620,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MD
-E4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NTk2MDIs
-LTM0NTkzODE4MiwtMTc1OTgwMzg4MCw1MDEyNjA1NDksOTI5Mj
-A5OTc2LC0xNDg0ODQzMDk1LC0xNDkxNjQ3ODQ3LC0yMjYxMzgx
-MjcsMTUxMDk2MjI1MiwtNzgzMTgwODUwLC03OTg5MTEyMjAsLT
-ExMzk4MjQ0MTUsMTUyODY0Nzk0LC0xODM3NDI4ODAwLC0xOTU1
-MDgyMDM0XX0=
+eyJoaXN0b3J5IjpbNDAzODc5NTQxLDQxMjk5Nzg0NCwzNDUyNz
+g3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0NDU0MTEzNCwt
+NDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4ODAsNTAxMj
+YwNTQ5LDkyOTIwOTk3NiwtMTQ4NDg0MzA5NSwtMTQ5MTY0Nzg0
+NywtMjI2MTM4MTI3LDE1MTA5NjIyNTIsLTc4MzE4MDg1MCwtNz
+k4OTExMjIwLC0xMTM5ODI0NDE1LDE1Mjg2NDc5NCwtMTgzNzQy
+ODgwMF19
 -->
