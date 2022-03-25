@@ -1653,6 +1653,56 @@ Capture and restore an object's internal state.
 
 **In C#:**
 ```cs
+interface IMemento
+{
+    List<IMemento> Mementos { get; set; }
+
+    void SetMemento();
+    IMemento? GetMemento(uint index);
+    IMemento? GetPreviousMemento() => (Mementos.Count > 1) ? Mementos[Mementos.Count - 2] : null;
+}
+
+class Subject : IMemento // Originator
+{
+
+    public Subject(string prop1, int prop2)
+    {
+        Prop1 = prop1;
+        Prop2 = prop2;
+        SetMemento();
+    }
+
+    private string _prop1;
+    public string Prop1 
+    {
+        get => _prop1;
+        set
+        {
+            _prop1 = value;
+            SetMemento();
+        }
+    }
+
+    private int _prop2;
+    public int Prop2
+    {
+        get => _prop2;
+        set
+        {
+            _prop2 = value;
+            SetMemento();
+        }
+    }
+
+    public List<IMemento> Mementos { get; set; } = new List<IMemento>(); // Caretaker
+
+    public void Method1() { }
+    public void Method2() { }
+
+    public void SetMemento() => Mementos.Add((IMemento)MemberwiseClone());
+    public IMemento? GetMemento(uint index) => (index < Mementos.Count) ? Mementos[(int)index] : null;
+    public IMemento? GetPreviousMemento() => (Mementos.Count > 1) ? Mementos[Mementos.Count - 2] : null;
+}
 ```
 
 ### Template Method
@@ -1745,11 +1795,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTgyNzU1Mzg3LC0yMDkwMzc3MDExLC03Mj
-U4NzkxNjgsLTE1MTA2NzA4MjIsMzY5MDcwODg4LC0zNTY4ODI5
-OSwtMzQ5MjU3NTY5LC0yMDE1NTE4MTc2LDQ5OTQ0Mzk4NiwxOT
-A5MDAxOTUwLC02MjY4MTgzNiwxMDMwNDAxMDcyLDQwMzg3OTU0
-MSw0MTI5OTc4NDQsMzQ1Mjc4NzU3LC0zNjYwMTg5MDYsNDYxMj
-EwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OTM4MTgy
-XX0=
+eyJoaXN0b3J5IjpbLTQwNzI5OTM3LC04Mjc1NTM4NywtMjA5MD
+M3NzAxMSwtNzI1ODc5MTY4LC0xNTEwNjcwODIyLDM2OTA3MDg4
+OCwtMzU2ODgyOTksLTM0OTI1NzU2OSwtMjAxNTUxODE3Niw0OT
+k0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4MzYsMTAzMDQwMTA3
+Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MD
+E4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NTk2MDJd
+fQ==
 -->
