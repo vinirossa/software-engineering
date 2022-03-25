@@ -18,16 +18,16 @@
     + [Composite](#composite)
     + [Flyweight](#flyweight)
   * [Behavioral Patterns](#behavioral-patterns)
+    + [Strategy](#strategy)
     + [Chain of Responsibility](#chain-of-responsibility)
     + [Command](#command)
+    + [Mediator](#mediator)
     + [Interpreter](#interpreter)
     + [Iterator](#iterator)
       - [Null Iterator](#null-iterator)
-    + [Mediator](#mediator)
-    + [Memento](#memento)
     + [State](#state)
     + [Observer](#observer)
-    + [Strategy](#strategy)
+    + [Memento](#memento)
     + [Template Method](#template-method)
     + [Visitor](#visitor)
   * [Other Patterns](#other-patterns)
@@ -1745,11 +1745,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwOTAzNzcwMTEsLTcyNTg3OTE2OCwtMT
-UxMDY3MDgyMiwzNjkwNzA4ODgsLTM1Njg4Mjk5LC0zNDkyNTc1
-NjksLTIwMTU1MTgxNzYsNDk5NDQzOTg2LDE5MDkwMDE5NTAsLT
-YyNjgxODM2LDEwMzA0MDEwNzIsNDAzODc5NTQxLDQxMjk5Nzg0
-NCwzNDUyNzg3NTcsLTM2NjAxODkwNiw0NjEyMTA5MTEsLTg0ND
-U0MTEzNCwtNDMzNTU5NjAyLC0zNDU5MzgxODIsLTE3NTk4MDM4
-ODBdfQ==
+eyJoaXN0b3J5IjpbLTgyNzU1Mzg3LC0yMDkwMzc3MDExLC03Mj
+U4NzkxNjgsLTE1MTA2NzA4MjIsMzY5MDcwODg4LC0zNTY4ODI5
+OSwtMzQ5MjU3NTY5LC0yMDE1NTE4MTc2LDQ5OTQ0Mzk4NiwxOT
+A5MDAxOTUwLC02MjY4MTgzNiwxMDMwNDAxMDcyLDQwMzg3OTU0
+MSw0MTI5OTc4NDQsMzQ1Mjc4NzU3LC0zNjYwMTg5MDYsNDYxMj
+EwOTExLC04NDQ1NDExMzQsLTQzMzU1OTYwMiwtMzQ1OTM4MTgy
+XX0=
 -->
