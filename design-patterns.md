@@ -1550,12 +1550,7 @@ interface IObservable
 
 class WeatherStation : IObservable
 {
-    public WeatherStation()
-    {
-        Observers = new List<IObserver> { };
-    }
-
-    public List<IObserver> Observers { get; private set; }
+    public List<IObserver> Observers { get; private set; } = new List<IObserver> { };
 
     private decimal _temperature { get; set; }
     public decimal Temperature
@@ -1794,11 +1789,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODM0MzEyOTQsLTQwNzI5OTM3LC04Mj
-c1NTM4NywtMjA5MDM3NzAxMSwtNzI1ODc5MTY4LC0xNTEwNjcw
-ODIyLDM2OTA3MDg4OCwtMzU2ODgyOTksLTM0OTI1NzU2OSwtMj
-AxNTUxODE3Niw0OTk0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4
-MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NT
-I3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0
-XX0=
+eyJoaXN0b3J5IjpbLTE1NjY3MjY4MzEsLTEzODM0MzEyOTQsLT
+QwNzI5OTM3LC04Mjc1NTM4NywtMjA5MDM3NzAxMSwtNzI1ODc5
+MTY4LC0xNTEwNjcwODIyLDM2OTA3MDg4OCwtMzU2ODgyOTksLT
+M0OTI1NzU2OSwtMjAxNTUxODE3Niw0OTk0NDM5ODYsMTkwOTAw
+MTk1MCwtNjI2ODE4MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsND
+EyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkx
+MV19
 -->
