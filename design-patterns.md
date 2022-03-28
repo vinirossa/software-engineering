@@ -1653,55 +1653,54 @@ Capture and restore an object's internal state.
 
 **In C#:**
 ```cs
-interface IMemento
+interface IOriginator<T>
 {
-    List<IMemento> Mementos { get; set; }
-
-    void SetMemento();
-    IMemento? GetMemento(uint index);
-    IMemento? GetPreviousMemento() => (Mementos.Count > 1) ? Mementos[Mementos.Count - 2] : null;
+    T SaveMemento();
+    void RestoreMemento(T memento);
 }
 
-class Subject : IMemento // Originator
+interface ISubjectMemento
 {
+    public string Prop1 { get; set; } // States
+}
 
-    public Subject(string prop1, int prop2)
+class Subject : IOriginator<SubjectMemento>, ISubjectMemento // Originator
+{
+    public Subject(string prop1, int prop2, bool prop3)
     {
         Prop1 = prop1;
         Prop2 = prop2;
-        SetMemento();
+        Prop3 = prop3;
     }
 
-    private string _prop1;
-    public string Prop1 
-    {
-        get => _prop1;
-        set
-        {
-            _prop1 = value;
-            SetMemento();
-        }
-    }
-
-    private int _prop2;
-    public int Prop2
-    {
-        get => _prop2;
-        set
-        {
-            _prop2 = value;
-            SetMemento();
-        }
-    }
-
-    public List<IMemento> Mementos { get; set; } = new List<IMemento>(); // Caretaker
+    public string Prop1 { get; set; }
+    public int Prop2 { get; set; }
+    public bool Prop3 { get; set; }
 
     public void Method1() { }
     public void Method2() { }
 
-    public void SetMemento() => Mementos.Add((IMemento)MemberwiseClone());
-    public IMemento? GetMemento(uint index) => (index < Mementos.Count) ? Mementos[(int)index] : null;
-    public IMemento? GetPreviousMemento() => (Mementos.Count > 1) ? Mementos[Mementos.Count - 2] : null;
+    public SubjectMemento SaveMemento() => new SubjectMemento(Prop1);
+    public void RestoreMemento(SubjectMemento memento) => Prop1 = memento.Prop1;
+}
+
+class SubjectMemento : ISubjectMemento
+{
+    public SubjectMemento(string prop1)
+    {
+        Prop1 = prop1;
+    }
+
+    public string Prop1 { get; set; }
+}
+
+class SubjectHistory // Caretaker
+{
+    private List<SubjectMemento> _mementos { get; set; } = new List<SubjectMemento> { };
+
+    public void Add(SubjectMemento memento) => _mementos.Add(memento);
+    public SubjectMemento? Get(uint index) => (index < _mementos.Count) ? _mementos[(int)index] : null;
+    public SubjectMemento? GetLast() => (_mementos.Count != 0) ? _mementos[_mementos.Count - 1] : null;
 }
 ```
 
@@ -1795,11 +1794,11 @@ Designed to act as a default value of an object, working as a null state.
 -   **Unit of Work**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNzI5OTM3LC04Mjc1NTM4NywtMjA5MD
-M3NzAxMSwtNzI1ODc5MTY4LC0xNTEwNjcwODIyLDM2OTA3MDg4
-OCwtMzU2ODgyOTksLTM0OTI1NzU2OSwtMjAxNTUxODE3Niw0OT
-k0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4MzYsMTAzMDQwMTA3
-Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NTI3ODc1NywtMzY2MD
-E4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0LC00MzM1NTk2MDJd
-fQ==
+eyJoaXN0b3J5IjpbLTEzODM0MzEyOTQsLTQwNzI5OTM3LC04Mj
+c1NTM4NywtMjA5MDM3NzAxMSwtNzI1ODc5MTY4LC0xNTEwNjcw
+ODIyLDM2OTA3MDg4OCwtMzU2ODgyOTksLTM0OTI1NzU2OSwtMj
+AxNTUxODE3Niw0OTk0NDM5ODYsMTkwOTAwMTk1MCwtNjI2ODE4
+MzYsMTAzMDQwMTA3Miw0MDM4Nzk1NDEsNDEyOTk3ODQ0LDM0NT
+I3ODc1NywtMzY2MDE4OTA2LDQ2MTIxMDkxMSwtODQ0NTQxMTM0
+XX0=
 -->
